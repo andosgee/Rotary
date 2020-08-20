@@ -17,5 +17,7 @@ if(!empty($_SESSION['ID'])){
 <body>
   <?php include "inc/nav.php"; ?>
 
+  <?php include "inc/signin-content.php"; ?>
+
 </body>
 </html>
