@@ -1,6 +1,7 @@
 <?php
 session_start();
 include "inc/depends.php";
+$conn = OpenCon();
 
 if(!empty($_SESSION['ID'])){
   header("location index.php");
