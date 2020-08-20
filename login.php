@@ -1,5 +1,6 @@
 <?php
 session_start();
+include "inc/depends.php";
 
 if(!empty($_SESSION['ID'])){
   header("location index.php");
