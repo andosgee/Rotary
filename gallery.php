@@ -22,9 +22,10 @@
 
    <div class="gallery column">
     <div class="gallery__section column">
+      <!-- 'example' will be replaced with var sectionID -->
       <div class="row">
         <h2 class="gallery__title">Section Title</h2>
-        <span class="gallery__expand">&#9650;</span> <!-- Up Arrow -->
+        <button class="gallery__expand" id="expandExample" onclick="toggleExpand('expandExample')">&#9650;</button> <!-- Up Arrow -->
       </div>
 
       <div class="column">
