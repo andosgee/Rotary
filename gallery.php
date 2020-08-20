@@ -21,38 +21,28 @@
    ?>
 
    <div class="gallery column">
-    <div class="gallery__section column">
+     <div class="gallery__section column" id="exampleSection">
       <!-- 'example' will be replaced with var sectionID -->
       <div class="row">
+        <button class="gallery__previous hidden" id="gallery__previous" onclick="previousImage()">&#8678;</button>
+
         <h2 class="gallery__title">Section Title</h2>
-        <button class="gallery__expand" id="expandExample" onclick="toggleExpand('expandExample')">&#9650;</button> <!-- Up Arrow -->
+
+        <button class="gallery__next hidden" id="gallery__next" onclick="nextImage()">&#8680;</button>
+
+        <button class="gallery__expand" id="gallery__expand" onclick="toggleExpand('gallery__expand')">&#9650;</button> <!-- Arrow -->
+
+       <button class="gallery__close hidden" id="gallery__close" onclick="toggleGalleryView('exampleSection')">&#10005;</button>
       </div>
 
-      <div class="column">
-        <div class="gallery__item column">
-          <img class= "gallery__image"src="./media/example.jpg" alt="Example Image">
-          <p class="gallery__description">Short Description</p>
+      <div class="gallery__items row">
+          <div class="gallery__item column">
+            <img class= "gallery__image"src="./media/example.jpg" alt="Example Image" onclick="toggleGalleryView('exampleSection')">
+            <p class="gallery__description">Short Description</p>
+          </div>
         </div>
-
-        <div class="gallery__item column">
-          <img class= "gallery__image"src="./media/example.jpg" alt="Example Image">
-          <p class="gallery__description">Short Description</p>
-        </div>
-
-        <div class="gallery__item column">
-          <img class= "gallery__image"src="./media/example.jpg" alt="Example Image">
-          <p class="gallery__description">Short Description</p>
-        </div>
-
-        <div class="gallery__item column">
-          <img class= "gallery__image"src="./media/example.jpg" alt="Example Image">
-          <p class="gallery__description">Short Description</p>
-        </div>
-
-      </div>
 
       <h3 class="gallery__sectionEnd">End of Section</h3>
-    </div>
    </div>
 
    <?php include './inc/footer.php'; ?>
