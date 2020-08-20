@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Aug 20, 2020 at 04:08 AM
+-- Generation Time: Aug 20, 2020 at 08:37 AM
 -- Server version: 10.4.6-MariaDB
 -- PHP Version: 7.1.32
 
@@ -41,7 +41,8 @@ CREATE TABLE `tbl_login` (
   `Suburb` varchar(30) NOT NULL,
   `PostCode` int(4) NOT NULL,
   `UserName` varchar(15) NOT NULL,
-  `Password` varchar(20) NOT NULL
+  `Password` varchar(20) NOT NULL,
+  `Admin` varchar(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
