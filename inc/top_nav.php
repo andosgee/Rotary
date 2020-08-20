@@ -10,10 +10,12 @@ if(empty($_SESSION['ID'])){
   <a href='login.php'>Login</a>
   |
   <a href='signup.php'>Sign-Up</a>";
-}else {
+}else{
   $name = $_SESSION['NameF']." ".$_SESSION['NameS'];
   echo "
-  Welcome ".$name."
+  Welcome ".$name." |
+  <a href='admin.php'>Manage Account</a>
+  |
   <a href='logout.php'>Logout</a>";
 }
 ?>
