@@ -2,9 +2,15 @@
 Rotary, Combined folder
 
 
-Andrew - Login/Signup/Nav
-Nathan - Design/CSS/Wireframes
-Matt - Testing
-Ben - Logo
-Jacob - Newsletter
-Harrison - Picture Gallery
+## Roles
+**Andrew:** Login/Signup/Nav
+<br>
+**Nathan:** Design/CSS/Wireframes
+<br>
+**Matt:** Testing
+<br>
+**Ben:** Logo
+<br>
+**Jacob:** Newsletter
+<br>
+**Harrison:** Picture Gallery
