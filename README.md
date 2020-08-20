@@ -3,7 +3,7 @@ Rotary, Combined folder
 
 
 Andrew - Login/Signup/Nav
-Nathan - Desig/CSS/Wireframes
+Nathan - Design/CSS/Wireframes
 Matt - Testing
 Ben - Logo
 Jacob - Newsletter
