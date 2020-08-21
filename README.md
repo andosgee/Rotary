@@ -14,3 +14,8 @@ Rotary, Combined folder
 **Jacob:** Newsletter
 <br>
 **Harrison:** Picture Gallery
+
+## Admin Login for testing
+**Username:** Admin
+<br>
+**Password:** Admin
