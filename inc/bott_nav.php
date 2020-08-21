@@ -5,7 +5,7 @@
 <a href="newsletter.php">Newsletters</a>
 
 <?php
-if(!empty($_SESSION['ID'])){
+if(!empty($_SESSION['USER'])){
   echo"
   <a href='minutes.php'>Minutes</a>";
 }

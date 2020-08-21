@@ -1,11 +1,11 @@
 <!-- Top nav -->
-<form method="get" name="search_site">
+<form method="get" name="search_site"> <!--Search Bar-->
   <input type="text" placeholder="Search" name="site_input" id="site_input">
   <button name="site_button" id="site_button" type="submit">Go</button>
 </form>
 
 <?php
-if(empty($_SESSION['ID'])){
+if(empty($_SESSION['USER'])){
   echo"
   <a href='login.php'>Login</a>
   |

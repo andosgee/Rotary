@@ -1,10 +1,10 @@
 <?php
 session_start();
-include "inc/depends.php";
+include "inc/depends.php";  #Adds Functions Files
 $conn = OpenCon();
 
-if(!empty($_SESSION['ID'])){
-  header("location index.php");
+if(!empty($_SESSION['USER'])){
+  header("location: index.php");
 }
 ?>
 
