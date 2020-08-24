@@ -11,7 +11,6 @@ if(isset($_POST["signin_butt"])){
 
   $login_pass = $conn -> query($sql_login_search);
   $login_pass_verif = $conn -> query($sql_login_search);
-  var_dump ($login_pass_verif);
   if(!empty($login_pass_verif)){
 
     while($row = $login_pass_verif -> fetch_assoc()){
