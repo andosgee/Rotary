@@ -2,6 +2,7 @@
 include "inc/depends.php";
 session_start();
 AccessForbid();
+$conn = OpenCon();
 
 ?>
 
