@@ -1,9 +1,8 @@
 <?php
+include "inc/depends.php";
 session_start();
+AccessForbid();
 
-if(empty($_SESSION['ID'])){
-  header("location index.php");
-}
 ?>
 
 <!DOCTYPE html>

@@ -3,9 +3,7 @@ session_start();
 include "inc/depends.php";  #Adds Functions Files
 $conn = OpenCon();
 
-if(!empty($_SESSION['USER'])){
-  header("location: index.php");
-}
+SessionExist();
 ?>
 
 <!DOCTYPE html>
