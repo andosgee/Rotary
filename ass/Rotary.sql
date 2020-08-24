@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.0.1
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Generation Time: Aug 20, 2020 at 08:37 AM
--- Server version: 10.4.6-MariaDB
--- PHP Version: 7.1.32
+-- Host: 127.0.0.1
+-- Generation Time: Aug 24, 2020 at 08:46 AM
+-- Server version: 10.4.11-MariaDB
+-- PHP Version: 7.4.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -19,8 +18,27 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `Rotary`
+-- Database: `rotary`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_interest`
+--
+
+CREATE TABLE `tbl_interest` (
+  `ID` int(11) NOT NULL,
+  `Name` varchar(60) NOT NULL,
+  `Email` varchar(80) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `tbl_interest`
+--
+
+INSERT INTO `tbl_interest` (`ID`, `Name`, `Email`) VALUES
+(1, 'Andrew', 'test@test.com');
 
 -- --------------------------------------------------------
 
@@ -41,9 +59,16 @@ CREATE TABLE `tbl_login` (
   `Suburb` varchar(30) NOT NULL,
   `PostCode` int(4) NOT NULL,
   `UserName` varchar(15) NOT NULL,
-  `Password` varchar(20) NOT NULL,
+  `Password` varchar(120) NOT NULL,
   `Admin` varchar(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tbl_login`
+--
+
+INSERT INTO `tbl_login` (`ID`, `NameF`, `NameS`, `Email`, `Mobile`, `StreetNum`, `UnitNum`, `StreetName`, `City`, `Suburb`, `PostCode`, `UserName`, `Password`, `Admin`) VALUES
+(1, 'Admin', 'Admin', 'admin@admin.com', '0000000', 12, '212', 'Tester', 'Tester', 'Test', 1111, 'Admin', '$2y$10$d7E7mzZo2N/Ko6N7Px.ipOtbH7q00DGogLo5KLfx0ittlY9Zbgf5i', 'Y');
 
 -- --------------------------------------------------------
 
@@ -76,6 +101,12 @@ CREATE TABLE `tbl_news` (
 --
 
 --
+-- Indexes for table `tbl_interest`
+--
+ALTER TABLE `tbl_interest`
+  ADD PRIMARY KEY (`ID`);
+
+--
 -- Indexes for table `tbl_login`
 --
 ALTER TABLE `tbl_login`
@@ -98,10 +129,16 @@ ALTER TABLE `tbl_news`
 --
 
 --
+-- AUTO_INCREMENT for table `tbl_interest`
+--
+ALTER TABLE `tbl_interest`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT for table `tbl_login`
 --
 ALTER TABLE `tbl_login`
-  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT;
+  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `tbl_mins`
