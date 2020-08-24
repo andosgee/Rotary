@@ -1,6 +1,6 @@
 <?php
 $username = $password = $password_user = "";
-echo password_hash("Admin", PASSWORD_DEFAULT);
+
 if(isset($_POST["signin_butt"])){
   $username = ltrim(rtrim($_POST["signin_user"]));
   $password = ltrim(rtrim($_POST["signin_pass"]));
