@@ -1,9 +1,9 @@
 <?php
+include "inc/depends.php";
+$conn = OpenCon();
 session_start();
 
-if(!empty($_SESSION['USER'])){
-  header("location: index.php");
-}
+SessionExist();
 ?>
 
 <!DOCTYPE html>
