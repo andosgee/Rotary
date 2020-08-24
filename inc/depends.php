@@ -10,4 +10,16 @@ function OpenCon(){ #Opens the connction
   return $conn;
 }
 
+function AccessForbid(){ #Function redirects user if the user is not supposed to be there
+  if(empty($_SESSION['USER'])){
+    header("location index.php");
+  }
+}
+
+function SessionExist(){ #Redirects a signed in user
+  if(!empty($_SESSION['USER'])){
+    header("location: index.php");
+  }
+}
+
 ?>
