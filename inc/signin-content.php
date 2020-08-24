@@ -13,7 +13,7 @@
         <div class="column">
           <input name="signin_user" id="signin_user" placeholder="Username" required>
           <br>
-          <input name="signin_pass" id="signin_pass" placeholder="Password" required>
+          <input type="password" name="signin_pass" id="signin_pass" placeholder="Password" required>
         </div>
       </div>
       <div class="row">
