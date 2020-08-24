@@ -22,4 +22,13 @@ function SessionExist(){ #Redirects a signed in user
   }
 }
 
+function AdminIs(){ #Checks Users Permissions
+  if($_SESSION['ADMIN'] == 'Y'){
+    include "inc/admin_options.php";
+    include "inc/default_options.php";
+  }else{
+    include "inc/default_options.php";
+  }
+}
+
 ?>

@@ -17,5 +17,9 @@ $conn = OpenCon();
 <body>
   <?php include "inc/nav.php"; ?>
 
+  <?php include "inc/admin_content.php"; ?>
+
+  <?php AdminIs();?>
+
 </body>
 </html>

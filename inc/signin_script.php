@@ -26,6 +26,7 @@ if(isset($_POST["signin_butt"])){
                 $_SESSION['USERNAME'] = $user['UserName'];
                 $_SESSION['NameF'] = $user["NameF"];
                 $_SESSION['NameS'] = $user["NameS"];
+                $_SESSION['ADMIN'] = $user["Admin"];
                 #echo "here";
             }else{
                 echo "Error Logging in, Please try Later.";
