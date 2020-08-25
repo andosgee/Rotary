@@ -31,4 +31,27 @@ function AdminIs(){ #Checks Users Permissions
   }
 }
 
+function AdminOptions(){  #If users are not admin they are redirected
+  if($_SESSION['ADMIN'] != 'Y'){
+    header("location: admin.php");
+  }
+
+}
+
+function PopUsersPwd(){ #populates the users into a selectbox for password reset.
+  $sql_pop = "SELECT * FROM `tbl_login`";
+  global $conn;
+  $pop = $conn -> query($sql_pop);
+  echo "<select name='admin_pwd_reset_select' id='admin_pwd_reset_select'>
+        <option>--</option>";
+  foreach ($pop as $items) {
+    $id = $items['ID'];
+    $fName = $items['NameF'];
+    $sName = $items['NameS'];
+    $userName = $items['UserName'];
+    echo "<option value='{$id}'>{$fName} {$sName} | {$userName}</option>";
+  }
+  echo"</select>";
+}
+
 ?>
