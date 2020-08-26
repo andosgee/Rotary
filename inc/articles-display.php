@@ -27,7 +27,7 @@
   }
 
   for ($i=$article_start; $i < $article_end; $i++) { //Display articles
-    display_article_card($all_articles[$i]);
+    display_article($all_articles[$i],'card');
   }
   ?>
 

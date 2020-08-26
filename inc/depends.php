@@ -42,13 +42,22 @@ function get_from_table($table_name,$condition=1,$sort=1,$sort_direction='ASC'){
 }
 
 
-function display_article_card($article=array()){
+function display_article($article=array(),$style="card"){ //Style is card or marquee
   echo "
-    <div class=\"article-card column\">
-      <img class=\"article-card__image\" src=\"./media/{$article['AID']}.jpg\" alt=\"Article Image\">
-      <h2 class=\"article-card__title\">{$article['Title']}</h2>
-      <p class=\"article-card__desc\">{$article['Description']}</p>
+    <div class=\"{$style}-card column\">
+      <img class=\"{$style}-card__image\" src=\"./media/{$article['AID']}.jpg\" alt=\"{$style} Image\">
+      <h2 class=\"{$style}-card__title\">{$article['Title']}</h2>
+      <p class=\"{$style}-card__desc\">{$article['Description']}</p>
     </div>
   ";
-};
+}
+
+
+function display_marquee_nav($item_count){ //Echo $item_count nav dots
+  echo "<div class=\"marquee__nav\">";
+  for ($i=1; $i < $item_count; $i++) {
+    echo "<span class=\"marquee__nav-dot\" onclick=\"currentSlide({$i})\"></span>";
+  }
+  echo "</div>";
+}
  ?>
