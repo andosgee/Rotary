@@ -1,6 +1,18 @@
 <?php
 declare(strict_types=1); // All variables must be the declared type
 
+
+function OpenCon(){ #Opens the connction
+  $dbhost = "localhost";
+  $dbuser = "root";
+  $dbpass = "";
+  $dbname = "Rotary";
+  $conn = new mysqli($dbhost, $dbuser, $dbpass,$dbname) or die("Connect failed: %s\n". $conn -> error);
+
+  return $conn;
+}
+
+
 function get_active_page(){ //Get active page as 'example' instead of '/pharcourts/example.php'
   $address = $_SERVER['PHP_SELF']; // Get as /pharcourts/example.php
   $components = explode('/', $address); //Get as array
@@ -30,14 +42,13 @@ function get_from_table($table_name,$condition=1,$sort=1,$sort_direction='ASC'){
 }
 
 
-function display_article_card($article){ //$article=array()
-  echo $article;
-  // echo "
-  //   <div class=\"article-card column\">
-  //     <img class=\"article-card__image\" src=\"./media/{$article['AID']}.jpg\" alt=\"Article Image\">
-  //     <h2 class=\"article-card__title\">{$article['Title']}</h2>
-  //     <p class=\"article-card__desc\">{$article['Description']}</p>
-  //   </div>
-  // ";
+function display_article_card($article=array()){
+  echo "
+    <div class=\"article-card column\">
+      <img class=\"article-card__image\" src=\"./media/{$article['AID']}.jpg\" alt=\"Article Image\">
+      <h2 class=\"article-card__title\">{$article['Title']}</h2>
+      <p class=\"article-card__desc\">{$article['Description']}</p>
+    </div>
+  ";
 };
  ?>

@@ -1,5 +1,5 @@
 <?php  //Constants
-  define("PER_PAGE",10);
+  define("PER_PAGE",2); //10
 
   //Get Article Current Page
   if(isset($_GET['page'])){
@@ -10,10 +10,10 @@
   }
 
   //Get Articles
-  // $all_articles = get_from_table("tbl_articles");
-  //
-  // $total_articles = count($all_articles);
-  $total_articles = 50;
+  $all_articles = get_from_table("tbl_articles");
+
+  $total_articles = count($all_articles);
+
   $total_pages = ceil($total_articles/PER_PAGE);
  ?>
 
@@ -27,7 +27,7 @@
   }
 
   for ($i=$article_start; $i < $article_end; $i++) { //Display articles
-    display_article_card($i); //$all_articles[$i]
+    display_article_card($all_articles[$i]);
   }
   ?>
 
@@ -55,6 +55,6 @@
   </div>
 
   <p class="articles-nav__location">
-    <?php echo "Page {$page} of {$total_pages}"; ?>
+    <?php echo "Page {$page} of {$total_pages}"; //Current Page?>
   </p>
 </div>
