@@ -17,44 +17,44 @@
   $total_pages = ceil($total_articles/PER_PAGE);
  ?>
 
+<div class="articles column">
+   <?php //Display Articles
+    $article_start = ($page-1) * PER_PAGE; //Define range
+    $article_end = $article_start + PER_PAGE;
 
- <?php //Display Articles
-  $article_start = ($page-1) * PER_PAGE; //Define range
-  $article_end = $article_start + PER_PAGE;
+    if($article_end > $total_articles){ //Check if outside range
+      $article_end = $total_articles;
+    }
 
-  if($article_end > $total_articles){ //Check if outside range
-    $article_end = $total_articles;
-  }
+    for ($i=$article_start; $i < $article_end; $i++) { //Display articles
+      display_article($all_articles[$i],'article');
+    }
+    ?>
 
-  for ($i=$article_start; $i < $article_end; $i++) { //Display articles
-    display_article($all_articles[$i],'card');
-  }
-  ?>
+  <!-- Display Pages Nav -->
+  <div class="articles-nav column">
+    <div class="articles-nav__items row">
+      <?php
+        if ($page != 1){ //All pages but first
+          echo "<a href=\"./articles.php?page=1\">First</a>";
+          $previous = $page - 1;
+          echo "<a href=\"./articles.php?page={$previous}\">Previous</a>";
+        }
 
+        if($page != 1 && $page != $total_pages){ //All pages but first and last
+          echo "|";
+        }
 
-<!-- Display Pages Nav -->
-<div class="articles-nav column">
-  <div class="articles-nav__items row">
-    <?php
-      if ($page != 1){ //All pages but first
-        echo "<a href=\"./articles.php?page=1\">First</a>";
-        $previous = $page - 1;
-        echo "<a href=\"./articles.php?page={$previous}\">Previous</a>";
-      }
+        if ($page != $total_pages){ //All pages but last
+          $next = $page + 1;
+          echo "<a href=\"./articles.php?page={$next}\">Next</a>";
+          echo "<a href=\"./articles.php?page={$total_pages}\">Last</a>";
+        }
+       ?>
+    </div>
 
-      if($page != 1 && $page != $total_pages){ //All pages but first and last
-        echo "|";
-      }
-
-      if ($page != $total_pages){ //All pages but last
-        $next = $page + 1;
-        echo "<a href=\"./articles.php?page={$next}\">Next</a>";
-        echo "<a href=\"./articles.php?page={$total_pages}\">Last</a>";
-      }
-     ?>
+    <p class="articles-nav__location">
+      <?php echo "Page {$page} of {$total_pages}"; //Current Page?>
+    </p>
   </div>
-
-  <p class="articles-nav__location">
-    <?php echo "Page {$page} of {$total_pages}"; //Current Page?>
-  </p>
 </div>

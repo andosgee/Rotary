@@ -42,12 +42,16 @@ function get_from_table($table_name,$condition=1,$sort=1,$sort_direction='ASC'){
 }
 
 
-function display_article($article=array(),$style="card"){ //Style is card or marquee
+function display_article($article=array(),$style="article"){ //Style is article or marquee
   echo "
     <div class=\"{$style}-card column\">
-      <img class=\"{$style}-card__image\" src=\"./media/{$article['AID']}.jpg\" alt=\"{$style} Image\">
       <h2 class=\"{$style}-card__title\">{$article['Title']}</h2>
-      <p class=\"{$style}-card__desc\">{$article['Description']}</p>
+      <div class=\"{$style}-card__head\">
+        <img class=\"{$style}-card__image\" src=\"./media/{$article['AID']}.jpg\" alt=\"{$style} Image\">
+      </div>
+      <div class=\"{$style}-card__body\">
+        <p class=\"{$style}-card__desc\">{$article['Description']}</p>
+      </div>
     </div>
   ";
 }
