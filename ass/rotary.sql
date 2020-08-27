@@ -2,10 +2,10 @@
 -- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Aug 24, 2020 at 08:46 AM
--- Server version: 10.4.11-MariaDB
--- PHP Version: 7.4.6
+-- Host: localhost
+-- Generation Time: Aug 27, 2020 at 02:41 AM
+-- Server version: 10.4.13-MariaDB
+-- PHP Version: 7.4.7
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -20,6 +20,30 @@ SET time_zone = "+00:00";
 --
 -- Database: `rotary`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_articles`
+--
+
+CREATE TABLE `tbl_articles` (
+  `AID` int(11) NOT NULL,
+  `Title` varchar(50) NOT NULL,
+  `Description` varchar(70) NOT NULL,
+  `Content` longtext NOT NULL,
+  `Date` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tbl_articles`
+--
+
+INSERT INTO `tbl_articles` (`AID`, `Title`, `Description`, `Content`, `Date`) VALUES
+(1, 'Honors knight', 'Some description of the text idk', 'soghspoajgbkajsbgabdsgjkpasdbgjkbasejkgfbsgisebasoghspoajgbkajsbgabdsgjkpasdbgjkbasejkgfbsgisebasoghspoajgbkajsbgabdsgjkpasdbgjkbasejkgfbsgisebasoghspoajgbkajsbgabdsgjkpasdbgjkbasejkgfbsgisebasoghspoajgbkajsbgabdsgjkpasdbgjkbasejkgfbsgisebasoghspoajgbkajsbgabdsgjkpasdbgjkbasejkgfbsgisebasoghspoajgbkajsbgabdsgjkpasdbgjkbasejkgfbsgisebasoghspoajgbkajsbgabdsgjkpasdbgjkbasejkgfbsgisebasoghspoajgbkajsbgabdsgjkpasdbgjkbasejkgfbsgisebasoghspoajgbkajsbgabdsgjkpasdbgjkbasejkgfbsgisebasoghspoajgbkajsbgabdsgjkpasdbgjkbasejkgfbsgisebasoghspoajgbkajsbgabdsgjkpasdbgjkbasejkgfbsgisebasoghspoajgbkajsbgabdsgjkpasdbgjkbasejkgfbsgisebasoghspoajgbkajsbgabdsgjkpasdbgjkbasejkgfbsgisebasoghspoajgbkajsbgabdsgjkpasdbgjkbasejkgfbsgisebasoghspoajgbkajsbgabdsgjkpasdbgjkbasejkgfbsgisebasoghspoajgbkajsbgabdsgjkpasdbgjkbasejkgfbsgisebasoghspoajgbkajsbgabdsgjkpasdbgjkbasejkgfbsgisebasoghspoajgbkajsbgabdsgjkpasdbgjkbasejkgfbsgisebasoghspoajgbkajsbgabdsgjkpasdbgjkbasejkgfbsgisebasoghspoajgbkajsbgabdsgjkpasdbgjkbasejkgfbsgisebasoghspoajgbkajsbgabdsgjkpasdbgjkbasejkgfbsgisebasoghspoajgbkajsbgabdsgjkpasdbgjkbasejkgfbsgisebasoghspoajgbkajsbgabdsgjkpasdbgjkbasejkgfbsgisebasoghspoajgbkajsbgabdsgjkpasdbgjkbasejkgfbsgisebasoghspoajgbkajsbgabdsgjkpasdbgjkbasejkgfbsgisebasoghspoajgbkajsbgabdsgjkpasdbgjkbasejkgfbsgisebasoghspoajgbkajsbgabdsgjkpasdbgjkbasejkgfbsgiseba', '2020-08-26'),
+(2, 'The Bible', 'sdilfhpsfk;hsfhsdbfk;hsabd', 'sdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabd sdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabd', '2020-08-26'),
+(3, 'Hitchiker\'s Guide', 'sdilfhpsfk;hsfhsdbfk;hsabd', 'sdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabd', '2020-08-26'),
+(4, 'Book', 'sdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabd', 'sdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabdsdilfhpsfk;hsfhsdbfk;hsabd', '2020-08-25');
 
 -- --------------------------------------------------------
 
@@ -83,22 +107,15 @@ CREATE TABLE `tbl_mins` (
   `UID` int(5) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
--- --------------------------------------------------------
-
---
--- Table structure for table `tbl_news`
---
-
-CREATE TABLE `tbl_news` (
-  `NID` int(5) NOT NULL,
-  `FileName` varchar(30) NOT NULL,
-  `Date` varchar(15) NOT NULL,
-  `UID` int(5) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `tbl_articles`
+--
+ALTER TABLE `tbl_articles`
+  ADD PRIMARY KEY (`AID`);
 
 --
 -- Indexes for table `tbl_interest`
@@ -119,14 +136,14 @@ ALTER TABLE `tbl_mins`
   ADD PRIMARY KEY (`MID`);
 
 --
--- Indexes for table `tbl_news`
---
-ALTER TABLE `tbl_news`
-  ADD PRIMARY KEY (`NID`);
-
---
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `tbl_articles`
+--
+ALTER TABLE `tbl_articles`
+  MODIFY `AID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `tbl_interest`
@@ -145,12 +162,6 @@ ALTER TABLE `tbl_login`
 --
 ALTER TABLE `tbl_mins`
   MODIFY `MID` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `tbl_news`
---
-ALTER TABLE `tbl_news`
-  MODIFY `NID` int(5) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
