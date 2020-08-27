@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 24, 2020 at 08:46 AM
+-- Generation Time: Aug 27, 2020 at 12:01 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.6
 
@@ -52,23 +52,25 @@ CREATE TABLE `tbl_login` (
   `NameS` varchar(30) NOT NULL,
   `Email` varchar(70) NOT NULL,
   `Mobile` varchar(12) NOT NULL,
-  `StreetNum` int(5) NOT NULL,
-  `UnitNum` varchar(8) NOT NULL,
+  `StreetNum` int(5) DEFAULT NULL,
+  `UnitNum` varchar(8) DEFAULT NULL,
   `StreetName` varchar(60) NOT NULL,
-  `City` varchar(30) NOT NULL,
-  `Suburb` varchar(30) NOT NULL,
+  `City` varchar(30) DEFAULT NULL,
+  `Suburb` varchar(30) DEFAULT NULL,
   `PostCode` int(4) NOT NULL,
   `UserName` varchar(15) NOT NULL,
   `Password` varchar(120) NOT NULL,
-  `Admin` varchar(1) NOT NULL
+  `Admin` varchar(1) NOT NULL,
+  `Active` varchar(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `tbl_login`
 --
 
-INSERT INTO `tbl_login` (`ID`, `NameF`, `NameS`, `Email`, `Mobile`, `StreetNum`, `UnitNum`, `StreetName`, `City`, `Suburb`, `PostCode`, `UserName`, `Password`, `Admin`) VALUES
-(1, 'Admin', 'Admin', 'admin@admin.com', '0000000', 12, '212', 'Tester', 'Tester', 'Test', 1111, 'Admin', '$2y$10$d7E7mzZo2N/Ko6N7Px.ipOtbH7q00DGogLo5KLfx0ittlY9Zbgf5i', 'Y');
+INSERT INTO `tbl_login` (`ID`, `NameF`, `NameS`, `Email`, `Mobile`, `StreetNum`, `UnitNum`, `StreetName`, `City`, `Suburb`, `PostCode`, `UserName`, `Password`, `Admin`, `Active`) VALUES
+(1, 'Admin', 'Admin', 'admin@admin.com', '1', 12, '212', 'Tester', 'Tester', 'Test', 1111, 'Admin', '$2y$10$d7E7mzZo2N/Ko6N7Px.ipOtbH7q00DGogLo5KLfx0ittlY9Zbgf5i', 'Y', 'Y'),
+(3, 'Andrew', 'Grant', 'Test@user.com', '0222222', 4, '', 'Faulks', 'Chc', 'Lin', 7608, 'andosgee', '$2y$10$seHV7/5NtlDvOB2UicFeWuXqn3Lt2wMLFYM8B2Abx/MOvFIqOmS1C', 'N', 'Y');
 
 -- --------------------------------------------------------
 
@@ -138,7 +140,7 @@ ALTER TABLE `tbl_interest`
 -- AUTO_INCREMENT for table `tbl_login`
 --
 ALTER TABLE `tbl_login`
-  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `tbl_mins`
