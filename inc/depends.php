@@ -54,8 +54,8 @@ function display_article($article=array(),$style="card"){ //Style is card or mar
 
 
 function display_marquee_nav($item_count){ //Echo $item_count nav dots
-  echo "<div class=\"marquee__nav\">";
-  for ($i=1; $i < $item_count; $i++) {
+  echo "<div class=\"marquee__nav row\">";
+  for ($i=1; $i <= $item_count; $i++) {
     echo "<span class=\"marquee__nav-dot\" onclick=\"currentSlide({$i})\"></span>";
   }
   echo "</div>";

@@ -8,7 +8,7 @@
     ?>
   <div class="row">
     <?php include './inc/sidebar.php';
-          include './inc/articles-display.php'
+          // include './inc/articles-display.php'
       ?>
   </div>
 </body>
