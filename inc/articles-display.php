@@ -1,5 +1,5 @@
 <?php  //Constants
-  define("PER_PAGE",2); //10
+  define("PER_PAGE",5); //10
 
   //Get Article Current Page
   if(isset($_GET['page'])){
@@ -15,6 +15,13 @@
   $total_articles = count($all_articles);
 
   $total_pages = ceil($total_articles/PER_PAGE);
+
+  if ($page > $total_pages){
+    $page = $total_pages;
+  }
+  elseif ($page < 1){
+    $page = 1;
+  }
  ?>
 
 <div class="articles column">
@@ -30,7 +37,7 @@
       display_article($all_articles[$i],'article');
     }
     ?>
-
+<hr class="solid">
   <!-- Display Pages Nav -->
   <div class="articles-nav column">
     <div class="articles-nav__items row">

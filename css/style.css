@@ -19,6 +19,12 @@ body {
   flex-direction: column;
 }
 
+.solid {
+  /*Fixes hr tags used in flex boxes */
+  width: 100%;
+  border: 1px solid #000000;
+}
+
 .marquee {
   display: flex;
   position: relative;
@@ -107,8 +113,9 @@ body {
 
 .marquee-card__title {
   position: absolute;
-  top: 5%;
-  font-size: 2em;
+  top: 0;
+  margin: 0.5em 0;
+  font-size: 1.8em;
   color: #000000;
   text-shadow: 1.5px 1.5px 0px rgba(255, 168, 0, 0.3);
   opacity: 0;
@@ -118,14 +125,16 @@ body {
 .marquee-card__body {
   position: absolute;
   top: 35%;
-  width: 50%;
+  width: 70%;
   overflow: hidden;
   opacity: 0;
   transition: opacity 0.6s;
 }
 
 .marquee-card__desc {
-  font-size: 1em;
+  margin-top: 1em;
+  font-size: 0.9em;
+  text-align: center;
 }
 
 .marquee-card:hover > .marquee-card__title, .marquee-card:hover > .marquee-card__body {
@@ -197,7 +206,7 @@ body {
   height: 25%;
   width: 100%;
   border-top: 0.1em solid #0055B0;
-  background-color: #FFA800;
+  background-image: linear-gradient(to bottom right, #ffcb66, #FFA800);
   border-bottom-left-radius: 1em;
   border-bottom-right-radius: 1em;
   box-shadow: 4px 5px 3px rgba(255, 168, 0, 0.25);
@@ -222,12 +231,13 @@ body {
 
 .article-card:nth-of-type(2n) > .article-card__body {
   border-color: #FFA800;
-  background-color: #0055B0;
+  background-image: linear-gradient(to bottom right, #0055B0, #003064);
   box-shadow: 4px 5px 3px rgba(0, 85, 176, 0.25);
+  color: #F2F2F2;
 }
 
 .articles-nav {
-  width: 60%;
+  width: 80%;
   align-items: center;
 }
 
