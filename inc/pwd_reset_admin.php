@@ -4,12 +4,12 @@ If a user has forgotten their password, reset it here.
 <from name="admin_pwd_reset" method="post">
   <div class="row">
     <div class="column">
-      <label for="admin_pwd_reset_select">User:</label>
+      <label for="user_select">User:</label>
       <br>
       <label for="admin_pwd_reset_confirm">Confirm Password Change:</label>
     </div>
     <div class="column">
-      <?php PopUsersPwd(); ?>
+      <?php PopUsersSelect(); ?>
       <br>
       <input type="checkbox" name="admin_pwd_reset_confirm" id="admin_pwd_reset_confirm" required>
     </div>
