@@ -44,7 +44,7 @@ function get_from_table($table_name,$condition=1,$sort=1,$sort_direction='ASC'){
 
 function display_article($article=array(),$style="article"){ //Style is article or marquee
   echo "
-    <div class=\"{$style}-card column\" onclick=(window.location.href='#')>
+    <div class=\"{$style}-card column\" onclick=(window.location.href='./article.php?AID={$article['AID']}')>
       <h2 class=\"{$style}-card__title\">{$article['Title']}</h2>
       <div class=\"{$style}-card__head\">
         <img class=\"{$style}-card__image\" src=\"./media/{$article['AID']}.jpg\" alt=\"{$style} Image\">
