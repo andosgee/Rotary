@@ -1,6 +1,6 @@
 <div class="nav"> <!--Master Class of divs-->
   <div  class="menu">
-    <div class="nav" id="items"><!--Holds nav items-->
+    <div class="items"><!--Holds nav items-->
       <a href="index.php">Home</a>
       <a href="about.php">About Us</a>
       <a href="contact.php">Contact Us</a>
@@ -22,14 +22,7 @@
       ?>
     </div>
     <div class="sidebar">
-      <h3>Next Meeting</h3>
-      _Day of week_
-      <br>
-      Time: ???
-      <br>
-      Address: ???
-      <br>
-      <iframe>Google Maps</iframe>
+      <?php include "inc/sidebar.php"?>
     </div>
   </div>
   <div class="login"> <!--Shows options avalible whether a user is signed in-->
