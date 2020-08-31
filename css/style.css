@@ -243,4 +243,41 @@ body {
   justify-content: space-around;
 }
 
+.article {
+  position: relative;
+  align-items: center;
+}
+
+.article__title {
+  text-align: center;
+  font-weight: 700;
+  color: #0055B0;
+  border-bottom: 0.1em solid #FFA800;
+  text-shadow: 1px 1px 4px rgba(255, 168, 0, 0.75);
+  margin-bottom: 0;
+}
+
+.article__info {
+  text-align: center;
+  color: #AAAAAA;
+  font-size: 0.8em;
+  margin: 0.5em;
+}
+
+.article__image {
+  width: 100%;
+}
+
+.article__content {
+  padding: 1em;
+}
+
+.article:after {
+  position: relative;
+  content: "";
+  width: 50%;
+  border-bottom: 0.2em solid #FFA800;
+  margin-bottom: 1em;
+}
+
 /*# sourceMappingURL=style.css.map */

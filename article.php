@@ -29,7 +29,7 @@
 
     <div class="article column">
       <h1 class="article__title"><?php echo $article['Title']; ?></h1>
-      <h4 class="article__info">Published by <?php echo strtoupper("{$article['NameF']} {$article['NameS']}"); ?> on <?php echo format_date($article['Date']); ?></h4>
+      <h4 class="article__info">Published by <b><?php echo strtoupper("{$article['NameF']} {$article['NameS']}"); ?></b> on <b><?php echo format_date($article['Date']); ?></b></h4>
       <img src="./media/<?php echo $article['AID']; ?>.jpg" alt="Article Image" class="article__image">
       <span class="article__content">
         <?php echo nl2br($article['Content']); //Convert newline to <br />?>

@@ -1,4 +1,4 @@
-$colors: ('yellow':#FFA800,'light blue':#0055B0,'dark blue':#143D94,'white':#F2F2F2,'black':#000000);
+$colors: ('yellow':#FFA800,'light blue':#0055B0,'dark blue':#143D94,'white':#F2F2F2,'black':#000000,'light grey':#AAAAAA);
 
 @function color_scheme($color){
   @return map-get($colors,$color);
@@ -252,5 +252,41 @@ body{
   &__items{
     width: 100%;
     justify-content: space-around;
+  }
+}
+
+.article{
+  position:relative;
+  align-items: center;
+  &__title{
+    text-align: center;
+    font-weight: 700;
+    color: color_scheme('light blue');
+    border-bottom: 0.1em solid color_scheme('yellow');
+    text-shadow: 1px 1px 4px rgba(255, 168, 0, 0.75);
+    margin-bottom:0;
+  }
+
+  &__info{
+    text-align: center;
+    color: color_scheme('light grey');
+    font-size: 0.8em;
+    margin: 0.5em;
+  }
+
+  &__image{
+    width: 100%;
+  }
+
+  &__content{
+    padding: 1em;
+  }
+
+  &:after{
+    position: relative;
+    content:"";
+    width: 50%;
+    border-bottom: 0.2em solid color_scheme('yellow');
+    margin-bottom: 1em;
   }
 }
