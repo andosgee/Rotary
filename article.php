@@ -4,7 +4,13 @@
 <?php include './inc/head.php';
       if(isset($_GET['AID'])){ //Only load page if article ID is given
         $ID = $_GET['AID']; //Get Article ID
-        $article = get_from_table("tbl_articles","tbl_articles.AID = {$ID}")[0];
+        $article_query = "SELECT *
+                          FROM tbl_articles
+                          INNER JOIN tbl_login
+                          ON tbl_articles.Author = tbl_login.ID
+                          WHERE tbl_articles.AID = {$ID}";
+        $result = $conn -> query($article_query);
+        $article = $result -> fetch_assoc();
         if ($article == ''){ //Invalid ID
           header("Location: ./article.php");
         }
@@ -21,12 +27,15 @@
   <div class="row">
     <?php include './inc/sidebar.php';?>
 
-    <div class="article">
-      <?php
-        display_article($article); //Temporary - testing gets information
-       ?>
-
+    <div class="article column">
+      <h1 class="article__title"><?php echo $article['Title']; ?></h1>
+      <h4 class="article__info">Published by <?php echo strtoupper("{$article['NameF']} {$article['NameS']}"); ?> on <?php echo format_date($article['Date']); ?></h4>
+      <img src="./media/<?php echo $article['AID']; ?>.jpg" alt="Article Image" class="article__image">
+      <span class="article__content">
+        <?php echo nl2br($article['Content']); //Convert newline to <br />?>
+      </span>
     </div>
   </div>
+  <?php include './inc/footer.php'; ?>
 </body>
 </html>

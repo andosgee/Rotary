@@ -64,4 +64,11 @@ function display_marquee_nav($item_count){ //Echo $item_count nav dots
   }
   echo "</div>";
 }
+
+
+function format_date(string $date){ //Date in format YYYY-MM-DD
+  list($year, $month, $day) = explode('-',$date);
+  $new_date = "{$day}/{$month}/{$year}"; //Convert to DD/MM/YYYY
+  return $new_date; //Return reformatted date
+}
  ?>
