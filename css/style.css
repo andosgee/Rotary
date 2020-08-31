@@ -2,18 +2,23 @@
 /* Style the navigation menu */
 .nav__menu {
   overflow: hidden;
-  background-color: #333;
+  background-color: #143D94;
   position: relative;
+  color: #FFA800;
 }
 
 /* Hide the links inside the navigation menu (except for logo/home) */
-.nav__menu #myLinks {
+.nav__items {
   display: none;
+}
+
+a.nav__item {
+  font-weight: bold;
 }
 
 /* Style navigation menu links */
 .nav__menu a {
-  color: white;
+  color: #FFA800;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
@@ -22,7 +27,7 @@
 
 /* Style the hamburger menu */
 .nav__menu a.icon {
-  background: black;
+  background: #143D94;
   display: block;
   position: absolute;
   right: 0;
@@ -31,6 +36,6 @@
 
 /* Add a grey background color on mouse-over */
 .nav__menu a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: #0055B0;
+  color: #FFA800;
 }

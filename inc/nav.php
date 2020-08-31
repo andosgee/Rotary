@@ -1,5 +1,6 @@
 <div class="nav"> <!--Master Class of divs-->
   <div  class="nav__menu">
+
     <div class="nav__items"><!--Holds nav items-->
       <a class="nav__item" href="index.php">Home</a>
       <a class="nav__item" href="about.php">About Us</a>
@@ -17,6 +18,9 @@
       }
       ?>
     </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
 
     <?php include './inc/sidebar.php'; ?>
   </div>
