@@ -1,10 +1,6 @@
 <?php
-
   //Get 'Featured' Articles
-
-  //Temporary until 'Featured' is decided
-  $num_featured = 3;
-  $featured_articles = array_slice(get_from_table('tbl_articles'),0,$num_featured);
+  $featured_articles = get_from_table('tbl_articles',"tbl_articles.Featured = 1");
 ?>
 
 

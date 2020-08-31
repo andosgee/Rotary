@@ -11,6 +11,6 @@
           include './inc/articles-display.php'
       ?>
   </div>
-  <?php include './footer.php'; ?>
+  <?php include './inc/footer.php'; ?>
 </body>
 </html>
