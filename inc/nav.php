@@ -18,7 +18,7 @@
       ?>
     </div>
 
-    <?php include './sidebar.php'; ?>
+    <?php include './inc/sidebar.php'; ?>
   </div>
     <?php
     if(empty($_SESSION['USER'])){
