@@ -47,7 +47,7 @@ function display_article($article=array(),$style="article"){ //Style is article 
     <div class=\"{$style}-card column\" onclick=(window.location.href='./article.php?AID={$article['AID']}')>
       <h2 class=\"{$style}-card__title\">{$article['Title']}</h2>
       <div class=\"{$style}-card__head\">
-        <img class=\"{$style}-card__image\" src=\"./media/{$article['AID']}.jpg\" alt=\"{$style} Image\">
+        <img class=\"{$style}-card__image\" src=\"./media/articles/{$article['AID']}.jpg\" alt=\"{$style} Image\">
       </div>
       <div class=\"{$style}-card__body\">
         <p class=\"{$style}-card__desc\">{$article['Description']}</p>
