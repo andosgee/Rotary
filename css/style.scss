@@ -1,0 +1,22 @@
+$colors: ('yellow':#FFA800,'light blue':#0055B0,'dark blue':#143D94,'white':#F2F2F2,'black':#000000,'light grey':#AAAAAA);
+
+@function color_scheme($color){
+  @return map-get($colors,$color);
+}
+:root{
+  font-size: 20px;
+  font-family: 'Montserrat';
+}
+body{
+  padding:0;
+  margin: 0;
+  background-color: color_scheme('white');
+}
+.row{
+  display: flex;
+  flex-direction: row;
+}
+.column{
+  display: flex;
+  flex-direction: column;
+}

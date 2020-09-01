@@ -1,0 +1,88 @@
+/* Styling */
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+}
+
+.column{
+  display: flex;
+  flex-direction: column;
+}
+.nav{
+  background-color: #143D94;
+  justify-content: space-between;
+}
+
+.nav a{
+  color: #FFA800;
+  text-decoration: none;
+}
+
+/* Style the navigation menu */
+.nav__menu {
+  overflow: hidden;
+  background-color: #143D94;
+  position: relative;
+  color: #FFA800;
+  display: block;
+  min-height: 45px;
+  text-align: center;
+  width:100%;
+  margin-bottom: 5px;
+  margin-right: 0;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.nav__items {
+  display: none;
+  width: 100%;
+
+}
+
+a.nav__item {
+  display: block;
+  font-size: 20px;
+}
+
+a.nav__item:hover{
+  background-color: #0055B0;
+  color: #FFA800;
+  font-size: 25px;
+}
+
+.nav__item{
+  margin-right: 10px;
+}
+
+/* Style navigation menu links */
+.nav__menu a {
+  color: #FFA800;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Styling for sidebaar in nav */
+.nav__info{
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+/* Style the hamburger menu */
+span.icon{
+  color: #FFA800;
+  margin-left: 10px;
+}
+
+.nav__menu a.icon {
+  background: #143D94;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
