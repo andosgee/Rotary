@@ -1,15 +1,30 @@
 <?php
-declare(strict_types=1); // All variables must be the declared type
 
+declare(strict_types=1); // All variables must be the declared type
 
 function OpenCon(){ #Opens the connction
   $dbhost = "localhost";
   $dbuser = "root";
   $dbpass = "";
-  $dbname = "Rotary";
+
+  $dbname = "rotary";
   $conn = new mysqli($dbhost, $dbuser, $dbpass,$dbname) or die("Connect failed: %s\n". $conn -> error);
 
   return $conn;
+}
+
+
+function AdminOnlyAccess(){ #Restrict page to admin access
+  if(!$_SESSION['ISADMIN']){
+    header("location: ./index.php");
+  }
+}
+
+
+function UserOnlyAccess(){ #Restrict page to user (or higher) access
+  if(!isset($_SESSION['USER'])){
+    header("location: ./index.php");
+  }
 }
 
 
@@ -41,6 +56,18 @@ function get_from_table($table_name,$condition=1,$sort=1,$sort_direction='ASC'){
   return $results; //Returns as array of associated arrays
 }
 
+
+function secure(string $string){ //Injection security
+  global $conn;
+  // Add escape character to problematic characters eg. " ' \
+  $string = $conn -> real_escape_string($string);
+  //Remove HTML, PHP, JS tags to prevent injection
+  $string = strip_tags($string);
+  //Remove leading/trailing whitespace
+  $string = trim($string);
+  return $string;
+}
+?>
 
 function display_article($article=array(),$style="article"){ //Style is article or marquee
   echo "
