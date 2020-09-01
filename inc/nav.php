@@ -1,4 +1,7 @@
-<div class="nav"> <!--Master Class of divs-->
+<div class="nav row"> <!--Master Class of divs-->
+  <span href="javascript:void(0);" class="icon" onclick="mobileMenu()">
+    &#9776;
+  </span>
   <div  class="nav__menu">
 
     <div class="nav__items"><!--Holds nav items-->
@@ -17,12 +20,10 @@
         echo"<a class=\"nav__item\" href='signup.php'>Sign-Up</a>";
       }
       ?>
+    <div class="nav__info">
+      <?php include './inc/sidebar.php'; ?>
     </div>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-    </a>
-
-    <?php include './inc/sidebar.php'; ?>
+    </div>
   </div>
     <?php
     if(empty($_SESSION['USER'])){
