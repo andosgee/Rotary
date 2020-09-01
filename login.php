@@ -6,9 +6,7 @@
   <?php include "./inc/nav.php"; ?>
 
   <?php include "./inc/login_form.php"; ?>
-  <div class="login__error">
-    <?php include "./inc/login_validation.php"; ?>
-  </div>
+  <?php include "./inc/login_validation.php"; ?>
 
   <?php include "./inc/footer.php"; ?>
 </body>

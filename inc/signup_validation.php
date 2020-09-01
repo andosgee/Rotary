@@ -1,3 +1,4 @@
+<div class="signup column">
 <?php
 $display_success_message = false;
 
@@ -24,7 +25,7 @@ if(isset($_POST["signup_submit"])){ #checks for button press
 //If successful form submit, replace form with message
 //Else display the form
 if($display_success_message){
-  echo "<h2>Thank you for registering.
+  echo "<h2 class='signup__message'>Thank you for registering.
             <br />
             We will be in touch shortly.
         </h2>";
@@ -33,3 +34,4 @@ else{ //Display interest form
   include './inc/signup_form.php';
 }
 ?>
+</div>

@@ -1,4 +1,4 @@
-$colors: ('yellow':#FFA800,'light blue':#0055B0,'dark blue':#143D94,'white':#F2F2F2,'black':#000000,'light grey':#AAAAAA);
+$colors: ('yellow':#FFA800,'light blue':#0055B0,'dark blue':#143D94,'white':#F2F2F2,'black':#000000,'light grey':#AAAAAA,'red':#F52C2C);
 
 @function color_scheme($color){
   @return map-get($colors,$color);
@@ -19,4 +19,98 @@ body{
 .column{
   display: flex;
   flex-direction: column;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+.solid{ /*Fixes hr tags used in flex boxes */
+  width: 100%;
+  border: 1px solid inherit;
+}
+
+.nav{
+  background-image: linear-gradient(180deg,color_scheme('dark blue'),lighten(color_scheme('dark blue'),10));
+  color: color_scheme('yellow');
+  border-bottom: 0.2em solid color_scheme('yellow');
+  padding: 0.5em;
+
+  &__bar{
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__hamburger{
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+
+  &__menu{
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    text-align: center;
+    transition: max-height 1s, opacity 0.7s ease-in-out;
+  }
+
+  &__items{
+    font-size: 1.5em;
+  }
+
+  &__item{
+    margin: 0.2em 0;
+  }
+}
+
+.login, .signup{
+  align-items: center;
+  width: 100%;
+
+  &__title{
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  &__form{
+    width: 80%;
+    text-align: center;
+  }
+
+  &__input{
+    margin: 0.25em 0;
+    height: 2em;
+    padding: 0 0.5em;
+    font-size: 1.5em;
+    border-radius: 0.5em;
+    border: 0.1em solid color_scheme('light blue');
+
+    &:focus{
+      outline: none;
+      border-color: color_scheme('yellow');
+      box-shadow: 0.2em 0.2em color_scheme('yellow');
+    }
+  }
+
+  &__submit{
+    font-size: 1.5em;
+    margin-top: 0.5em;
+    width: 100%;
+    color: color_scheme('white');
+    background-image: radial-gradient(color_scheme('dark blue'),color_scheme('light blue'));
+    height: 2em;
+    border: none;
+    -webkit-appearance: none
+  }
+
+  &__error{
+    margin: 1.5em auto;
+    text-align: center;
+    color: color_scheme('red');
+  }
+}
+
+.signup__message{
+  text-align: center;
 }

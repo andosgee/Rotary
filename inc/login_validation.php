@@ -24,7 +24,7 @@ if(isset($_POST["login_submit"])){
     header("location: index.php");
   }
   else{
-    echo "Incorrect Username or Password.";
+    echo "<div class='login__error'>Incorrect Username or Password</div>";
   }
 }
 ?>

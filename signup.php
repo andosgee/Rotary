@@ -6,9 +6,7 @@
   <?php include "inc/nav.php"; ?>
   <div class="row">
     <?php //include './inc/sidebar.php'; ?> <!-- Only on desktop -->
-    <div class="column">
-      <?php include "./inc/signup_validation.php";?>
-    </div>
+    <?php include "./inc/signup_validation.php";?>
   </div>
   <?php include "./inc/footer.php"; ?>
 </body>

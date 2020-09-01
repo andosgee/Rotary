@@ -23,9 +23,18 @@ else{ //Default Menu
 }
  ?>
 
-<div class="nav row"> <!--Master Class of divs-->
-  <span class="nav__hamburger" onclick="mobileMenu()">&#9776;</span>
-  <div class="nav__menu">
+<div class="nav"> <!--Master Class of divs-->
+  <div class="nav__bar row">
+    <span class="nav__hamburger" onclick="mobileMenu()">&#9776;</span>
+
+    <?php
+    echo "<a class=\"nav__login\" href='./{$login_state}.php'>"
+            .ucwords($login_state).
+         "</a>";
+    ?>
+  </div>
+
+  <div class="nav__menu column">
     <div class="nav__items column"><!--Holds nav items-->
       <?php //Display links
       foreach($nav_items as $display_text => $link){
@@ -34,14 +43,12 @@ else{ //Default Menu
       }
        ?>
     </div>
+    <hr class="solid">
     <!-- Include sidebar in mobile version -->
     <?php include './inc/sidebar.php'; ?>
   </div>
-  <?php
-  echo "<a class=\"nav__item\" href='./{$login_state}.php'>"
-          .ucwords($login_state).
-       "</a>";
-  ?>
+
+
 </div>
 
 <!-- JS for hamburger -->
