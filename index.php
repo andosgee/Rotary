@@ -10,6 +10,8 @@ session_start();
   <title>Home | Rotary Belfast</title>
 </head>
 <body>
+<?php include "inc/header.php"; ?>
+
   <?php include "inc/nav.php"; ?>
 </body>
 </html>

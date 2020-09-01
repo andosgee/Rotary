@@ -15,6 +15,8 @@ SessionExist();
   <title>Signup | Rotary Belfast</title>
 </head>
 <body>
+  <?php include "inc/header.php"; ?>
+
   <?php include "inc/nav.php"; ?>
 
   <?php include "inc/signup-content.php";?>

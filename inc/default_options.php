@@ -1,29 +1,29 @@
-<div class="default_options">
-  <div class="default_options" id="tile">
-    <h2>Change Password</h2>
-    <img alt="padlock" src="">
+<div class="default">
+  <div class="card">
+    <h2 class="card__heading">Change Password</h2>
+    <img alt="padlock" src="media/admin_portal/default/Padlock.png" class="card__image">
     <br>
-    <a href="password_change.php">Click Here</a> to change your password.
+    <a href="password_change.php" class="card__link">Click Here</a> to change your password.
   </div>
 
-  <div class="default_options" id="tile">
-    <h2>Change Details</h2>
-    <img alt="person" src="">
+  <div class="card">
+    <h2 class="card__heading">Change Details</h2>
+    <img alt="person" src="media/admin_portal/default/person.png" class="card__image">
     <br>
-    <a href="details_change.php">Click Here</a> to change your details.
+    <a href="details_change.php" class="card__link">Click Here</a> to change your details.
   </div>
 
-  <div class="default_options" id="tile">
-    <h2>Create Story</h2>
-    <img alt="article" src="">
+  <div class="card">
+    <h2 class="card__heading">Create Story</h2>
+    <img alt="article" src="" class="card__image">
     <br>
-    <a href="create_article.php">Click Here</a> to create an article.
+    <a href="create_article.php" class="card__link">Click Here</a> to create an article.
   </div>
 
-  <div class="default_options" id="tile">
-    <h2>Add Image</h2>
-    <img alt="picture" src="">
+  <div class="card">
+    <h2 class="card__heading">Add Image</h2>
+    <img alt="picture" src="" class="card__image">
     <br>
-    <a href="add_gallery_image.php">Click Here</a> to add an image to the site.
+    <a href="add_gallery_image.php" class="card__link">Click Here</a> to add an image to the site.
   </div>
 </div>

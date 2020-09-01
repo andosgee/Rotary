@@ -12,7 +12,7 @@ function OpenCon(){ #Opens the connction
 
 function AccessForbid(){ #Function redirects user if the user is not supposed to be there
   if(empty($_SESSION['USER'])){
-    header("location index.php");
+    header("location: index.php");
   }
 }
 
@@ -42,7 +42,7 @@ function PopUsersSelect(){ #populates the users into a selectbox for password re
   $sql_pop = "SELECT * FROM `tbl_login` WHERE `Active` = 'Y'";
   global $conn;
   $pop = $conn -> query($sql_pop);
-  echo "<select name='user_select' id='user_select'>
+  echo "<select name='user_select' class='user__select'>
         <option>--</option>";
   foreach ($pop as $items) {
     $id = $items['ID'];
