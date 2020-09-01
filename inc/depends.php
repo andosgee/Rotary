@@ -1,9 +1,12 @@
 <?php
 
+declare(strict_types=1); // All variables must be the declared type
+
 function OpenCon(){ #Opens the connction
   $dbhost = "localhost";
   $dbuser = "root";
   $dbpass = "";
+
   $dbname = "rotary";
   $conn = new mysqli($dbhost, $dbuser, $dbpass,$dbname) or die("Connect failed: %s\n". $conn -> error);
 
@@ -65,3 +68,34 @@ function secure(string $string){ //Injection security
   return $string;
 }
 ?>
+
+function display_article($article=array(),$style="article"){ //Style is article or marquee
+  echo "
+    <div class=\"{$style}-card column\" onclick=(window.location.href='./article.php?AID={$article['AID']}')>
+      <h2 class=\"{$style}-card__title\">{$article['Title']}</h2>
+      <div class=\"{$style}-card__head\">
+        <img class=\"{$style}-card__image\" src=\"./media/articles/{$article['AID']}.jpg\" alt=\"{$style} Image\">
+      </div>
+      <div class=\"{$style}-card__body\">
+        <p class=\"{$style}-card__desc\">{$article['Description']}</p>
+      </div>
+    </div>
+  ";
+}
+
+
+function display_marquee_nav($item_count){ //Echo $item_count nav dots
+  echo "<div class=\"marquee__nav row\">";
+  for ($i=1; $i <= $item_count; $i++) {
+    echo "<span class=\"marquee__nav-dot\" onclick=\"currentSlide({$i})\"></span>";
+  }
+  echo "</div>";
+}
+
+
+function format_date(string $date){ //Date in format YYYY-MM-DD
+  list($year, $month, $day) = explode('-',$date);
+  $new_date = "{$day}/{$month}/{$year}"; //Convert to DD/MM/YYYY
+  return $new_date; //Return reformatted date
+}
+ ?>
