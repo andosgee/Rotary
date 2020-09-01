@@ -1,0 +1,3 @@
+Tasks:
+  1. Make form for editing details
+  2. Apply Style to form
