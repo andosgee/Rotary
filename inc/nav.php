@@ -19,6 +19,7 @@ else{ //Default Menu
                      'About Us'=>'./about.php',
                      'Contact Us'=>'./contact.php',
                      'Newsletter'=>'./newsletter.php',
+                     'Articles'=>'./articles.php',
                      'Sign-Up'=>'./signup.php');
 }
  ?>

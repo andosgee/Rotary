@@ -25,7 +25,7 @@
         include './inc/nav.php';
     ?>
   <div class="row">
-    <?php include './inc/sidebar.php';?>
+    <?php //include './inc/sidebar.php';?>
 
     <div class="article column">
       <h1 class="article__title"><?php echo $article['Title']; ?></h1>

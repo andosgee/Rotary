@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Aug 31, 2020 at 10:51 AM
+-- Generation Time: Sep 01, 2020 at 11:13 AM
 -- Server version: 10.4.13-MariaDB
 -- PHP Version: 7.4.7
 
@@ -133,7 +133,7 @@ CREATE TABLE `tbl_login` (
   `PostCode` int(4) NOT NULL,
   `UserName` varchar(15) NOT NULL,
   `Password` varchar(120) NOT NULL,
-  `Admin` varchar(1) NOT NULL
+  `Admin` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -141,7 +141,8 @@ CREATE TABLE `tbl_login` (
 --
 
 INSERT INTO `tbl_login` (`ID`, `NameF`, `NameS`, `Email`, `Mobile`, `StreetNum`, `UnitNum`, `StreetName`, `City`, `Suburb`, `PostCode`, `UserName`, `Password`, `Admin`) VALUES
-(1, 'Admin', 'Admin', 'admin@admin.com', '0000000', 12, '212', 'Tester', 'Tester', 'Test', 1111, 'Admin', '$2y$10$d7E7mzZo2N/Ko6N7Px.ipOtbH7q00DGogLo5KLfx0ittlY9Zbgf5i', 'Y');
+(1, 'Admin', 'Admin', 'admin@admin.com', '0000000', 12, '212', 'Tester', 'Tester', 'Test', 1111, 'Admin', '$2y$10$tMkgQx99Wq9neWRT7d3.D.MGaEX5qMutcz2eaMyWIehZNg9jVMg4e', 1),
+(2, 'Example', 'User', 'example.user@gmail.com', ' 3141592653', 123, '', 'Main St', 'Christchurch', 'Redwood', 8051, 'ExUser', '$2y$10$uNvEJeTcToc0zaTNfpLcxOY6ZVh43u3/mJ.ste6wsPpfXXOOYItVa', 0);
 
 -- --------------------------------------------------------
 
@@ -171,7 +172,8 @@ ALTER TABLE `tbl_articles`
 -- Indexes for table `tbl_interest`
 --
 ALTER TABLE `tbl_interest`
-  ADD PRIMARY KEY (`ID`);
+  ADD PRIMARY KEY (`ID`),
+  ADD UNIQUE KEY `Unique` (`Email`);
 
 --
 -- Indexes for table `tbl_login`
@@ -199,13 +201,13 @@ ALTER TABLE `tbl_articles`
 -- AUTO_INCREMENT for table `tbl_interest`
 --
 ALTER TABLE `tbl_interest`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `tbl_login`
 --
 ALTER TABLE `tbl_login`
-  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `tbl_mins`

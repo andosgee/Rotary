@@ -1,12 +1,9 @@
 <?php
 
-declare(strict_types=1); // All variables must be the declared type
-
 function OpenCon(){ #Opens the connction
   $dbhost = "localhost";
   $dbuser = "root";
   $dbpass = "";
-
   $dbname = "rotary";
   $conn = new mysqli($dbhost, $dbuser, $dbpass,$dbname) or die("Connect failed: %s\n". $conn -> error);
 
@@ -67,7 +64,7 @@ function secure(string $string){ //Injection security
   $string = trim($string);
   return $string;
 }
-?>
+
 
 function display_article($article=array(),$style="article"){ //Style is article or marquee
   echo "
@@ -98,4 +95,5 @@ function format_date(string $date){ //Date in format YYYY-MM-DD
   $new_date = "{$day}/{$month}/{$year}"; //Convert to DD/MM/YYYY
   return $new_date; //Return reformatted date
 }
- ?>
+
+?>
