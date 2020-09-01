@@ -22,7 +22,7 @@ body {
 .solid {
   /*Fixes hr tags used in flex boxes */
   width: 100%;
-  border: 1px solid #000000;
+  border: 1px solid inherit;
 }
 
 .marquee {
@@ -291,6 +291,7 @@ body {
   font-size: 1.8em;
   font-weight: 700;
   margin: 0em 0em 0.5em 0em;
+  text-decoration: none;
 }
 
 .title__link {
@@ -301,3 +302,5 @@ body {
   margin-top: 1em;
   width: 35%;
 }
+
+/*# sourceMappingURL=style.css.map */
