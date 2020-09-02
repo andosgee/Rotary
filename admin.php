@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 include "inc/depends.php";
 session_start();
@@ -20,6 +21,16 @@ $conn = OpenCon();
   <?php include "inc/header.php"; ?>
 
   <?php include "inc/nav.php"; ?>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<?php include "./inc/head.php"; ?>
+<?php AdminOnlyAccess();?>
+<body>
+  <?php include './inc/title.php'; ?>
+  <?php include "./inc/nav.php"; ?>
+  <?php include './inc/footer.php'; ?>
+>>>>>>> master
 
   <?php include "inc/admin_content.php"; ?>
 

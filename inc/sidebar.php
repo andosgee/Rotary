@@ -1,8 +1,11 @@
-<h3>Next Meeting</h3>
-_Day of week_
-<br>
-Time: ???
-<br>
-Address: ???
-<br>
-<iframe>Google Maps</iframe>
+<div class="sidebar">
+  Some fancy sidebar content
+  <br>
+  Next meeting
+  <br>
+  All of
+  <br>
+  The
+  <br>
+  Meeting Details
+</div>
