@@ -26,7 +26,7 @@ a {
 
 .solid {
   /*Fixes hr tags used in flex boxes */
-  width: 100%;
+  width: 90%;
   border: 1px solid inherit;
 }
 
@@ -392,6 +392,144 @@ a {
 .title__logo {
   margin-top: 1em;
   width: 35%;
+}
+
+.join-rotary {
+  background-image: linear-gradient(to bottom right, #FFA800, #ffc24d);
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.join-rotary__heading {
+  align-items: center;
+  padding: 0 1em;
+}
+
+.join-rotary__title {
+  font-weight: 700;
+  margin-bottom: 0.1em;
+}
+
+.join-rotary__underline {
+  border: 0.1em solid #143D94;
+  margin-bottom: 0.2em;
+  text-align: center;
+  width: 100%;
+}
+
+.join-rotary__underline:nth-of-type(2) {
+  width: 80%;
+}
+
+.join-rotary__underline:nth-of-type(3) {
+  width: 40%;
+}
+
+.join-rotary__column {
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+}
+
+.join-rotary__column:nth-of-type(2n) {
+  flex-direction: row-reverse;
+}
+
+.join-rotary__image {
+  width: 30%;
+}
+
+.join-rotary__content {
+  width: 60%;
+  margin: 0 1em;
+}
+
+.join-rotary__subheading {
+  font-size: 1.5em;
+  margin: 0;
+  margin-bottom: 0.5em;
+}
+
+.join-rotary__desc {
+  margin: 0;
+}
+
+.card-section {
+  width: 100%;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 12.5rem;
+  overflow: hidden;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card__head, .card__body {
+  transition: width 0.6s ease-in-out;
+}
+
+.card__head {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.card__image {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  min-height: 100%;
+  vertical-align: middle;
+  filter: blur(1px);
+  z-index: -1;
+}
+
+.card__title {
+  font-size: 2em;
+  margin: 0;
+  text-align: center;
+  position: relative;
+  top: 40%;
+  color: #F2F2F2;
+  text-shadow: 0.1em 0.1em 0.1em #000000;
+}
+
+.card__body {
+  font-size: 0.8em;
+  overflow: hidden;
+  width: 0%;
+  height: 100%;
+  color: #F2F2F2;
+  background-color: #0055B0;
+}
+
+.card__content, .card__link {
+  padding: 0 0.8em;
+}
+
+.card__link {
+  color: #FFA800;
+}
+
+.card--expanded .card__head, .card--expanded .card__body {
+  width: 50%;
+}
+
+.card:nth-of-type(2n) {
+  flex-direction: row-reverse;
+}
+
+.card:nth-of-type(2n) .card__body {
+  color: #000000;
+  background-color: #FFA800;
+}
+
+.card:nth-of-type(2n) .card__link {
+  color: #0055B0;
 }
 
 /*# sourceMappingURL=style.css.map */
