@@ -538,3 +538,78 @@ a{
     }
   }
 }
+
+.footer{
+  margin-top: 2em;
+  align-items: center;
+  background-image: linear-gradient(0deg,color_scheme('dark blue'),lighten(color_scheme('dark blue'),10));
+  color: color_scheme('white');
+  text-align: center;
+
+  &__top{
+    margin: 0.5em;
+
+
+    &:active, &:hover{
+      color: color_scheme('yellow');
+    }
+  }
+
+  &__newsletter{
+    position: relative;
+    align-items: center;
+    &:before, &:after{
+      content: "";
+      border: 0.1em solid color_scheme('yellow');
+      width: 50%;
+      margin:1em;
+    }
+  }
+
+  &__label{
+    font-size: 1.2em;
+    font-weight: 600;
+    // margin: 0 0.2em;
+    margin-bottom: 0.5em
+
+  }
+
+  &__inputs{
+    width: 90%;
+    height: 2em;
+  }
+
+  &__text,&__submit{
+    margin: 0;
+    height: 100%;
+    outline:none;
+    border:none;
+    border-radius: none;
+    padding: 0;
+    border-radius: 0;
+    -webkit-appearance: none;
+  }
+
+  &__text{
+    width: 70%;
+    padding-left: 0.5em;
+    font-size: 1.1em;
+  }
+
+  &__submit{
+    width: 30%;
+    background-color: color_scheme('yellow');
+    font-size: 1.05em;
+  }
+
+  &__info{
+    margin-top: 0.8em;
+  }
+  &__legal{
+    font-size: 0.8em;
+  color: color_scheme('light grey');
+  margin: 0.5em;
+}
+
+
+}
