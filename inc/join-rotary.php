@@ -3,7 +3,6 @@
     <h2 class="join-rotary__title">Benefits of Joining Rotary</h2>
     <span class="join-rotary__underline"></span>
     <span class="join-rotary__underline"></span>
-    <span class="join-rotary__underline"></span>
   </div>
 
   <div class="column">
@@ -26,7 +25,7 @@
     </div>
 
     <hr class="solid">
-    
+
     <div class="join-rotary__column row" onclick=(window.location.href='#')>
       <img class="join-rotary__image" src="./media/rotary-join-template.png" alt="Image">
       <div class="join-rotary__content column">
