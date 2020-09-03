@@ -475,8 +475,8 @@ a {
   width: 90%;
   background-color: #0055B0;
   margin-bottom: 0.5em;
-  padding: 5px;
-  border-radius: 15px;
+  padding: 0.2em;
+  border-radius: 1em;
   color: #FFA800;
 }
 

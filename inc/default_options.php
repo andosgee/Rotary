@@ -3,7 +3,7 @@
     <h2 class="card__heading">Change Password</h2>
     <img alt="padlock" src="media/admin_portal/default/Padlock.png" class="card__image">
     <br>
-    <a href="password_change.php" class="card__link">Click Here</a> to change your password.
+    <a href="password_change.php" class="card__link">Click Here to change your password.</a> 
   </div>
 
   <div class="card column">

@@ -9,18 +9,22 @@
       <input name="add_mem_name_f" class="form__input" placeholder="First Name" required>
       <input name="add_mem_name_s" class="form__input" placeholder="Surname" required>
     </div>
+
     <div class="row">
       <label for="add_mem_email" class="form__label">Email:</label>
       <input type="email" name="add_mem_email" class="form__input" placeholder="sample@sample.com" required>
     </div>
+
     <div class="row">
       <label for="add_mem_phone" class="form__label">Phone Number:</label>
       <input type="tel" name="add_mem_phone" class="form__input" placeholder="123456789" required>
     </div>
+
     <div class="row">
       <label for="add_mem_username" class="form__label">Username:</label>
       <input name="add_mem_username" class="form__input" placeholder="Username" required>
     </div>
+
     <div class="row">
       <label for="add_mem_address" class="form__label">Address:</label>
       <div class="column">
@@ -32,7 +36,9 @@
         <input type="number" name="add_mem_add_postcode" class="form__input" placeholder="Post Code">
       </div>
     </div>
+
   </div>
+
   <button name="add_mem_sub" type="submit" class="form__submit">Add User</button>
 </form>
 

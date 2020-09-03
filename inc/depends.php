@@ -114,20 +114,13 @@ function AdminOptions(){  #If users are not admin they are redirected
 
 }
 
-function PopUsersSelect(){ #populates the users into a selectbox for password reset.
-  $sql_pop = "SELECT * FROM `tbl_login` WHERE `Active` = 'Y'";
-  global $conn;
-  $pop = $conn -> query($sql_pop);
-  echo "<select name='user_select' class='user__select'>
-        <option>--</option>";
-  foreach ($pop as $items) {
-    $id = $items['ID'];
-    $fName = $items['NameF'];
-    $sName = $items['NameS'];
-    $userName = $items['UserName'];
-    echo "<option value='{$id}'>{$fName} {$sName} | {$userName}</option>";
+function DisplayUsersAsOption(){ #populates the users into a selectbox for password reset.
+  $users = get_from_table('tbl_login','Active = 1');
+  // print_r($users);
+
+  foreach($users as $user){
+    echo "<option value=\"{$user['ID']}\">{$user['NameF']} {$user['NameS']}</option>";
   }
-  echo"</select>";
 }
 
 ?>
