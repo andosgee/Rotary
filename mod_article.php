@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Moderate Articles | Rotary Belfast</title>
-  </head>
+<?php include "inc/head.php";
+      AdminOnlyAccess();
+      UserOnlyAccess();?>
   <body>
     <?php include "inc/header.php"; ?>
 

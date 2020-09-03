@@ -4,7 +4,7 @@
 Change your Details here.
 <p />
 
-<form method="post" name="change_details" class="cgnDet__form">
+<form method="post" name="change_details" class="form">
   <div class="row">
     <div class="column">
       <label for="cgn_det_name">Name:</label>
@@ -17,21 +17,21 @@ Change your Details here.
     </div>
 
     <div class="column">
-      <input name="cgn_det_name_f" class="cgnDet__ipt" placeholder="First Name" value="<?php echo htmlspecialchars($fName); ?>">
-      <input name="cgn_det_name_s" class="cgnDet__ipt" placeholder="Surname" value="<?php echo htmlspecialchars($sName); ?>">
+      <input name="cgn_det_name_f" class="form__input" placeholder="First Name" value="<?php echo htmlspecialchars($fName); ?>">
+      <input name="cgn_det_name_s" class="form__input" placeholder="Surname" value="<?php echo htmlspecialchars($sName); ?>">
       <br>
-      <input type="email" name="cgn_det_email" class="cgnDet__ipt" placeholder="sample@sample.com" value="<?php echo htmlspecialchars($email); ?>">
+      <input type="email" name="cgn_det_email" class="form__input" placeholder="sample@sample.com" value="<?php echo htmlspecialchars($email); ?>">
       <br>
-      <input type="tel" name="cgn_det_phone" class="cgnDet__ipt" placeholder="123456789" value="<?php echo htmlspecialchars($phone); ?>">
+      <input type="tel" name="cgn_det_phone" class="form__input" placeholder="123456789" value="<?php echo htmlspecialchars($phone); ?>">
       <br>
-      <input name="cgn_det_streNum" class="cgnDet__ipt" placeholder="Street Number" value="<?php echo htmlspecialchars($streNum); ?>">
-      <input name="cgn_det_unit" class="cgnDet__ipt" placeholder="Unit" value="<?php echo htmlspecialchars($unit); ?>">
+      <input name="cgn_det_streNum" class="form__input" placeholder="Street Number" value="<?php echo htmlspecialchars($streNum); ?>">
+      <input name="cgn_det_unit" class="form__input" placeholder="Unit" value="<?php echo htmlspecialchars($unit); ?>">
       <br>
-      <input name="cgn_det_streName" class="cgnDet__ipt" placeholder="Street Name" value="<?php echo htmlspecialchars($streName); ?>">
+      <input name="cgn_det_streName" class="form__input" placeholder="Street Name" value="<?php echo htmlspecialchars($streName); ?>">
       <br>
-      <input name="cgn_det_city" class="cgnDet__ipt" placeholder="City" value="<?php echo htmlspecialchars($city); ?>">
-      <input name="cgn_det__sub" class="cgnDet__ipt" placeholder="Suburb" value="<?php echo htmlspecialchars($suburb); ?>">
-      <input type="number" name="cgn_det_postcode" class="cgnDet__ipt" placeholder="Post Code" value="<?php echo htmlspecialchars($postCode); ?>">
+      <input name="cgn_det_city" class="form__input" placeholder="City" value="<?php echo htmlspecialchars($city); ?>">
+      <input name="cgn_det__sub" class="form__input" placeholder="Suburb" value="<?php echo htmlspecialchars($suburb); ?>">
+      <input type="number" name="cgn_det_postcode" class="form__input" placeholder="Post Code" value="<?php echo htmlspecialchars($postCode); ?>">
     </div>
   </div>
 
@@ -41,13 +41,13 @@ Change your Details here.
     </div>
 
     <div class="column">
-      <input type="checkbox" name="cgn_det_con" class="cgnDet__chk" required>
+      <input type="checkbox" name="cgn_det_con" class="form__checkbox" required>
     </div>
   </div>
 
   <div class="cgnDet__btn--array">
-    <button type="submit" name="cgn_det_get" class="cgnDet__btn--get">Fill Form</button>
-    <button type="submit" name="cgn_det_sub" class="cgnDet__btn--send">Update</button>
+    <button type="submit" name="cgn_det_get" class="form__button--get">Fill Form</button>
+    <button type="submit" name="cgn_det_sub" class="form__button--send">Update</button>
   </div>
 </form>
 </div>

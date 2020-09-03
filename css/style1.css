@@ -116,13 +116,13 @@ body{
 }
 
 /* FOrm Styling */
-.addMem__form{
+.form{
   display: flex;
   flex-direction: column;
 }
 
 /* Inputs */
-.addMem__ipt{
+.form__input{
   font-family: 'Montserrat', sans-serif;
   border: none;
   background-color: #143D94;
@@ -243,13 +243,13 @@ body{
 }
 
 /* Form Styling */
-.cgnDet__form{
+.form{
   display: flex;
   flex-direction: column;
 }
 
 /* Inputs */
-.cgnDet__ipt{
+.form__input{
   border: none;
   font-family: 'Montserrat', sans-serif;
   background-color: #143D94;
@@ -258,7 +258,7 @@ body{
 }
 
 /* CHeck Box */
-.cgnDet__chk{
+.form__checkbox{
   transform: scale(1.5);
 }
 
@@ -268,7 +268,7 @@ body{
   justify-content: space-around;
 }
 
-.cgnDet__btn--get{
+.form__button--get{
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   border-radius: 5px;
@@ -279,11 +279,11 @@ body{
   padding: 5px;
 }
 
-.cgnDet__btn--get:hover{
+.form__button--get:hover{
   background-color: #FF983C;
 }
 
-.cgnDet__btn--send{
+.form__button--send{
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   border-radius: 5px;
@@ -294,6 +294,6 @@ body{
   padding: 5px;
 }
 
-.cgnDet__btn--send:hover{
+.form__button--send:hover{
   background-color: #48E68B;
 }

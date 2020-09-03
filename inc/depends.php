@@ -28,6 +28,7 @@ function UserOnlyAccess(){ #Restrict page to user (or higher) access
 function get_active_page(){ //Get active page as 'example' instead of '/pharcourts/example.php'
   $address = $_SERVER['PHP_SELF']; // Get as /pharcourts/example.php
   $components = explode('/', $address); //Get as array
+
   return str_replace('.php', '', end($components)); //Return last element
 }
 
