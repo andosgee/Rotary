@@ -5,7 +5,7 @@
       UserOnlyAccess();?>
   <body>
     <div class="remUser__bckgro">
-    <?php include "inc/header.php"; ?>
+    <?php include "inc/title.php"; ?>
 
     <?php include "inc/nav.php"; ?>
 

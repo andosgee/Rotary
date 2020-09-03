@@ -4,11 +4,11 @@
           UserOnlyAccess();
           ?>
   <body>
-    <?php include "inc/header.php"; ?>
+    <?php include "inc/title.php"; ?>
 
     <?php include "inc/nav.php"; ?>
 
     <?php include "inc/pwd_change.php"; ?>
-  
+
   </body>
 </html>

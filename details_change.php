@@ -6,7 +6,7 @@
   <body>
 
     <div class="cgnDet__bckgro">
-    <?php include "inc/header.php"; ?>
+    <?php include "inc/title.php"; ?>
 
     <?php include "inc/nav.php"; ?>
 

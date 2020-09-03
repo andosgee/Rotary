@@ -28,8 +28,9 @@ function UserOnlyAccess(){ #Restrict page to user (or higher) access
 function get_active_page(){ //Get active page as 'example' instead of '/pharcourts/example.php'
   $address = $_SERVER['PHP_SELF']; // Get as /pharcourts/example.php
   $components = explode('/', $address); //Get as array
-
-  return str_replace('.php', '', end($components)); //Return last element
+  $page_name = str_replace('.php', '', end($components));
+  $page_name = str_replace('_',' ',$page_name);
+  return $page_name; //Return last element
 }
 
 
@@ -98,7 +99,7 @@ function format_date(string $date){ //Date in format YYYY-MM-DD
 }
 
 function AdminIs(){ #Checks Users Permissions
-  if($_SESSION['ADMIN'] == 'Y'){
+  if($_SESSION['ISADMIN'] == 'Y'){
     include "inc/admin_options.php";
     include "inc/default_options.php";
   }else{

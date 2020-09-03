@@ -47,7 +47,7 @@ Change your Details here.
 
   <div class="cgnDet__btn--array">
     <button type="submit" name="cgn_det_get" class="form__button--get">Fill Form</button>
-    <button type="submit" name="cgn_det_sub" class="form__button--send">Update</button>
+    <button type="submit" name="cgn_det_sub" class="form__button">Update</button>
   </div>
 </form>
 </div>

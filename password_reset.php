@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-  <?php include "inc/head.php";
-        AdminOnlyAccess();
-        UserOnlyAccess();?>
+  <?php include "inc/head.php";?>
   <body>
-    <div class="pwdAdmin__bckgro">
-    <?php include "inc/header.php"; ?>
+
+    <?php include "inc/title.php"; ?>
 
     <?php include "inc/nav.php"; ?>
 
-    <?php include "inc/pwd_reset_admin.php"; ?>
-  </div>
+    <?php include "inc/pwd_reset_form.php"; ?>
+    <?php include "./inc/footer.php"; ?>
   </body>
 </html>
