@@ -45,7 +45,6 @@ function get_from_table($table_name,$condition=1,$sort=1,$sort_direction='ASC'){
 
   $count = $query_result -> num_rows; //Check if empty
   if($count == 0){ //If no results
-    echo 'test';
     return false;
   }
 
