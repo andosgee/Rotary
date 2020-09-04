@@ -111,6 +111,14 @@ a{
     text-align: center;
     color: color_scheme('red');
   }
+
+  //link Styling
+  &__link{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    color: color_scheme('yellow');
+  }
 }
 
 .signup__message{
@@ -410,11 +418,12 @@ a{
   width: 100%;
 
   &__input{
-    border: none;
+    border-style: groove;
     font-family: 'Montserrat', sans-serif;
     background-color: color_scheme(white);
     color: color_scheme('black');
     border-radius: 5px;
+    font-size: 1em;
   }
 
   &__checkbox{

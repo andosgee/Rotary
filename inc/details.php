@@ -5,7 +5,7 @@
   <div class="column">
     <div class="row">
       <label for="cgn_det_name" class="form__label">Name:</label>
-      <input name="cgn_det_name_f" class="form__input" placeholder="First Name" required>
+      <input name="cgn_det_name_f" class="form__input" placeholder="First Name" value="" required>
       <input name="cgn_det_name_s" class="form__input" placeholder="Surname" required>
     </div>
 

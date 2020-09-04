@@ -1,12 +1,5 @@
 <div class="cards column">
   <div class="card column">
-    <h2 class="card__heading">Reset User Passwords</h2>
-    <img alt="padlock_cross" src="" class="card__image">
-    <br>
-    <a href="password_reset.php" class="card__link">Click Here to reset a members password.</a>
-  </div>
-
-  <div class="card column">
     <h2 class="card__heading">Create New User</h2>
     <img alt="person plus" src="" class="card__image">
     <br>

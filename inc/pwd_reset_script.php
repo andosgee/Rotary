@@ -2,6 +2,7 @@
   $err_pwd = "";
   if(isset($_POST['pwd_reset_btn'])){
     //Email request
+    header("location: landing_page.php");
   }
 
   if(isset($_POST['pwd_change_btn'])){

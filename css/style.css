@@ -112,6 +112,13 @@ a {
   color: #F52C2C;
 }
 
+.login__link, .signup__link {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  color: #FFA800;
+}
+
 .signup__message {
   text-align: center;
 }
@@ -399,10 +406,11 @@ a {
 }
 
 .form__input {
-  border: none;
+  border-style: groove;
   font-family: 'Montserrat', sans-serif;
   color: #000000;
   border-radius: 5px;
+  font-size: 1em;
 }
 
 .form__checkbox {

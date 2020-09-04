@@ -3,8 +3,15 @@
   <form name="remove_member" method="post" class="form column">
     <div class="row">
       <label for="user_select">Select Member:</label>
+
       <select name="user_select" class="form__select">
-        <?php DisplayUsersAsOption() ?>
+        <option value="">-</option>
+        <?php
+          $users = get_from_table('tbl_login','Active = 1');
+
+          foreach($users as $user){
+            echo "<option value=\"{$user['ID']}\">{$user['NameF']} {$user['NameS']}</option>";
+          } ?>
       </select>
     </div>
 

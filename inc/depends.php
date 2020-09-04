@@ -45,11 +45,13 @@ function get_from_table($table_name,$condition=1,$sort=1,$sort_direction='ASC'){
 
   $count = $query_result -> num_rows; //Check if empty
   if($count == 0){ //If no results
+    echo 'test';
     return false;
   }
 
   while($item = $query_result-> fetch_assoc()){ //Iterate through items
     $results[] = $item; //Append to array
+
   }
 
   return $results; //Returns as array of associated arrays
@@ -114,13 +116,5 @@ function AdminOptions(){  #If users are not admin they are redirected
 
 }
 
-function DisplayUsersAsOption(){ #populates the users into a selectbox for password reset.
-  $users = get_from_table('tbl_login','Active = 1');
-  // print_r($users);
-
-  foreach($users as $user){
-    echo "<option value=\"{$user['ID']}\">{$user['NameF']} {$user['NameS']}</option>";
-  }
-}
 
 ?>
