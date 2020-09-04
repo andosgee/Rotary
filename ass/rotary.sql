@@ -133,7 +133,7 @@ CREATE TABLE `tbl_login` (
   `PostCode` int(4) NOT NULL,
   `UserName` varchar(15) NOT NULL,
   `Password` varchar(120) NOT NULL,
-  `Admin` tinyint(1) NOT NULL
+  `Admin` tinyint(1) NOT NULL,
   `Active` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -141,7 +141,7 @@ CREATE TABLE `tbl_login` (
 -- Dumping data for table `tbl_login`
 --
 
-INSERT INTO `tbl_login` (`ID`, `NameF`, `NameS`, `Email`, `Mobile`, `StreetNum`, `UnitNum`, `StreetName`, `City`, `Suburb`, `PostCode`, `UserName`, `Password`, `Admin`) VALUES
+INSERT INTO `tbl_login` (`ID`, `NameF`, `NameS`, `Email`, `Mobile`, `StreetNum`, `UnitNum`, `StreetName`, `City`, `Suburb`, `PostCode`, `UserName`, `Password`, `Admin`,`Active`) VALUES
 (1, 'Admin', 'Admin', 'admin@admin.com', '0000000', 12, '212', 'Tester', 'Tester', 'Test', 1111, 'Admin', '$2y$10$tMkgQx99Wq9neWRT7d3.D.MGaEX5qMutcz2eaMyWIehZNg9jVMg4e', 1,1),
 (2, 'Example', 'User', 'example.user@gmail.com', ' 3141592653', 123, '', 'Main St', 'Christchurch', 'Redwood', 8051, 'ExUser', '$2y$10$uNvEJeTcToc0zaTNfpLcxOY6ZVh43u3/mJ.ste6wsPpfXXOOYItVa', 0,1);
 
