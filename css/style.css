@@ -401,6 +401,10 @@ a {
   width: 35%;
 }
 
+.form {
+  width: 100%;
+}
+
 .cards {
   width: 100%;
   align-items: center;

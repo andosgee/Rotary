@@ -100,7 +100,7 @@ function format_date(string $date){ //Date in format YYYY-MM-DD
 }
 
 function AdminIs(){ #Checks Users Permissions
-  if($_SESSION['ISADMIN'] == 'Y'){
+  if($_SESSION['ISADMIN'] == 1){
     include "inc/admin_options.php";
     include "inc/default_options.php";
   }else{
@@ -114,6 +114,5 @@ function AdminOptions(){  #If users are not admin they are redirected
   }
 
 }
-
 
 ?>

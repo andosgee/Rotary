@@ -3,9 +3,9 @@
 <?php include "inc/head.php";
 
       UserOnlyAccess();?>
-      <script src='./js/auto_fill_details.js'></script>
-  <body onload="autoFillForm()">
 
+  <body onload="autoFillForm()">
+    <?php include "js/auto_fill_details.php";?>
     <div class="cgnDet__bckgro">
     <?php include "inc/title.php"; ?>
 
