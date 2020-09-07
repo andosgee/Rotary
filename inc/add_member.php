@@ -25,20 +25,23 @@
   </div>
 
   <label for="add_mem_address" class="form__label">Address</label>
-  <div class="column">
+
     <div class="row">
       <input name="add_mem_add_num" class="form__input" placeholder="Street Number">
       <input name="add_mem_add_unit" class="form__input" placeholder="Unit">
+    </div>
+    <div class="row">
       <input name="add_mem_add_streName" class="form__input" placeholder="Street Name">
     </div>
 
-    <input name="add_mem_add_city" class="form__input" placeholder="City">
-
+    <div class="row">
+      <input name="add_mem_add_city" class="form__input" placeholder="City">
+    </div>
     <div class="row">
       <input name="add_mem_add_sub" class="form__input" placeholder="Suburb">
       <input type="number" name="add_mem_add_postcode" class="form__input" placeholder="Post Code">
     </div>
-  </div>
+
 
   <button name="add_mem_sub" type="submit" class="form__submit">Add User</button>
 </form>

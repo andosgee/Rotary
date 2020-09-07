@@ -1,24 +1,5 @@
 <?php
-// Script for chnaging details -- To whom ever has to test, I am very sorry for the length
-
-//Fills form with Details
-
-  //Sql Statement
-  $user = get_from_table('tbl_login',"ID = {$_SESSION['USER']}")[0];
-
-    $fName = $user['NameF'];
-    //
-    $sName = $user['NameS'];
-    $email = $user['Email'];
-    $phone = $user['Mobile'];
-    $streNum = $user['StreetNum'];
-    $unit = $user['UnitNum'];
-    $streName = $user['StreetName'];
-    $city = $user['City'];
-    $suburb = $user['Suburb'];
-    $postCode = $user['PostCode'];
-
-
+//Changes the users info
 if(isset($_POST['cgn_det_sub'])){
   //Sets Vars
   $fName = secure($_POST['cgn_det_name_f']);

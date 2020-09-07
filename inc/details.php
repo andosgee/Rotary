@@ -5,8 +5,10 @@
   <div class="column">
     <div class="row">
       <label for="cgn_det_name" class="form__label">Name:</label>
-      <input name="cgn_det_name_f" class="form__input" placeholder="First Name" value="" required>
-      <input name="cgn_det_name_s" class="form__input" placeholder="Surname" required>
+      <div class="column">
+        <input name="cgn_det_name_f" class="form__input" placeholder="First Name" value="" required>
+        <input name="cgn_det_name_s" class="form__input" placeholder="Surname" required>
+      </div>
     </div>
 
     <div class="row">
@@ -15,6 +17,7 @@
     </div>
 
     <div class="row">
+
       <label for="cgn_det_phone" class="form__label">Phone Number:</label>
       <input type="tel" name="cgn_det_phone" class="form__input" placeholder="123456789" required>
     </div>

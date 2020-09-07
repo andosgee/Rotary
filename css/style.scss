@@ -414,14 +414,19 @@ a{
 }
 
 .form{
+  margin-top: 1em;
   width: 100%;
 
-  &__label{
 
+  &__label{
+    margin-bottom: 1em;
   }
 
   &__input{
-
+     font-size: 0.9em;
+     height: 1em;
+     border-radius: 0.25em;
+     width: 100%;
   }
 
   &__submit{

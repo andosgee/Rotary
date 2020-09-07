@@ -3,7 +3,7 @@
 <?php include "inc/head.php";
 
       UserOnlyAccess();?>
-
+<?php #include "js/auto_fill_details.php";?>
   <body onload="autoFillForm()">
     <?php include "js/auto_fill_details.php";?>
     <div class="cgnDet__bckgro">
