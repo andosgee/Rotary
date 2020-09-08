@@ -43,7 +43,7 @@
     </div>
 
 
-  <button name="add_mem_sub" type="submit" class="form__submit">Add User</button>
+  <button name="add_mem_sub" type="submit" class="form__button form__button--submit">Add User</button>
 </form>
 
 <?php include "inc/new_user_info.php"; ?>

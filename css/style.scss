@@ -414,23 +414,68 @@ a{
 }
 
 .form{
-  margin-top: 1em;
-  width: 100%;
+  margin: 1em;
+  width: 90%;
+
+
 
 
   &__label{
-    margin-bottom: 1em;
+    margin-bottom: 0.4em;
+
   }
 
   &__input{
+    margin-bottom: 0.4em;
      font-size: 0.9em;
      height: 1em;
      border-radius: 0.25em;
      width: 100%;
   }
 
-  &__submit{
+  &__select{
+    font-family: 'Montserrat';
+    font-size: 0.9em;
+    background-color: color_scheme('white');
+    border-radius: 0.25em;
+    color: color_scheme('black');
+  }
 
+  &__button{
+    margin-top: 0.5em;
+    border: none;
+    font-size: 0.9em;
+    border-radius: 0.4em;
+    color: color_scheme('white');
+    font-family: 'Montserrat';
+    min-width: 40%;
+    height: 1.9em;
+
+
+    &--submit{
+      background-color: color_scheme('green');
+      box-shadow: 0em 0.4em 0em 0em darken(color_scheme('green'),10);
+
+      &:hover{
+        background-color: lighten(color_scheme('green'),10);
+        color: color_scheme('black');
+      }
+    }
+
+    &--delete{
+      background-color: darken(color_scheme('red'),10);
+      box-shadow: 0em 0.4em 0em 0em darken(color_scheme('red'),20);
+
+      &:hover{
+        background-color: color_scheme('red');
+      }
+    }
+}
+
+  &__checkbox{
+    margin-top: 0.7em;
+    margin-left: 1em;
+    transform: scale(2);
   }
 }
 

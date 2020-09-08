@@ -20,5 +20,5 @@
       <input type="checkbox" name="remove_member_chk" class="form__checkbox" required>
     </div>
 
-    <button type="submit" name="remove_member_btn" class="form__button--delete">Remove User</button>
+    <button type="submit" name="remove_member_btn" class="form__button form__button--delete">Remove User</button>
   </form>
