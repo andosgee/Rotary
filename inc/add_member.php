@@ -42,6 +42,10 @@
       <input type="number" name="add_mem_add_postcode" class="form__input" placeholder="Post Code">
     </div>
 
+    <div class="row">
+      <label for="add_mem_admin" class="form__label">Admin:</label>
+      <input type="checkbox" name="add_mem_admin" class="form__checkbox" value="1" >
+    </div>
 
   <button name="add_mem_sub" type="submit" class="form__button form__button--submit">Add User</button>
 </form>

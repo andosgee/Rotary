@@ -15,15 +15,9 @@
 
   <div class="card column" onclick="location.href='create_article.php';">
     <h2 class="card__heading">Create Story</h2>
-    <img alt="article" src="" class="card__image">
+    <img alt="article" src="media/admin_portal/default/article.png" class="card__image">
     <br>
     Click Here to create an article.
   </div>
 
-  <div class="card column" onclick="location.href='add_gallery_image.php';">
-    <h2 class="card__heading">Add Image</h2>
-    <img alt="picture" src="" class="card__image">
-    <br>
-    Click Here to add an image to the site.
-  </div>
 </div>

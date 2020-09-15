@@ -14,13 +14,14 @@
     $suburb = secure($_POST['add_mem_add_sub']);
     $postcode = secure($_POST['add_mem_add_postcode']);
     $username = secure($_POST['add_mem_username']);
+    $admin = secure($_POST['add_mem_admin']);
     $password = password_hash("default", PASSWORD_DEFAULT);
 
     //SQL Statement to send the data for the new User
     $sql_add_user = "INSERT INTO `tbl_login` (`NameF`, `NameS`, `Email`, `Mobile`, `StreetNum`, `UnitNum`, `StreetName`, `City`,
       `Suburb`, `PostCode`, `UserName`, `Password`, `Admin`, `Active`)
     VALUES ('{$fName}','{$sName}','{$email}','{$phoNum}','{$streNum}','{$unit}','{$streNam}','{$city}','{$suburb}','{$postcode}',
-      '{$username}','{$password}',0,1)";
+      '{$username}','{$password}',{$admin},1)";
   $conn -> query($sql_add_user);
 
   }

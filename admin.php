@@ -7,7 +7,7 @@
   <?php include "./inc/nav.php"; ?>
   <?php include './inc/footer.php'; ?>
 
-  <?php include "inc/admin_content.php"; ?>
+  
 
   <?php AdminIs();?>
 

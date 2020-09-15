@@ -8,7 +8,7 @@ if(isset($_SESSION['USER'])){ //If logged in
   if ($_SESSION['ISADMIN']){ //Add Admin options
     $nav_items['Home'] = './admin.php';
     $nav_items['Moderate Article'] = './mod_article.php';
-    $nav_items['Members'] = '#'; //add user or remove user
+    $nav_items['Members'] = './members.php'; //add user or remove user
   }
   $nav_items['Edit Details'] = './details_change.php'; //Last item in nav
 

@@ -1,5 +1,6 @@
 <?php
 
+
 function OpenCon(){ #Opens the connction
   $dbhost = "localhost";
   $dbuser = "root";

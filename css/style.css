@@ -406,20 +406,23 @@ a {
   width: 90%;
 }
 
+.form > * {
+  margin-bottom: 1em;
+}
+
 .form__label {
-  margin-bottom: 0.4em;
+  margin-bottom: 0.2em;
 }
 
 .form__input {
-  margin-bottom: 0.4em;
-  font-size: 0.9em;
-  height: 1em;
+  font-size: 0.8em;
+  padding-left: 0.5em;
+  height: 2em;
   border-radius: 0.25em;
   width: 100%;
 }
 
 .form__select {
-  font-family: 'Montserrat';
   font-size: 0.9em;
   background-color: #F2F2F2;
   border-radius: 0.25em;
@@ -432,7 +435,6 @@ a {
   font-size: 0.9em;
   border-radius: 0.4em;
   color: #F2F2F2;
-  font-family: 'Montserrat';
   min-width: 40%;
   height: 1.9em;
 }

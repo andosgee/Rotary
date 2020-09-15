@@ -1,7 +1,7 @@
 <!-- Form for changing details of the current user. -->
 <?php include "inc/change_script.php"?>
 
-<form method="post" name="change_details" class="form" autocomplete="on">
+<form method="post" name="change_details" class="form column" autocomplete="on">
   <label for="cgn_det_name" class="form__label">Name:</label>
   <div class="row">
     <input name="cgn_det_name_f" class="form__input" placeholder="First Name" value="" required>
@@ -24,19 +24,21 @@
   </div>
 
   <label for="cgn_det_address" class="form__label">Address:</label>
-  <div class="row">
-    <input name="cgn_det_add_num" class="form__input" placeholder="Street Number">
-    <input name="cgn_det_add_unit" class="form__input" placeholder="Unit">
-  </div>
-  <div  class="row">
-    <input name="cgn_det_add_streName" class="form__input" placeholder="Street Name">
-  </div>
-  <div class="row">
-    <input name="cgn_det_add_city" class="form__input" placeholder="City">
-  </div>
-  <div class="row">
-    <input name="cgn_det_add_sub" class="form__input" placeholder="Suburb">
-    <input type="number" name="cgn_det_add_postcode" class="form__input" placeholder="Post Code">
+  <div class="column">
+    <div class="row">
+      <input name="cgn_det_add_num" class="form__input" placeholder="Street Number">
+      <input name="cgn_det_add_unit" class="form__input" placeholder="Unit">
+    </div>
+    <div  class="row">
+      <input name="cgn_det_add_streName" class="form__input" placeholder="Street Name">
+    </div>
+    <div class="row">
+      <input name="cgn_det_add_city" class="form__input" placeholder="City">
+    </div>
+    <div class="row">
+      <input name="cgn_det_add_sub" class="form__input" placeholder="Suburb">
+      <input type="number" name="cgn_det_add_postcode" class="form__input" placeholder="Post Code">
+    </div>
   </div>
 
 

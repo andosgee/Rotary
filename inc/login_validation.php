@@ -21,7 +21,11 @@ if(isset($_POST["login_submit"])){
     $_SESSION['NameS'] = $user["NameS"];
     $_SESSION['ISADMIN'] = $user['Admin'];
     //Redirect
+    if($_SESSION['ISADMIN']){
+      header("location: admin.php");
+    }else{
     header("location: index.php");
+  }
   }
   else{
     echo "<div class='login__error'>Incorrect Username or Password</div>";
