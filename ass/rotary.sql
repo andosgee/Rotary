@@ -69,8 +69,8 @@ CREATE TABLE `tbl_login` (
 --
 
 INSERT INTO `tbl_login` (`ID`, `NameF`, `NameS`, `Email`, `Mobile`, `StreetNum`, `UnitNum`, `StreetName`, `City`, `Suburb`, `PostCode`, `UserName`, `Password`, `Admin`, `Active`) VALUES
-(1, 'Admin', 'Admin', 'admin@admin.com', '1', 12, '212', 'Tester', 'Tester', 'Test', 1111, 'Admin', '$2y$10$d7E7mzZo2N/Ko6N7Px.ipOtbH7q00DGogLo5KLfx0ittlY9Zbgf5i', 'Y', 'Y'),
-(3, 'Andrew', 'Grant', 'Test@user.com', '0222222', 4, '', 'Faulks', 'Chc', 'Lin', 7608, 'andosgee', '$2y$10$seHV7/5NtlDvOB2UicFeWuXqn3Lt2wMLFYM8B2Abx/MOvFIqOmS1C', 'N', 'Y');
+(1, 'Admin', 'Admin', 'admin@admin.com', '1', 12, '212', 'Tester', 'Tester', 'Test', 1111, 'Admin', '$2y$10$d7E7mzZo2N/Ko6N7Px.ipOtbH7q00DGogLo5KLfx0ittlY9Zbgf5i', '1', '1'),
+(3, 'Andrew', 'Grant', 'Test@user.com', '0222222', 4, '', 'Faulks', 'Chc', 'Lin', 7608, 'andosgee', '$2y$10$seHV7/5NtlDvOB2UicFeWuXqn3Lt2wMLFYM8B2Abx/MOvFIqOmS1C', '0', '1');
 
 -- --------------------------------------------------------
 
