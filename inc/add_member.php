@@ -1,11 +1,35 @@
-<?php include "inc/add_mem_script.php";?>
+<?php include "inc/add_mem_script.php";
+include "inc/loaduserNew.php";
+?>
+<script src="js/get_details.js"></script>
+
 <!-- Form to add a user -->
 
 
 <form method="POST" name="add_member_form" class="form column">
+  <h2>Add New Member</h2>
+  <div class="row">
+    <h3>Select From List or Enter Details Manually</h3>
+  </div>
+  <div class="row">
+    <label for="user_select">Select Member:</label>
+    <select name="user_select" class="form__select" onchange="loadInfoNew(this.value)">
+      <option value="0">-</option>
+      <?php
+        $users = get_from_table('tbl_interest');
+
+        foreach($users as $user){
+          echo "<option value=\"{$user['ID']}\">{$user['fName']} {$user['Surname']}</option>";
+        } ?>
+    </select>
+
+  </div>
+  <div class="row">
+  <?php include  "inc/getuser.php"?>
+</div>
   <label for="add_mem_name" class="form__label">Name</label>
   <div class="row">
-    <input name="add_mem_name_f" class="form__input" placeholder="First Name" required>
+    <input name="add_mem_name_f" class="form__input" placeholder="First Name" value="<?php echo $fName;?>"required>
     <input name="add_mem_name_s" class="form__input" placeholder="Surname" required>
   </div>
 

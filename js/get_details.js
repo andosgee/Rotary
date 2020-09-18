@@ -1,27 +1,29 @@
-//Found issue: POST is getting stuck. The PHP is refreshing that  file before it
-//recieves the POST data.
-//Needs Restructure to solve isssue.
-//THerefore, this is 'Succedding' in the way that it is handled by JS/ajax
-//Maybe use a  ext. Lib
-$( document ).ready(function() {
-
-$("select").change(function(self){//Submit form on change
-var value = $(this).val();
-
-var values = {value: value};
-
-$.ajax({
-  dataType: 'text',
-url: "inc/getuser.php",
-method: "POST",
-data: values,
-
-success: function(result){
-//document.getElementById('userID').innerHTML = value;
-console.log(value);
+function loadInfoCurrent(id) { //Get data on change and displays info
+  if (id=="") {
+    document.getElementsByClass("form__select").item(0).innerHTML="";
+    return;
+  }
+  var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+       if (this.readyState == 4 && this.status == 200) {
+         document.getElementById("txtHint").innerHTML = this.responseText;
+       }
+    };
+  xmlhttp.open("GET","inc/getuser.php?id="+id,true);
+  xmlhttp.send();
 }
-});
 
-
-});
-});
+function loadInfoNew(id){ //Get data on change and displays info
+  if (id=="") {
+    document.getElementsByClass("form__select").item(0).innerHTML="";
+    return;
+  }
+  var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+       if (this.readyState == 4 && this.status == 200) {
+         document.getElementById("txtHint").innerHTML = this.responseText;
+       }
+    };
+  xmlhttp.open("GET","inc/loaduserNew.php?id="+id,true);
+  xmlhttp.send();
+}

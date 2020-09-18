@@ -1,13 +1,14 @@
 <?php include "inc/manage_user_script.php";
 ?>
 <script src="js/get_details.js"></script>
-<?php include  "inc/getuser.php"?>
+
+
 
 <span id="userID"></span>
 <form method="POST" name="manage_members" class="form" id="manageUser">
   <div class="row">
     <label for="user_select">Select Member:</label>
-    <select name="user_select" class="form__select" id="hi">
+    <select name="user_select" class="form__select" onchange="loadInfoCurrent(this.value)">
       <option value="0">-</option>
       <?php
         $users = get_from_table('tbl_login');
@@ -16,7 +17,11 @@
           echo "<option value=\"{$user['ID']}\">{$user['NameF']} {$user['NameS']}</option>";
         } ?>
     </select>
+
   </div>
+  <div class="row">
+  <?php include  "inc/getuser.php"?>
+</div>
   <div class="row">
     <label for="reinstate_member_chk">Reinstate Member:</label>
     <input type="checkbox" name="reinstate_member_chk" class="form__checkbox">

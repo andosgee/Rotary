@@ -58,7 +58,7 @@ function get_from_table($table_name,$condition=1,$sort=1,$sort_direction='ASC'){
 }
 
 
-function secure(string $string){ //Injection security
+function secure($string){ //Injection security
   global $conn;
   // Add escape character to problematic characters eg. " ' \
   $string = $conn -> real_escape_string($string);
@@ -113,6 +113,35 @@ function AdminOptions(){  #If users are not admin they are redirected
   if($_SESSION['ADMIN'] != 'Y'){
     header("location: admin.php");
   }
+
+}
+
+function LoadInfo($id){ #Loads and displays the datqa from get req and ajax/xml
+  
+  $user = get_from_table('tbl_login',"ID={$id}")[0];
+
+
+    echo"
+    <div class='row'>
+    Name: {$user['NameF']} {$user['NameS']}
+    </div>
+    <div class='row'>
+    Username: {$user['UserName']}
+    </div>
+    <div class='row'>
+    Email: {$user['Email']}
+    </div>
+    <div class='row'>
+    Phone: {$user['Mobile']}
+    </div>
+    <div class='row'>
+    Active: {$user['Active']}
+    </div>
+    <div class='row'>
+    Admin: {$user['Admin']}
+    </div>
+    ";
+
 
 }
 
