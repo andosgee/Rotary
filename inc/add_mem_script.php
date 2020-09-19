@@ -3,6 +3,7 @@
 
   if(isset($_POST['add_mem_sub'])){
     //Sets the vars from the form and protects them
+    $interestID = secure($_POST['user_select']);
     $fName = secure($_POST['add_mem_name_f']);
     $sName = secure($_POST['add_mem_name_s']);
     $email = secure($_POST['add_mem_email']);
@@ -14,8 +15,14 @@
     $suburb = secure($_POST['add_mem_add_sub']);
     $postcode = secure($_POST['add_mem_add_postcode']);
     $username = secure($_POST['add_mem_username']);
-    $admin = secure($_POST['add_mem_admin']);
-    $password = password_hash("default", PASSWORD_DEFAULT);
+    $password = password_hash("{$username}", PASSWORD_BCRYPT);
+
+    if(isset($_POST['add_mem_admin'])){
+      $admin = 1;
+    }
+    else{
+      $admin = 0;
+    }
 
     //SQL Statement to send the data for the new User
     $sql_add_user = "INSERT INTO `tbl_login` (`NameF`, `NameS`, `Email`, `Mobile`, `StreetNum`, `UnitNum`, `StreetName`, `City`,
@@ -24,6 +31,16 @@
       '{$username}','{$password}',{$admin},1)";
   $conn -> query($sql_add_user);
 
+  //If added user was from interest table remove from interest
+  if($interestID){
+    $sql_remove = "DELETE FROM tbl_interest WHERE ID = {$interestID}";
+    $conn -> query($sql_remove);
   }
+  ?>
 
-?>
+
+  <script>
+    window.alert('Successfully Added User.');
+  </script>
+
+<?php } ?>

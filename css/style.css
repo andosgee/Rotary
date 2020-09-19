@@ -410,6 +410,7 @@ a {
 }
 
 .form__head {
+  align-items: center;
   margin-left: auto;
   margin-right: auto;
 }

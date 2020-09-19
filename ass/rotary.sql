@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Sep 19, 2020 at 04:48 AM
+-- Generation Time: Sep 19, 2020 at 07:59 AM
 -- Server version: 10.4.13-MariaDB
 -- PHP Version: 7.4.7
 
@@ -101,17 +101,25 @@ INSERT INTO `tbl_articles` (`AID`, `Title`, `Description`, `Content`, `Date`, `A
 --
 
 CREATE TABLE `tbl_interest` (
-  `ID` int(11) NOT NULL,
-  `Name` varchar(60) NOT NULL,
-  `Email` varchar(80) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  `ID` int(10) NOT NULL,
+  `NameF` varchar(30) NOT NULL,
+  `NameS` varchar(30) NOT NULL,
+  `Email` varchar(70) NOT NULL,
+  `Mobile` varchar(12) NOT NULL,
+  `StreetNum` int(5) NOT NULL,
+  `UnitNum` varchar(8) DEFAULT NULL,
+  `StreetName` varchar(60) NOT NULL,
+  `City` varchar(30) NOT NULL,
+  `Suburb` varchar(30) NOT NULL,
+  `PostCode` int(4) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `tbl_interest`
 --
 
-INSERT INTO `tbl_interest` (`ID`, `Name`, `Email`) VALUES
-(1, 'Andrew', 'test@test.com');
+INSERT INTO `tbl_interest` (`ID`, `NameF`, `NameS`, `Email`, `Mobile`, `StreetNum`, `UnitNum`, `StreetName`, `City`, `Suburb`, `PostCode`) VALUES
+(1, 'Cain', 'Garcia', 'name.last@example.com', '0225557432', 123, NULL, 'Main North Road', 'Christchutch', 'Redwood', 8051);
 
 -- --------------------------------------------------------
 
@@ -144,7 +152,7 @@ CREATE TABLE `tbl_login` (
 INSERT INTO `tbl_login` (`ID`, `NameF`, `NameS`, `Email`, `Mobile`, `StreetNum`, `UnitNum`, `StreetName`, `City`, `Suburb`, `PostCode`, `UserName`, `Password`, `Admin`, `Active`) VALUES
 (1, 'Admin', 'Admin', 'admin@admin.com', '0000000', 12, '212', 'Tester', 'Tester', 'Test', 1111, 'Admin', '$2y$10$tMkgQx99Wq9neWRT7d3.D.MGaEX5qMutcz2eaMyWIehZNg9jVMg4e', 1, 1),
 (2, 'Example', 'User', 'example.user@gmail.com', '3141592653', 123, NULL, 'Main St', 'Christchurch', 'Redwood', 8051, 'ExUser', '$2y$10$uNvEJeTcToc0zaTNfpLcxOY6ZVh43u3/mJ.ste6wsPpfXXOOYItVa', 0, 1),
-(3, 'Andrew', 'Grant', 'Test@user.com', '0222222', 4, '', 'Faulks', 'Chc', 'Lin', 7608, 'andosgee', '$2y$10$seHV7/5NtlDvOB2UicFeWuXqn3Lt2wMLFYM8B2Abx/MOvFIqOmS1C', 0, 1);
+(3, 'Andrew', 'Grant', 'Test@user.com', '0222222', 4, NULL, 'Faulks', 'Chc', 'Lin', 7608, 'andosgee', '$2y$10$seHV7/5NtlDvOB2UicFeWuXqn3Lt2wMLFYM8B2Abx/MOvFIqOmS1C', 0, 1);
 
 -- --------------------------------------------------------
 
@@ -174,8 +182,7 @@ ALTER TABLE `tbl_articles`
 -- Indexes for table `tbl_interest`
 --
 ALTER TABLE `tbl_interest`
-  ADD PRIMARY KEY (`ID`),
-  ADD UNIQUE KEY `Unique` (`Email`);
+  ADD PRIMARY KEY (`ID`);
 
 --
 -- Indexes for table `tbl_login`
@@ -203,7 +210,7 @@ ALTER TABLE `tbl_articles`
 -- AUTO_INCREMENT for table `tbl_interest`
 --
 ALTER TABLE `tbl_interest`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `tbl_login`

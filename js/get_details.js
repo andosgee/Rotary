@@ -1,6 +1,5 @@
-
 function populateFormByID(id,form){
-  if(!Number(id)){ //Set blank if invalid id
+  if(!Number(id) && id != 0){ //Set blank if invalid id
     return document.getElementsByClassName("form__content")[0].innerHTML = "";
   }
 
@@ -18,21 +17,4 @@ function populateFormByID(id,form){
 
   xmlhttp.open("GET",form+"?id="+id,true); //Open request
   xmlhttp.send(); //Submit request
-}
-
-
-//No need for this
-function loadInfoNew(id){ //Get data on change and displays info
-  if (id=="") {
-    document.getElementsByClass("form__select").item(0).innerHTML="";
-    return;
-  }
-  var xmlhttp = new XMLHttpRequest();
-    xmlhttp.onreadystatechange = function() {
-       if (this.readyState == 4 && this.status == 200) {
-         document.getElementById("txtHint").innerHTML = this.responseText;
-       }
-    };
-  xmlhttp.open("GET","inc/loaduserNew.php?id="+id,true);
-  xmlhttp.send();
 }
