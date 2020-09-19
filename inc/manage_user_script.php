@@ -1,41 +1,33 @@
 <?php
 
 if(isset($_POST['delete_user'])){
-  $user = $_POST['user_select'];
-  $sql_inactive = "UPDATE `tbl_login` SET `Active` = 0, `Admin` = 0 WHERE `ID` = {$user}";
+  $id = secure($_POST['user_select']);
+  $sql_inactive = "UPDATE `tbl_login` SET `Active` = 0 WHERE `ID` = {$id}";
   $conn -> query($sql_inactive);
 }
 
+
 if(isset($_POST['update_user'])){
-  $user = $_POST['user_select'];
-  $activate = $_POST['reinstate_member_chk'];
-  $admin = $_POST['make_admin_user'];
-  $admin_rem = $_POST['remove_admin_user'];
+  $id = secure($_POST['user_select']);
+  // $active = secure();
+  // $admin = secure($_POST['admin_status']);
 
-  if(isset($activate)){
-    $sql_act = "`Active` = 1";
-  }else{
-    $sql_act = '';
+  if(isset($_POST['active_status'])){ //Convert checkbox to boolean
+    $active = 1; //Ticked
   }
-
-  if(isset($admin)){
-    $sql_admin = ",`Admin` = 1";
-  }else {
-    $sql_admin = "";
-  }
-
-  if(isset($admin_rem)){
-    $sql_admin = ",`Admin` = 0";
-  }else {
-    $sql_admin = "";
+  else{
+    $active = 0; //Unticked
   }
 
 
-  $sql_update = "UPDATE `tbl_login` SET {$sql_act} {$sql_admin} WHERE `ID` = {$user}";
+  if(isset($_POST['admin_status'])){ //Convert checkbox to boolean
+    $admin = 1; //Ticked
+  }
+  else{
+    $admin = 0; //Unticked
+  }
+
+  $sql_update = "UPDATE `tbl_login` SET tbl_login.Active = {$active}, tbl_login.Admin = {$admin} WHERE `ID` = {$id}";
+  $conn -> query($sql_update);
 }
-
-
-
-
-
 ?>

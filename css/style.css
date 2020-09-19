@@ -402,16 +402,24 @@ a {
 }
 
 .form {
-  margin: 1em;
-  width: 90%;
+  padding: 1em;
 }
 
-.form > * {
+.form > *, .form__content > * {
   margin-bottom: 1em;
 }
 
+.form__head {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form__title {
+  margin-top: 0;
+}
+
 .form__label {
-  margin-bottom: 0.2em;
+  margin: 0.2em;
 }
 
 .form__input {
@@ -427,6 +435,10 @@ a {
   background-color: #F2F2F2;
   border-radius: 0.25em;
   color: #000000;
+}
+
+.form__buttons {
+  justify-content: space-around;
 }
 
 .form__button {
@@ -456,6 +468,7 @@ a {
 
 .form__button--delete:hover {
   background-color: #F52C2C;
+  color: #000000;
 }
 
 .form__checkbox {
@@ -465,6 +478,7 @@ a {
 }
 
 .cards {
+  margin-top: 1em;
   width: 100%;
   align-items: center;
 }
@@ -478,6 +492,7 @@ a {
   padding: 0.2em;
   border-radius: 1em;
   color: #FFA800;
+  cursor: pointer;
 }
 
 .card__heading {

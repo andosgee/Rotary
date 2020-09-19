@@ -4,6 +4,6 @@
 <body>
   <?php include './inc/title.php'; ?>
   <?php include "inc/nav.php"; ?>
-  <?php include "./inc/footer.php"; ?>
 </body>
+<?php include "./inc/footer.php"; ?>
 </html>

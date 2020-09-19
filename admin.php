@@ -5,11 +5,8 @@
 <body>
   <?php include './inc/title.php'; ?>
   <?php include "./inc/nav.php"; ?>
-  <?php include './inc/footer.php'; ?>
-
-  
-
-  <?php AdminIs();?>
-
+  <h1>Some welcome message</h1>
 </body>
+
+<?php include './inc/footer.php'; ?>
 </html>

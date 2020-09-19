@@ -414,15 +414,24 @@ a{
 }
 
 .form{
-  margin: 1em;
-  width: 90%;
+  padding: 1em;
+  // align-items: center;
 
-  & > *{
+  & > *, &__content > *{
     margin-bottom: 1em;
   }
 
+  &__head{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__title{
+    margin-top: 0;
+  }
+
   &__label{
-    margin-bottom: 0.2em;
+    margin: 0.2em;
   }
 
   &__input{
@@ -438,6 +447,10 @@ a{
     background-color: color_scheme('white');
     border-radius: 0.25em;
     color: color_scheme('black');
+  }
+
+  &__buttons{
+    justify-content: space-around;
   }
 
   &__button{
@@ -466,6 +479,7 @@ a{
 
       &:hover{
         background-color: color_scheme('red');
+        color: color_scheme('black');
       }
     }
 }
@@ -480,6 +494,7 @@ a{
 
 //main housing
 .cards{
+  margin-top: 1em;
   width: 100%;
   align-items: center;
 }
@@ -493,6 +508,7 @@ a{
   padding: 0.2em;
   border-radius: 1em;
   color: color_scheme('yellow');
+  cursor: pointer;
 
 
   //headings

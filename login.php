@@ -7,7 +7,6 @@
 
   <?php include "./inc/login_form.php"; ?>
   <?php include "./inc/login_validation.php"; ?>
-
-  <?php include "./inc/footer.php"; ?>
 </body>
+<?php include "./inc/footer.php"; ?>
 </html>

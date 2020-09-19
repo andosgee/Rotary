@@ -8,6 +8,7 @@
     <?php //include './inc/sidebar.php'; ?> <!-- Only on desktop -->
     <?php include "./inc/signup_validation.php";?>
   </div>
-  <?php include "./inc/footer.php"; ?>
 </body>
+
+<?php include "./inc/footer.php"; ?>
 </html>

@@ -1,46 +1,36 @@
-<?php include "inc/manage_user_script.php";
-?>
-<script src="js/get_details.js"></script>
+<?php
+  if(isset($_GET['id'])){
+    //Refresh connection and functions for async request
+    include "../inc/depends.php";
+    $conn = OpenCon();
+    $id = secure($_GET['id']);
+    $user = get_from_table('tbl_login',"ID={$id}")[0];?>
 
+    <div class="form__info column">
+      <label class="form__label"><b>Name:</b> <?php echo "{$user['NameF']} {$user['NameS']}"?></label>
+      <label class="form__label"><b>Username:</b> <?php echo $user['UserName'] ?></label>
+      <label class="form__label"><b>Email:</b> <?php echo $user['Email'] ?></label>
+      <label class="form__label"><b>Mobile:</b> <?php echo $user['Mobile'] ?></label>
+    </div>
 
+    <div class="column">
+      <div class="row">
+        <label class="form__label" for="active_status">Active:</label>
+        <input type="checkbox" name="active_status" class="form__checkbox" <?php echo (($user['Active'])? "checked":"")?>>
+      </div>
 
-<span id="userID"></span>
-<form method="POST" name="manage_members" class="form" id="manageUser">
-  <div class="row">
-    <label for="user_select">Select Member:</label>
-    <select name="user_select" class="form__select" onchange="loadInfoCurrent(this.value)">
-      <option value="0">-</option>
-      <?php
-        $users = get_from_table('tbl_login');
+      <div class="row">
+        <label class="form__label" for="admin_status">Admin:</label>
+        <input type="checkbox" name="admin_status" class="form__checkbox" <?php echo (($user['Admin'])? "checked":"")?>>
+      </div>
+    </div>
 
-        foreach($users as $user){
-          echo "<option value=\"{$user['ID']}\">{$user['NameF']} {$user['NameS']}</option>";
-        } ?>
-    </select>
-
-  </div>
-  <div class="row">
-  <?php include  "inc/getuser.php"?>
-</div>
-  <div class="row">
-    <label for="reinstate_member_chk">Reinstate Member:</label>
-    <input type="checkbox" name="reinstate_member_chk" class="form__checkbox">
-  </div>
-
-  <div class="row">
-    <label for="make_admin_user">Make Admin:</label>
-    <input type="checkbox" name="make_admin_user" class="form__checkbox">
-  </div>
-
-  <div class="row">
-    <label for="remove_admin_user">Remove Admin:</label>
-    <input type="checkbox" name="remove_admin_user" class="form__checkbox">
-  </div>
-
-  <div class="row">
-    <label for="confirm_change">Confirm:</label>
-    <input type="checkbox" name="confirm_change" class="form__checkbox" required>
-  </div>
-  <button type="submit" name="delete_user" class="form__button form__button--delete">Delete User</button>
-  <button type="submit" name="update_user" class="form__button form__button--submit">Update User</button>
-</form>
+    <div class="row">
+      <label class="form__label" for="confirm_change">Confirm:</label>
+      <input type="checkbox" name="confirm_change" class="form__checkbox" required>
+    </div>
+    <div class="form__buttons row">
+      <button type="submit" name="delete_user" class="form__button form__button--delete">Delete User</button>
+      <button type="submit" name="update_user" class="form__button form__button--submit">Update User</button>
+    </div>
+<?php } ?>
