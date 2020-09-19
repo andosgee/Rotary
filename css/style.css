@@ -429,6 +429,7 @@ a {
   height: 2em;
   border-radius: 0.25em;
   width: 100%;
+  font-family: inherit;
 }
 
 .form__select {
@@ -436,6 +437,13 @@ a {
   background-color: #F2F2F2;
   border-radius: 0.25em;
   color: #000000;
+}
+
+.form__textarea {
+  font-family: inherit;
+  font-size: 0.9em;
+  min-height: 10em;
+  resize: vertical;
 }
 
 .form__buttons {
@@ -450,6 +458,7 @@ a {
   color: #F2F2F2;
   min-width: 40%;
   height: 1.9em;
+  -webkit-appearance: none;
 }
 
 .form__button--submit {

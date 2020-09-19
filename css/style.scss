@@ -441,6 +441,7 @@ a{
    height: 2em;
    border-radius: 0.25em;
    width: 100%;
+   font-family: inherit;
   }
 
   &__select{
@@ -448,6 +449,13 @@ a{
     background-color: color_scheme('white');
     border-radius: 0.25em;
     color: color_scheme('black');
+  }
+
+  &__textarea{
+    font-family: inherit;
+    font-size: 0.9em;
+    min-height: 10em;
+    resize: vertical;
   }
 
   &__buttons{
@@ -462,7 +470,7 @@ a{
     color: color_scheme('white');
     min-width: 40%;
     height: 1.9em;
-
+    -webkit-appearance: none;
 
     &--submit{
       background-color: color_scheme('green');
