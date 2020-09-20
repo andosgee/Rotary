@@ -15,7 +15,7 @@
     </div>
 
     <?php if($_SESSION['ISADMIN']){?>
-      <div class="card column" onclick="location.href='mod_article.php';">
+      <div class="card column" onclick="location.href='moderate_article.php';">
         <h2 class="card__heading">Moderate Articles</h2>
         <img alt="person" src="media/members/edit_member.png" class="card__image">
         <br>

@@ -1,5 +1,5 @@
 <?php
-  if(isset($_GET['id'])){
+  if(isset($_GET['id']) && !empty($_GET['id'])){
     //Refresh connection and functions for async request
     include "../inc/depends.php";
     $conn = OpenCon();

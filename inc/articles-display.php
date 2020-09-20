@@ -10,7 +10,7 @@
   }
 
   //Get Articles that aren't featured
-  $all_articles = get_from_table("tbl_articles","tbl_articles.Featured = 0 and tbl_articles.Moderated = 1");
+  $all_articles = get_from_table("tbl_articles","tbl_articles.Featured = 0 and tbl_articles.Moderated = 1", "tbl_articles.Date","DESC");
 
   $total_articles = count($all_articles);
 

@@ -5,7 +5,7 @@
 <body>
   <?php include './inc/title.php'; ?>
   <?php include "./inc/nav.php"; ?>
-  <h1>Some welcome message</h1>
+  <h1>Some admin welcome message</h1>
 </body>
 
 <?php include './inc/footer.php'; ?>
