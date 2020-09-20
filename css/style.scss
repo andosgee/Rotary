@@ -21,6 +21,17 @@ body{
   flex-direction: column;
 }
 
+.underline{
+  border:0.1em solid color_scheme('dark blue');
+  margin-bottom: 0.2em;
+  text-align: center;
+  width: 100%;
+
+  &:nth-of-type(2){
+    width: 80%;
+  }
+}
+
 a{
   text-decoration: none;
   color: inherit;
@@ -422,17 +433,6 @@ a{
     margin-bottom: 0.1em;
   }
 
-  &__underline{
-    border:0.1em solid color_scheme('dark blue');
-    margin-bottom: 0.2em;
-    text-align: center;
-    width: 100%;
-
-    &:nth-of-type(2){
-      width: 80%;
-    }
-  }
-
   &__column{
     justify-content: space-between;
     align-items: center;
@@ -489,6 +489,7 @@ a{
   &__image{
     position: absolute;
     top:0;
+    left:0;
     width: 100%;
     min-height: 100%;
     vertical-align: middle;
@@ -525,6 +526,10 @@ a{
 
   &--expanded &__head, &--expanded &__body{
     width: 50%;
+  }
+
+  &--expanded &__title{
+    top:35%;
   }
 
   &:nth-of-type(2n){
@@ -605,11 +610,54 @@ a{
   &__info{
     margin-top: 0.8em;
   }
+
   &__legal{
-    font-size: 0.8em;
+  font-size: 0.8em;
   color: color_scheme('light grey');
   margin: 0.5em;
+  }
 }
 
+.about{
+  width: 100%;
+  text-align: justify;
+  align-items: center;
+
+  &__heading{
+    align-items: center;
+  }
+
+  &__title{
+    font-weight: 700;
+    margin-bottom: 0.1em;
+  }
+
+  &__main{
+    padding: 0em 1.5em 0em 1.5em;
+  }
+
+  & > .card-section > .card{
+    flex-direction: row-reverse;
+    & > .card__body{
+      background-color: color_scheme('yellow');
+      color: color_scheme('black');
+    }
+    & > .card__link{
+      color: color_scheme('light blue');
+    }
+
+    &:nth-of-type(2n){
+      flex-direction: row;
+      & > .card__body{
+        background-color: color_scheme('light blue');
+        color: color_scheme('white');
+      }
+
+      & > .card__link{
+        color: color_scheme('yellow');
+      }
+    }
+
+  }
 
 }
