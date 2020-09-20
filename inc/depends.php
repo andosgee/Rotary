@@ -96,4 +96,28 @@ function format_date(string $date){ //Date in format YYYY-MM-DD
   return $new_date; //Return reformatted date
 }
 
+function get_extensionless_filename(string $filename)
+{
+	return explode(".", $filename)[0];
+}
+
+function get_files(string $directory, string $extension="pdf")
+{
+	$result = [];
+	
+	if(is_dir($directory))
+	{
+		$files = scandir($directory);
+		
+		foreach($files as $file)
+		{
+			if(strpos($file, $extension))
+			{
+				$result[] = get_extensionless_filename($file);
+			}
+		}
+	}
+
+	return $result;
+}
 ?>

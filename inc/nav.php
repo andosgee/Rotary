@@ -3,7 +3,7 @@ if(isset($_SESSION['USER'])){ //If logged in
   $login_state = 'logout'; //Set state of login/out button
   $nav_items = array('Home'=>'./welcome.php', //Set user Nav
                      'Minutes'=>'./minutes.php',
-                     'Newsletter'=>'./newsletter.php',
+                     'Newsletter'=>'./newsletters.php',
                      'New Article' => './create_article.php',);
   if ($_SESSION['ISADMIN']){ //Add Admin options
     $nav_items['Home'] = './admin.php';
@@ -18,7 +18,7 @@ else{ //Default Menu
   $nav_items = array('Home'=>'./index.php',
                      'About Us'=>'./about.php',
                      'Contact Us'=>'./contact.php',
-                     'Newsletter'=>'./newsletter.php',
+                     'Newsletter'=>'./newsletters.php',
                      'Articles'=>'./articles.php',
                      'Sign-Up'=>'./signup.php');
 }
