@@ -1,6 +1,6 @@
 <?php
 	$page = get_active_page();
-	$dir = "./pdf/{$page}";
+	$dir = "./ass/{$page}";
 ?>
 <div class="pdf-display column">
 	<select id="{$page}_date" onchange="update_pdf(this.value)">
