@@ -605,11 +605,19 @@ a{
   &__info{
     margin-top: 0.8em;
   }
+
   &__legal{
     font-size: 0.8em;
   color: color_scheme('light grey');
   margin: 0.5em;
 }
+}
 
-
+.pdf-display{
+  width: 100%;
+  overflow: hidden;
+}
+#pdf-display{
+  height: 100vh;
+  width: 100%;
 }

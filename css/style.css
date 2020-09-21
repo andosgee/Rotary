@@ -601,4 +601,14 @@ a {
   margin: 0.5em;
 }
 
+.pdf-display {
+  width: 100%;
+  overflow: hidden;
+}
+
+#pdf-display {
+  height: 100vh;
+  width: 100%;
+}
+
 /*# sourceMappingURL=style.css.map */

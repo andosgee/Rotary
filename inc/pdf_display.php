@@ -3,7 +3,7 @@
 	$dir = "./ass/{$page}";
 ?>
 <div class="pdf-display column">
-	<select id="{$page}_date" onchange="update_pdf(this.value)">
+	<select class="form__select" onchange="update_pdf(this.value,'pdf_display')">
 		<?php
 			$files = get_files($dir);
 			{
@@ -14,10 +14,10 @@
 			}
 			?>
 	</select>
-	<?php 
+	<?php
 	if(sizeof($files) > 0)
 	{
-		echo("<iframe id='pdf_display' src='{$dir}/{$files[0]}.pdf'></iframe>");
+		echo("<iframe id='pdf-display' src='{$dir}/{$files[0]}.pdf'></iframe>");
 	}
 	?>
 </div>
