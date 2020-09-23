@@ -8,6 +8,13 @@
   <?php include "inc/nav.php"; ?>
 
   <div class="cards column">
+    <div class="card column" onclick="location.href='view_members.php';">
+      <h2 class="card__heading">View Club Members</h2>
+      <img alt="person" src="media/members/add_member.png" class="card__image">
+      <br>
+      Click Here to view club members.
+    </div>
+
     <div class="card column" onclick="location.href='add_member.php';">
       <h2 class="card__heading">Add User</h2>
       <img alt="person" src="media/members/add_member.png" class="card__image">
