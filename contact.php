@@ -4,6 +4,7 @@
 <body>
   <?php include './inc/title.php'; ?>
   <?php include "./inc/nav.php"; ?>
+  <?php include "./inc/contact_content.php"; ?>
   <?php include './inc/footer.php'; ?>
 </body>
 </html>

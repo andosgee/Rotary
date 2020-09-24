@@ -618,7 +618,7 @@ a{
   }
 }
 
-.about{
+.about, .contact{
   width: 100%;
   text-align: justify;
   align-items: center;
@@ -658,6 +658,15 @@ a{
       }
     }
 
+  }
+
+  &__subheading{
+    color: color_scheme('yellow');
+    margin: 1em 0em 0em 0em;
+  }
+
+  &__details{
+    
   }
 
 }
