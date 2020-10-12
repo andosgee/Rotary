@@ -527,3 +527,43 @@ a{
     color: color_scheme('yellow');
   }
 }
+
+//table
+.table{
+  margin-top: 1em;
+  margin-left: 0.4em;
+  margin-right: 0.4em;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  overflow: scroll;
+  max-width: 570px;
+
+  &__column{
+    margin: 0.2em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__head{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    flex-direction: row;
+    height: 3em;
+    max-width: 6.5em;
+    color: color_scheme('yellow');
+
+  }
+
+  &__data{
+    text-align: center;
+    overflow: scroll;
+    max-width: 6.5em;
+    height: 3em;
+    display: flex;
+    flex-direction: row;
+    font-size: 0.9em;
+  }
+}

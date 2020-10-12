@@ -1,5 +1,7 @@
-<?php include "inc/pwd_reset_script.php";?>
+<?php include "inc/pwd_script.php";?>
+
   <form name="pwd_change" class="form column" method="post">
+    <?php echo $suc_pwd; ?>
     <label for="pwd_change_pwd">New Password:</label>
       <div class="row">
         <input type="password" name="pwd_change_pwd" class="form__input" placeholder="New Password" required>

@@ -10,7 +10,7 @@
     <div class="sidebar-d">
       <?php include './inc/sidebar.php'; ?>
     </div>
-    <?php //include './inc/sidebar.php';
+    <?php
           include './inc/articles-display.php'
       ?>
   </div>

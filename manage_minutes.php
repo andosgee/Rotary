@@ -10,13 +10,13 @@
   <div class="cards column">
     <div class="card column" onclick="location.href='create_minutes.php';">
       <h2 class="card__heading">Update Minutes</h2>
-      <img alt="person" src="media/members/add_member.png" class="card__image">
+      <img alt="person" src="media/admin_portal/default/article.png" class="card__image">
       <br>
     </div>
 
     <div class="card column" onclick="location.href='minutes.php';">
       <h2 class="card__heading">View Current Minutes</h2>
-      <img alt="person" src="media/members/edit_member.png" class="card__image">
+      <img alt="person" src="media/admin_portal/default/article.png" class="card__image">
       <br>
     </div>
   </div>

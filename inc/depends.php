@@ -18,6 +18,12 @@ function AdminOnlyAccess(){ #Restrict page to admin access
   }
 }
 
+function GuestOnly(){
+  if(!empty($_SESSION['USER'])){
+    header("location: ./index.php");
+  }
+}
+
 
 function UserOnlyAccess(){ #Restrict page to user (or higher) access
   if(!isset($_SESSION['USER'])){
