@@ -124,6 +124,7 @@ a{
 .signup__message{
   text-align: center;
 }
+
 .marquee{
   display: flex;
   position: relative;
@@ -238,14 +239,6 @@ a{
     font-size: 0.9em;
     text-align: center;
   }
-
-  // &:hover > &__title, &:hover > &__body{
-  //   opacity: 1;
-  // }
-  //
-  // &:hover > &__head{
-  //   opacity: 0.4;
-  // }
 }
 
 
@@ -415,7 +408,6 @@ a{
 
 .form{
   padding: 1em;
-  // align-items: center;
 
   & > *, &__content > *{
     margin-bottom: 1em;

@@ -49,7 +49,9 @@ else{ //Default Menu
     </div>
     <hr class="solid">
     <!-- Include sidebar in mobile version -->
-    <?php include './inc/sidebar.php'; ?>
+    <div class="sidebar-m">
+      <?php include './inc/sidebar.php'; ?>
+    </div>
   </div>
 
 
