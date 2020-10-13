@@ -7,7 +7,10 @@
         include './inc/marquee.php';
     ?>
   <div class="row">
-    <?php //include './inc/sidebar.php';
+    <div class="sidebar-d">
+      <?php include './inc/sidebar.php'; ?>
+    </div>
+    <?php
           include './inc/articles-display.php'
       ?>
   </div>

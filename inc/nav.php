@@ -1,16 +1,19 @@
 <?php
 if(isset($_SESSION['USER'])){ //If logged in
   $login_state = 'logout'; //Set state of login/out button
-  $nav_items = array('Home'=>'./welcome.php', //Set user Nav
+  $nav_items = array('Home'=>'./index.php', //Set user Nav
                      'Minutes'=>'./minutes.php',
-                     'Newsletter'=>'./newsletters.php',
-                     'New Article' => './create_article.php',);
+                     'Newsletter'=>'./newsletter.php',
+                     'Articles' => './manage_articles.php');
   if ($_SESSION['ISADMIN']){ //Add Admin options
     $nav_items['Home'] = './admin.php';
-    $nav_items['Moderate Article'] = './mod_article.php';
-    $nav_items['Members'] = '#'; //add user or remove user
+    $nav_items['Minutes'] = './manage_minutes.php';
+    $nav_items['Newsletter'] = './manage_newsletter.php';
+    $nav_items['Members'] = './members.php'; //manage members
   }
-  $nav_items['Edit Details'] = './details_change.php'; //Last item in nav
+  //Included in both
+  $nav_items['Edit Details'] = './details_change.php';
+  $nav_items['Change Password'] = './password_change.php';
 
 }
 else{ //Default Menu
@@ -46,7 +49,9 @@ else{ //Default Menu
     </div>
     <hr class="solid">
     <!-- Include sidebar in mobile version -->
-    <?php include './inc/sidebar.php'; ?>
+    <div class="sidebar-m">
+      <?php include './inc/sidebar.php'; ?>
+    </div>
   </div>
 
 

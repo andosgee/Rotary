@@ -1,5 +1,6 @@
 <?php
 
+
 function OpenCon(){ #Opens the connction
   $dbhost = "localhost";
   $dbuser = "root";
@@ -17,6 +18,12 @@ function AdminOnlyAccess(){ #Restrict page to admin access
   }
 }
 
+function GuestOnly(){
+  if(!empty($_SESSION['USER'])){
+    header("location: ./index.php");
+  }
+}
+
 
 function UserOnlyAccess(){ #Restrict page to user (or higher) access
   if(!isset($_SESSION['USER'])){
@@ -28,7 +35,9 @@ function UserOnlyAccess(){ #Restrict page to user (or higher) access
 function get_active_page(){ //Get active page as 'example' instead of '/pharcourts/example.php'
   $address = $_SERVER['PHP_SELF']; // Get as /pharcourts/example.php
   $components = explode('/', $address); //Get as array
-  return str_replace('.php', '', end($components)); //Return last element
+  $page_name = str_replace('.php', '', end($components));
+  $page_name = str_replace('_',' ',$page_name);
+  return $page_name; //Return last element
 }
 
 
@@ -48,13 +57,14 @@ function get_from_table($table_name,$condition=1,$sort=1,$sort_direction='ASC'){
 
   while($item = $query_result-> fetch_assoc()){ //Iterate through items
     $results[] = $item; //Append to array
+
   }
 
   return $results; //Returns as array of associated arrays
 }
 
 
-function secure(string $string){ //Injection security
+function secure($string){ //Injection security
   global $conn;
   // Add escape character to problematic characters eg. " ' \
   $string = $conn -> real_escape_string($string);
@@ -104,11 +114,11 @@ function get_extensionless_filename(string $filename)
 function get_files(string $directory, string $extension="pdf")
 {
 	$result = [];
-	
+
 	if(is_dir($directory))
 	{
 		$files = scandir($directory);
-		
+
 		foreach($files as $file)
 		{
 			if(strpos($file, $extension))

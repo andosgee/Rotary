@@ -9,4 +9,5 @@
   <?php include './inc/index-cards.php'; ?>
   <?php include './inc/footer.php'; ?>
 </body>
+<?php include "inc/footer.php"; ?>
 </html>
