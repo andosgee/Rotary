@@ -1,8 +1,8 @@
 <div class="join-rotary column">
   <div class="join-rotary__heading column">
     <h2 class="join-rotary__title">Benefits of Joining Rotary</h2>
-    <span class="join-rotary__underline"></span>
-    <span class="join-rotary__underline"></span>
+    <span class="underline"></span>
+    <span class="underline"></span>
   </div>
 
   <div class="column">

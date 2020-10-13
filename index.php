@@ -5,9 +5,16 @@
   <?php include './inc/title.php'; ?>
   <?php include "./inc/nav.php"; ?>
   <?php include './inc/marquee.php'; ?>
-  <?php include './inc/join-rotary.php'; ?>
-  <?php include './inc/index-cards.php'; ?>
-  <?php include './inc/footer.php'; ?>
+  <div class="row">
+    <div class="column sidebar-d">
+      <?php include './inc/sidebar.php'; ?>
+    </div>
+  </div>
+  <div class="column">
+    <?php include './inc/join-rotary.php'; ?>
+    <?php include './inc/index-cards.php'; ?>
+    <?php include './inc/footer.php'; ?>
+  </div>
 </body>
 <?php include "inc/footer.php"; ?>
 </html>

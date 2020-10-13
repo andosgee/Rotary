@@ -19,6 +19,17 @@ body {
   flex-direction: column;
 }
 
+.underline {
+  border: 0.1em solid #143D94;
+  margin-bottom: 0.2em;
+  text-align: center;
+  width: 100%;
+}
+
+.underline:nth-of-type(2) {
+  width: 80%;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -492,6 +503,7 @@ a {
 .card__image {
   position: absolute;
   top: 0;
+  left: 0;
   width: 100%;
   min-height: 100%;
   vertical-align: middle;
@@ -529,6 +541,10 @@ a {
 .card--expanded .card__body,
 .card--expanded .card__head {
   width: 50%;
+}
+
+.card--expanded .card__title {
+  top: 35%;
 }
 
 .card:nth-of-type(2n) {
@@ -744,6 +760,12 @@ a {
   color: #FFA800;
 }
 
+.admin-card__legal {
+  font-size: 0.8em;
+  color: #AAAAAA;
+  margin: 0.5em;
+}
+
 .table {
   margin-top: 1em;
   margin-left: 0.4em;
@@ -772,7 +794,57 @@ a {
   color: #FFA800;
 }
 
-.table__data {
+.about, .contact {
+  width: 100%;
+  text-align: justify;
+  align-items: center;
+}
+
+.about__heading, .contact__heading {
+  align-items: center;
+}
+
+.about__title, .contact__title {
+  font-weight: 700;
+  margin-bottom: 0.1em;
+}
+
+.about__main, .contact__main {
+  padding: 0em 1.5em 0em 1.5em;
+}
+
+.about > .card-section > .card, .contact > .card-section > .card {
+  flex-direction: row-reverse;
+}
+
+.about > .card-section > .card > .card__body, .contact > .card-section > .card > .card__body {
+  background-color: #FFA800;
+  color: #000000;
+}
+
+.about > .card-section > .card > .card__link, .contact > .card-section > .card > .card__link {
+  color: #0055B0;
+}
+
+.about > .card-section > .card:nth-of-type(2n), .contact > .card-section > .card:nth-of-type(2n) {
+  flex-direction: row;
+}
+
+.about > .card-section > .card:nth-of-type(2n) > .card__body, .contact > .card-section > .card:nth-of-type(2n) > .card__body {
+  background-color: #0055B0;
+  color: #F2F2F2;
+}
+
+.about > .card-section > .card:nth-of-type(2n) > .card__link, .contact > .card-section > .card:nth-of-type(2n) > .card__link {
+  color: #FFA800;
+}
+
+.about__subheading, .contact__subheading {
+  color: #FFA800;
+  margin: 1em 0em 0em 0em;
+}
+
+.about__data, .contact__data {
   text-align: center;
   overflow: scroll;
   max-width: 6.5em;
