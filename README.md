@@ -1,9 +1,9 @@
 # RotaryCombine
 Rotary, Combined folder
 
-#NEW DB DOWNLOAD AS OF 20 OCT 20
+# NEW DB DOWNLOAD AS OF 20 OCT 20
 <br>
-##PLEASE READ IMPORTANT
+## PLEASE READ IMPORTANT
 **Crucial Changes:**
 <br>
 SubScribe Needs Linking
