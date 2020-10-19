@@ -55,8 +55,8 @@ function get_from_table($table_name,$condition=1,$sort=1,$sort_direction='ASC'){
     return false;
   }
 
-  while($item = $query_result-> fetch_assoc()){ //Iterate through items
-    $results[] = $item; //Append to array
+  while($item = $query_result-> fetch_assoc()){ 
+    $results[] = $item; //Iterate through items Append to array 
 
   }
 

@@ -13,7 +13,7 @@
   <div class="column">
     <?php include './inc/join-rotary.php'; ?>
     <?php include './inc/index-cards.php'; ?>
-    <?php include './inc/footer.php'; ?>
+
   </div>
 </body>
 <?php include "inc/footer.php"; ?>

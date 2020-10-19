@@ -10,7 +10,7 @@
       <img class="join-rotary__image" src="./media/rotary-join-template.png" alt="Image">
       <div class="join-rotary__content column">
         <h3 class="join-rotary__subheading">Reason</h3>
-        <p class="join-rotary__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, ipsa.</p>
+        <p class="join-rotary__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, ipsa.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, ipsa.</p>
       </div>
     </div>
 

@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Sep 20, 2020 at 02:16 AM
--- Server version: 10.4.13-MariaDB
--- PHP Version: 7.4.7
+-- Generation Time: Oct 20, 2020 at 12:11 AM
+-- Server version: 10.4.14-MariaDB
+-- PHP Version: 7.4.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -93,7 +93,8 @@ INSERT INTO `tbl_articles` (`AID`, `Title`, `Description`, `Content`, `Date`, `A
 (48, 'Ex. Title 44', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condi', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum tellus sed auctor congue.\r\n\rQuisque a tortor vel est faucibus vehicula. Fusce rhoncus, nulla eu viverra laoreet, lacus velit feugiat sapien, in commodo metus mi nec dui. Pellentesque vitae lectus feugiat ipsum luctus fermentum id id nulla. Morbi ut enim placerat, consequat ligula congue, pharetra nunc. Pellentesque at blandit libero.\r\n\rVivamus ipsum tortor, tempor non neque et, aliquam efficitur tellus. Sed suscipit suscipit libero, non placerat velit venenatis nec. Proin pretium turpis vel vulputate vestibulum. Morbi fermentum est a orci ullamcorper, eget tristique nibh posuere. Ut metus diam, rutrum vitae dolor ut, pretium posuere urna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce dignissim ipsum sed est gravida, vel aliquam diam iaculis.', '0008-10-20', 1, 0, 1),
 (49, 'Ex. Title 45', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condi', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum tellus sed auctor congue.\r\n\rQuisque a tortor vel est faucibus vehicula. Fusce rhoncus, nulla eu viverra laoreet, lacus velit feugiat sapien, in commodo metus mi nec dui. Pellentesque vitae lectus feugiat ipsum luctus fermentum id id nulla. Morbi ut enim placerat, consequat ligula congue, pharetra nunc. Pellentesque at blandit libero.\r\n\rVivamus ipsum tortor, tempor non neque et, aliquam efficitur tellus. Sed suscipit suscipit libero, non placerat velit venenatis nec. Proin pretium turpis vel vulputate vestibulum. Morbi fermentum est a orci ullamcorper, eget tristique nibh posuere. Ut metus diam, rutrum vitae dolor ut, pretium posuere urna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce dignissim ipsum sed est gravida, vel aliquam diam iaculis.', '0009-10-20', 1, 0, 1);
 INSERT INTO `tbl_articles` (`AID`, `Title`, `Description`, `Content`, `Date`, `Author`, `Featured`, `Moderated`) VALUES
-(50, 'Ex. Title 46', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus co...', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum tellus sed auctor congue.\r\n\r\nQuisque a tortor vel est faucibus vehicula. Fusce rhoncus, nulla eu viverra laoreet, lacus velit feugiat sapien, in commodo metus mi nec dui. Pellentesque vitae lectus feugiat ipsum luctus fermentum id id nulla. Morbi ut enim placerat, consequat ligula congue, pharetra nunc. Pellentesque at blandit libero.\r\n\r\nVivamus ipsum tortor, tempor non neque et, aliquam efficitur tellus. Sed suscipit suscipit libero, non placerat velit venenatis nec. Proin pretium turpis vel vulputate vestibulum. Morbi fermentum est a orci ullamcorper, eget tristique nibh posuere. Ut metus diam, rutrum vitae dolor ut, pretium posuere urna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce dignissim ipsum sed est gravida, vel aliquam diam iaculis.', '2010-10-20', 1, 0, 0);
+(50, 'Ex. Title 46', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus co...', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum tellus sed auctor congue.\r\n\r\nQuisque a tortor vel est faucibus vehicula. Fusce rhoncus, nulla eu viverra laoreet, lacus velit feugiat sapien, in commodo metus mi nec dui. Pellentesque vitae lectus feugiat ipsum luctus fermentum id id nulla. Morbi ut enim placerat, consequat ligula congue, pharetra nunc. Pellentesque at blandit libero.\r\n\r\nVivamus ipsum tortor, tempor non neque et, aliquam efficitur tellus. Sed suscipit suscipit libero, non placerat velit venenatis nec. Proin pretium turpis vel vulputate vestibulum. Morbi fermentum est a orci ullamcorper, eget tristique nibh posuere. Ut metus diam, rutrum vitae dolor ut, pretium posuere urna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce dignissim ipsum sed est gravida, vel aliquam diam iaculis.', '2010-10-20', 1, 0, 0),
+(51, 'Ex Article 47', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus co...', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum tellus sed auctor congue.\r\n\r\nQuisque a tortor vel est faucibus vehicula. Fusce rhoncus, nulla eu viverra laoreet, lacus velit feugiat sapien, in commodo metus mi nec dui. Pellentesque vitae lectus feugiat ipsum luctus fermentum id id nulla. Morbi ut enim placerat, consequat ligula congue, pharetra nunc. Pellentesque at blandit libero.\r\n\r\nVivamus ipsum tortor, tempor non neque et, aliquam efficitur tellus. Sed suscipit suscipit libero, non placerat velit venenatis nec. Proin pretium turpis vel vulputate vestibulum. Morbi fermentum est a orci ullamcorper, eget tristique nibh posuere. Ut metus diam, rutrum vitae dolor ut, pretium posuere urna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce dignissim ipsum sed est gravida, vel aliquam diam iaculis.', '2020-09-21', 1, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -143,17 +144,18 @@ CREATE TABLE `tbl_login` (
   `UserName` varchar(15) NOT NULL,
   `Password` varchar(120) NOT NULL,
   `Admin` tinyint(1) NOT NULL,
-  `Active` tinyint(1) NOT NULL
+  `Active` tinyint(1) NOT NULL,
+  `Publish` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `tbl_login`
 --
 
-INSERT INTO `tbl_login` (`ID`, `NameF`, `NameS`, `Email`, `Mobile`, `StreetNum`, `UnitNum`, `StreetName`, `City`, `Suburb`, `PostCode`, `UserName`, `Password`, `Admin`, `Active`) VALUES
-(1, 'Admin', 'Admin', 'admin@admin.com', '0000000', 12, '212', 'Tester', 'Tester', 'Test', 1111, 'Admin', '$2y$10$tMkgQx99Wq9neWRT7d3.D.MGaEX5qMutcz2eaMyWIehZNg9jVMg4e', 1, 1),
-(2, 'Example', 'User', 'example.user@gmail.com', '3141592653', 123, NULL, 'Main St', 'Christchurch', 'Redwood', 8051, 'ExUser', '$2y$10$uNvEJeTcToc0zaTNfpLcxOY6ZVh43u3/mJ.ste6wsPpfXXOOYItVa', 0, 1),
-(3, 'Andrew', 'Grant', 'Test@user.com', '0222222', 4, NULL, 'Faulks', 'Chc', 'Lin', 7608, 'andosgee', '$2y$10$seHV7/5NtlDvOB2UicFeWuXqn3Lt2wMLFYM8B2Abx/MOvFIqOmS1C', 0, 1);
+INSERT INTO `tbl_login` (`ID`, `NameF`, `NameS`, `Email`, `Mobile`, `StreetNum`, `UnitNum`, `StreetName`, `City`, `Suburb`, `PostCode`, `UserName`, `Password`, `Admin`, `Active`, `Publish`) VALUES
+(1, 'Admin', 'Admin', 'admin@admin.com', '0000000', 12, '212', 'Tester', 'Tester', 'Test', 1111, 'Admin', '$2y$10$tMkgQx99Wq9neWRT7d3.D.MGaEX5qMutcz2eaMyWIehZNg9jVMg4e', 1, 1, 1),
+(2, 'Example', 'User', 'example.user@gmail.com', '3141592653', 123, NULL, 'Main St', 'Christchurch', 'Redwood', 8051, 'ExUser', '$2y$10$uNvEJeTcToc0zaTNfpLcxOY6ZVh43u3/mJ.ste6wsPpfXXOOYItVa', 0, 1, 1),
+(3, 'Andrew', 'Grant', 'Test@user.com', 'N', 4, NULL, 'Faulks', 'Chc', 'Lin', 7608, 'andosgee', '$2y$10$seHV7/5NtlDvOB2UicFeWuXqn3Lt2wMLFYM8B2Abx/MOvFIqOmS1C', 0, 1, 0);
 
 -- --------------------------------------------------------
 
@@ -167,6 +169,30 @@ CREATE TABLE `tbl_mins` (
   `Date` varchar(15) NOT NULL,
   `UID` int(5) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_newsReg`
+--
+
+CREATE TABLE `tbl_newsReg` (
+  `UID` int(11) NOT NULL,
+  `Email` varchar(60) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `til_news`
+--
+
+CREATE TABLE `til_news` (
+  `NID` int(11) NOT NULL,
+  `FileName` varchar(60) NOT NULL,
+  `Date` varchar(10) NOT NULL,
+  `UID` int(1) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Indexes for dumped tables
@@ -198,6 +224,12 @@ ALTER TABLE `tbl_mins`
   ADD PRIMARY KEY (`MID`);
 
 --
+-- Indexes for table `til_news`
+--
+ALTER TABLE `til_news`
+  ADD PRIMARY KEY (`NID`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -205,7 +237,7 @@ ALTER TABLE `tbl_mins`
 -- AUTO_INCREMENT for table `tbl_articles`
 --
 ALTER TABLE `tbl_articles`
-  MODIFY `AID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
+  MODIFY `AID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
 
 --
 -- AUTO_INCREMENT for table `tbl_interest`
@@ -224,6 +256,12 @@ ALTER TABLE `tbl_login`
 --
 ALTER TABLE `tbl_mins`
   MODIFY `MID` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `til_news`
+--
+ALTER TABLE `til_news`
+  MODIFY `NID` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- Constraints for dumped tables

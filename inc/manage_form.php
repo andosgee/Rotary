@@ -25,10 +25,6 @@
       </div>
     </div>
 
-    <div class="row">
-      <label class="form__label" for="confirm_change">Confirm:</label>
-      <input type="checkbox" name="confirm_change" class="form__checkbox" required>
-    </div>
     <div class="form__buttons row">
       <button type="submit" name="delete_user" class="form__button form__button--delete">Delete User</button>
       <button type="submit" name="update_user" class="form__button form__button--submit">Update User</button>
