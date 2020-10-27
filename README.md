@@ -5,8 +5,7 @@ Rotary, Combined folder
 <br>
 ## PLEASE READ IMPORTANT
 **Crucial Changes:**
-<br>
-SubScribe Needs Linking
+
 <br>
 Mins Needs Upload
 <br>
@@ -15,7 +14,6 @@ View and Upload Newsletter
 View Members - Mobile Formatting
 
 **Next Step**
-Add Google Analytics Tracking with Account
 <br>
 Desktop CSS
 <br>
@@ -40,3 +38,8 @@ FULLY TEST
 **Username:** Admin
 <br>
 **Password:** Admin
+
+## Google Sign In
+**User:** belfast.rotarynz@gmail.Com
+<br>
+**Pass:** P1zz4B0x
