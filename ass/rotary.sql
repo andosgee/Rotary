@@ -2,10 +2,10 @@
 -- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Generation Time: Oct 20, 2020 at 12:11 AM
--- Server version: 10.4.14-MariaDB
--- PHP Version: 7.4.9
+-- Host: 127.0.0.1
+-- Generation Time: Oct 27, 2020 at 08:16 AM
+-- Server version: 10.4.11-MariaDB
+-- PHP Version: 7.4.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -173,26 +173,33 @@ CREATE TABLE `tbl_mins` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_newsReg`
+-- Table structure for table `tbl_news`
 --
 
-CREATE TABLE `tbl_newsReg` (
-  `UID` int(11) NOT NULL,
-  `Email` varchar(60) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `til_news`
---
-
-CREATE TABLE `til_news` (
+CREATE TABLE `tbl_news` (
   `NID` int(11) NOT NULL,
   `FileName` varchar(60) NOT NULL,
   `Date` varchar(10) NOT NULL,
   `UID` int(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_newsreg`
+--
+
+CREATE TABLE `tbl_newsreg` (
+  `UID` int(11) NOT NULL,
+  `Email` varchar(60) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `tbl_newsreg`
+--
+
+INSERT INTO `tbl_newsreg` (`UID`, `Email`) VALUES
+(1, 'wfd');
 
 --
 -- Indexes for dumped tables
@@ -224,10 +231,16 @@ ALTER TABLE `tbl_mins`
   ADD PRIMARY KEY (`MID`);
 
 --
--- Indexes for table `til_news`
+-- Indexes for table `tbl_news`
 --
-ALTER TABLE `til_news`
+ALTER TABLE `tbl_news`
   ADD PRIMARY KEY (`NID`);
+
+--
+-- Indexes for table `tbl_newsreg`
+--
+ALTER TABLE `tbl_newsreg`
+  ADD PRIMARY KEY (`UID`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -258,10 +271,16 @@ ALTER TABLE `tbl_mins`
   MODIFY `MID` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `til_news`
+-- AUTO_INCREMENT for table `tbl_news`
 --
-ALTER TABLE `til_news`
+ALTER TABLE `tbl_news`
   MODIFY `NID` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `tbl_newsreg`
+--
+ALTER TABLE `tbl_newsreg`
+  MODIFY `UID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- Constraints for dumped tables
