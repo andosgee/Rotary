@@ -5,5 +5,5 @@
 
       <input class="form__input" type="email" name="signup_email" placeholder="Email" required>
     </div>
-      <button class="form__button" type="submit" name="signup_submit">Submit</button>
+      <button class="form__button form__button--submit" type="submit" name="signup_submit">Submit</button>
     </form>

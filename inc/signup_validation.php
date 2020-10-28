@@ -8,7 +8,7 @@ if(isset($_POST["signup_submit"])){ #checks for button press
   $email = secure($_POST['signup_email']);
 
   #Sql statement for adding to list
-  $insert_query = "INSERT INTO `tbl_interest` (`Name`,`Email`) VALUES ('{$name}','{$email}')";
+  $insert_query = "INSERT INTO `tbl_interest` (`NameF`,`Email`) VALUES ('{$name}','{$email}')";
 
   if($conn -> query($insert_query)){
     //On Success
