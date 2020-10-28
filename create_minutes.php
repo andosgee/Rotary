@@ -5,7 +5,7 @@
   <body>
     <?php include "inc/title.php"; ?>
     <?php include "inc/nav.php"; ?>
-
+	<?php include "inc/pdf_upload.php"; ?>
     <?php include "inc/footer.php"; ?>
   </body>
 </html>
