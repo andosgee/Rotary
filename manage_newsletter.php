@@ -8,13 +8,13 @@
   <?php include "inc/nav.php"; ?>
 
   <div class="cards column">
-    <div class="admin-card column" onclick="location.href='create_newsletter.php';">
+    <div class="admin-card column" onclick="location.href='create_newsletters.php';">
       <h2 class="admin-card__heading">Update Newsletter</h2>
       <img alt="person" src="media/admin_portal/default/Newsletter.png" class="admin-card__image">
       <br>
     </div>
 
-    <div class="admin-card column" onclick="location.href='newsletter.php';">
+    <div class="admin-card column" onclick="location.href='newsletters.php';">
       <h2 class="admin-card__heading">View Current Newsletter</h2>
       <img alt="person" src="media/admin_portal/default/Newsletter.png" class="admin-card__image">
       <br>

@@ -3,7 +3,7 @@
 	$dir = "./ass/{$page}";
 ?>
 <div class="pdf-display column">
-	<select class="form__select" onchange="update_pdf(this.value,'pdf_display')">
+	<select class="form__select" onchange="update_pdf(this.value,'pdf-display')">
 		<?php
 			$files = get_files($dir);
 			{
