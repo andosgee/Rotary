@@ -37,7 +37,7 @@ if(isset($_POST['user_search_button'])){
           <div class='table__head'>Address</div>";
     foreach ($members as $info) {
       echo"
-          <div class='table__data'>{$info['UnitNum']}/{$info['StreetNum']} {$info['StreetName']}
+          <div class='table__data'>{$info['UnitNum']}{$info['StreetNum']} {$info['StreetName']}
           <br>{$info['City']} {$info['Suburb']} {$info['PostCode']}
           </div>
           ";
@@ -74,7 +74,7 @@ if(isset($_POST['user_search_button'])){
     // }
     echo "</div>
           <div class='table__column'>
-          <div class='table__head'>Email</div>";
+          <div class='table__head'>Contact</div>";
     foreach ($members as $info) {
       echo"
           <div class='table__data'>{$info['Email']}<br>{$info['Mobile']}</div>
@@ -85,7 +85,7 @@ if(isset($_POST['user_search_button'])){
           <div class='table__head'>Address</div>";
     foreach ($members as $info) {
       echo"
-          <div class='table__data'>{$info['UnitNum']}/{$info['StreetNum']} {$info['StreetName']}
+          <div class='table__data'>".((isset($info['UnitNum']))? "{$info['UnitNum']}/":"")."{$info['StreetNum']} {$info['StreetName']}
           <br>{$info['City']} {$info['Suburb']} {$info['PostCode']}
           </div>
           ";
