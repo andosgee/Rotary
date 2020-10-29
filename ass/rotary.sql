@@ -2,10 +2,10 @@
 -- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Oct 27, 2020 at 08:16 AM
--- Server version: 10.4.11-MariaDB
--- PHP Version: 7.4.6
+-- Host: localhost
+-- Generation Time: Oct 29, 2020 at 01:27 AM
+-- Server version: 10.4.14-MariaDB
+-- PHP Version: 7.4.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -105,15 +105,15 @@ INSERT INTO `tbl_articles` (`AID`, `Title`, `Description`, `Content`, `Date`, `A
 CREATE TABLE `tbl_interest` (
   `ID` int(10) NOT NULL,
   `NameF` varchar(30) NOT NULL,
-  `NameS` varchar(30) NOT NULL,
+  `NameS` varchar(30) DEFAULT NULL,
   `Email` varchar(70) NOT NULL,
-  `Mobile` varchar(12) NOT NULL,
-  `StreetNum` int(5) NOT NULL,
+  `Mobile` varchar(12) DEFAULT NULL,
+  `StreetNum` int(5) DEFAULT NULL,
   `UnitNum` varchar(8) DEFAULT NULL,
-  `StreetName` varchar(60) NOT NULL,
-  `City` varchar(30) NOT NULL,
-  `Suburb` varchar(30) NOT NULL,
-  `PostCode` int(4) NOT NULL
+  `StreetName` varchar(60) DEFAULT NULL,
+  `City` varchar(30) DEFAULT NULL,
+  `Suburb` varchar(30) DEFAULT NULL,
+  `PostCode` int(4) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -121,7 +121,9 @@ CREATE TABLE `tbl_interest` (
 --
 
 INSERT INTO `tbl_interest` (`ID`, `NameF`, `NameS`, `Email`, `Mobile`, `StreetNum`, `UnitNum`, `StreetName`, `City`, `Suburb`, `PostCode`) VALUES
-(1, 'Cain', 'Garcia', 'name.last@example.com', '0225557432', 123, NULL, 'Main North Road', 'Christchutch', 'Redwood', 8051);
+(1, 'Cain', 'Garcia', 'name.last@example.com', '0225557432', 123, NULL, 'Main North Road', 'Christchutch', 'Redwood', 8051),
+(6, 'Andrew', NULL, 'andosgee@gmail.com', NULL, NULL, NULL, NULL, NULL, NULL, NULL),
+(7, 'User', 'User', 'Samplee@user', '12345', 123, '11', 'Sample Strewet', 'A Nice', 'Place', 1111);
 
 -- --------------------------------------------------------
 
@@ -153,7 +155,7 @@ CREATE TABLE `tbl_login` (
 --
 
 INSERT INTO `tbl_login` (`ID`, `NameF`, `NameS`, `Email`, `Mobile`, `StreetNum`, `UnitNum`, `StreetName`, `City`, `Suburb`, `PostCode`, `UserName`, `Password`, `Admin`, `Active`, `Publish`) VALUES
-(1, 'Admin', 'Admin', 'admin@admin.com', '0000000', 12, '212', 'Tester', 'Tester', 'Test', 1111, 'Admin', '$2y$10$tMkgQx99Wq9neWRT7d3.D.MGaEX5qMutcz2eaMyWIehZNg9jVMg4e', 1, 1, 1),
+(1, 'Admin', 'Admin', 'admin@admin.com', '0', 12, NULL, 'Tester', 'Tester', 'Test', 1111, 'Admin', '$2y$10$tMkgQx99Wq9neWRT7d3.D.MGaEX5qMutcz2eaMyWIehZNg9jVMg4e', 1, 1, 1),
 (2, 'Example', 'User', 'example.user@gmail.com', '3141592653', 123, NULL, 'Main St', 'Christchurch', 'Redwood', 8051, 'ExUser', '$2y$10$uNvEJeTcToc0zaTNfpLcxOY6ZVh43u3/mJ.ste6wsPpfXXOOYItVa', 0, 1, 1),
 (3, 'Andrew', 'Grant', 'Test@user.com', 'N', 4, NULL, 'Faulks', 'Chc', 'Lin', 7608, 'andosgee', '$2y$10$seHV7/5NtlDvOB2UicFeWuXqn3Lt2wMLFYM8B2Abx/MOvFIqOmS1C', 0, 1, 0);
 
@@ -186,20 +188,13 @@ CREATE TABLE `tbl_news` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_newsreg`
+-- Table structure for table `tbl_newsReg`
 --
 
-CREATE TABLE `tbl_newsreg` (
+CREATE TABLE `tbl_newsReg` (
   `UID` int(11) NOT NULL,
   `Email` varchar(60) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `tbl_newsreg`
---
-
-INSERT INTO `tbl_newsreg` (`UID`, `Email`) VALUES
-(1, 'wfd');
 
 --
 -- Indexes for dumped tables
@@ -237,12 +232,6 @@ ALTER TABLE `tbl_news`
   ADD PRIMARY KEY (`NID`);
 
 --
--- Indexes for table `tbl_newsreg`
---
-ALTER TABLE `tbl_newsreg`
-  ADD PRIMARY KEY (`UID`);
-
---
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -256,7 +245,7 @@ ALTER TABLE `tbl_articles`
 -- AUTO_INCREMENT for table `tbl_interest`
 --
 ALTER TABLE `tbl_interest`
-  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `tbl_login`
@@ -275,12 +264,6 @@ ALTER TABLE `tbl_mins`
 --
 ALTER TABLE `tbl_news`
   MODIFY `NID` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `tbl_newsreg`
---
-ALTER TABLE `tbl_newsreg`
-  MODIFY `UID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- Constraints for dumped tables
