@@ -424,6 +424,9 @@ a{
 
   &__image {
     width: 100%;
+    @include responsive(desktop){
+      width: 60%;
+    }
   }
 
   &__content {
