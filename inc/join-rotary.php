@@ -5,7 +5,7 @@
     <span class="underline"></span>
   </div>
 
-  <div class="column">
+  <div class="join-rotary__content column">
     <div class="join-rotary__column row" onclick=(window.location.href='#')>
       <img class="join-rotary__image" src="./media/rotary-join-template.png" alt="Image">
       <div class="join-rotary__content column">

@@ -10,8 +10,10 @@
         </div>
     <div class="column">
       <?php include "./inc/contact_content.php"; ?>
-      <?php include './inc/footer.php'; ?>
+
     </div>
+
   </div>
+  <?php include './inc/footer.php'; ?>
 </body>
 </html>

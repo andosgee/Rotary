@@ -12,6 +12,14 @@ $colors: (
   @return map-get($colors,$color);
 }
 
+@mixin responsive ($breakpoint) {
+    @if $breakpoint==desktop {
+        @media only screen and (min-width: 800px) {
+            @content;
+        }
+    }
+}
+
 :root {
   font-size: 20px;
   font-family: 'Montserrat';
@@ -21,6 +29,7 @@ body {
   padding: 0;
   margin: 0;
   background-color: color_scheme('white');
+  align-content: center;
 }
 
 .row {
@@ -60,15 +69,25 @@ a{
   color: color_scheme('yellow');
   border-bottom: 0.2em solid color_scheme('yellow');
   padding: 0.5em;
+  @include responsive(desktop){
+    flex-direction: row;
+  }
 
   &__bar {
     justify-content: space-between;
     align-items: center;
+    @include responsive(desktop){
+      // display: none;
+      justify-content: flex-end;
+    }
   }
 
   &__hamburger {
     font-size: 1.5em;
     cursor: pointer;
+    @include responsive(desktop){
+      display: none;
+    }
   }
 
   &__menu {
@@ -77,10 +96,20 @@ a{
     opacity: 0;
     text-align: center;
     transition: max-height 1s, opacity 0.7s ease-in-out;
+    @include responsive(desktop){
+      opacity: 1;
+      max-height: 100%;
+      transition: none;
+    }
   }
 
   &__items {
     font-size: 1.5em;
+    @include responsive(desktop){
+      flex-direction: row;
+      justify-content: space-around;
+      width: 100%;
+    }
   }
 
   &__item {
@@ -156,6 +185,9 @@ a{
   overflow: hidden;
   height: 10rem;
   justify-content: center;
+  @include responsive(desktop){
+  width: 50%;
+  }
 
   &__next,
   &__previous {
@@ -427,15 +459,23 @@ a{
   &__logo {
     margin-top: 1em;
     width: 35%;
+    @include responsive(desktop){
+      width: 10%;
+    }
   }
 }
 
 .join-rotary {
-  // margin-top: 2em;
   background-image: linear-gradient(to bottom right,color_scheme('yellow'),lighten(color_scheme('yellow'),15));
   align-items: center;
   text-align: center;
   cursor: pointer;
+  @include responsive(desktop){
+    justify-content: center;
+    padding-bottom: 0.5em;
+    width: 80%;
+
+  }
 
   &__heading {
     align-items: center;
@@ -466,15 +506,25 @@ a{
     &:nth-of-type(2n) {
       flex-direction: row-reverse;
     }
+    @include responsive(desktop){
+      justify-content: space-around;
+      width: 70%;
+    }
   }
 
   &__image {
     width: 30%;
+    @include responsive(desktop){
+      width: 15%;
+    }
   }
 
   &__content {
-    width: 60%;
+    width: 100%;
     margin: 0 1em;
+    @include responsive(desktop){
+      align-items: center;
+    }
   }
 
   &__subheading {
@@ -489,6 +539,10 @@ a{
 
 .card-section {
   width: 100%;
+  @include responsive(desktop){
+    width: 80%;
+    margin: auto;
+  }
 }
 
 .card {
@@ -520,6 +574,9 @@ a{
     vertical-align: middle;
     filter: blur(1px);
     z-index: -1;
+    @include responsive(desktop){
+      filter: blur(0px);
+    }
   }
 
   &__title {
@@ -827,6 +884,11 @@ a{
     padding: 0em 1.5em 0em 1.5em;
   }
 
+  &__details{
+    width: 100%;
+    margin-left: 3em;
+  }
+
   & > .card-section > .card{
     flex-direction: row-reverse;
     & > .card__body{
@@ -873,4 +935,23 @@ a{
 
 .sidebar-d{
   display:none;
+  @include responsive(desktop){
+    display: block;
+  }
+}
+
+.sidebar-m{
+  @include responsive(desktop){
+    display: none;
+  }
+}
+
+.sidebar{
+  height: 100%;
+
+  &__content{
+    @include responsive(desktop){
+    padding: 1em 1em;
+  }
+  }
 }
