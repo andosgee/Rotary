@@ -188,7 +188,9 @@ a {
 
 @media only screen and (min-width: 800px) {
   .marquee {
-    width: 50%;
+    min-width: 100%;
+    margin-bottom: 1em;
+    margin-top: 1em;
   }
 }
 
@@ -863,25 +865,25 @@ a {
   margin-top: 1em;
   margin-left: 0.4em;
   margin-right: 0.4em;
-  display: flex;
-  flex-direction: row;
   text-align: center;
   overflow: scroll;
   max-width: 570px;
 }
 
-.table__column {
-  margin: 0.2em;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+@media only screen and (min-width: 800px) {
+  .table {
+    min-width: 100%;
+    overflow: hidden;
+  }
+}
+
+.table table {
+  overflow: scroll;
 }
 
 .table__head {
-  display: flex;
   align-items: center;
   font-weight: bold;
-  flex-direction: row;
   height: 3em;
   max-width: 6.5em;
   color: #FFA800;
@@ -959,6 +961,11 @@ a {
 @media only screen and (min-width: 800px) {
   .sidebar-d {
     display: block;
+    background-color: #0055B0;
+    padding-top: 0.8em;
+    margin-left: 0.5em;
+    padding-bottom: 0.8em;
+    color: #F2F2F2;
   }
 }
 
@@ -972,8 +979,20 @@ a {
   height: 100%;
 }
 
+.sidebar iframe {
+  display: block;
+  margin: 0 auto;
+}
+
 @media only screen and (min-width: 800px) {
   .sidebar__content {
     padding: 1em 1em;
   }
 }
+
+.sidebar__calendar {
+  height: 14em;
+  width: 16em;
+}
+
+/*# sourceMappingURL=style.css.map */

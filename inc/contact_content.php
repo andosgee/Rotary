@@ -17,13 +17,17 @@
   </div>
   <div class="contact__details">
     <h3 class="contact__subtitle">Address:</h3>
-    <p>123 Random address, Belfast</p>
+    <p>18 March Place
+      <br>Belfast, 8051
+      <br>New Zealand</p>
 
     <h3 class="contact__subtitle">Phone:</h3>
     <h4>03 123 4567</h4>
 
     <h3 class="contact__subtitle">Email:</h3>
     <h4><a href="mailto:asdf@asdf.com">Email us at asdf@asdf.com</a></h4>
+
+    <h3 class="contact__subtitle"><a href="https://calendar.google.com/calendar/ical/belfast.rotarynz%40gmail.com/public/basic.ics">Click Here to Add our Calendar</a></h3>
 
 
   </div>

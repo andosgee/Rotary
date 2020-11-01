@@ -38,3 +38,4 @@
       <div class="column">
         <button name="signup_submit" type="submit" class="form__button form__button--submit">Submit</button>
       </div>
+    </form>
