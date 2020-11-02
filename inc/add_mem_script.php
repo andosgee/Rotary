@@ -32,7 +32,7 @@
     $sql_add_user = "INSERT INTO `tbl_login` (`NameF`, `NameS`, `Email`, `Mobile`, `StreetNum`, `UnitNum`, `StreetName`, `City`,
       `Suburb`, `PostCode`, `UserName`, `Password`, `Admin`, `Active`,`Publish`)
     VALUES ('{$fName}','{$sName}','{$email}','{$phoNum}','{$streNum}',{$unit},'{$streNam}','{$city}','{$suburb}','{$postcode}',
-      '{$username}','{$password}',{$admin},1,0)";
+      '{$username}','{$password}',{$admin},1,1)";
   $conn -> query($sql_add_user);
 
   //If added user was from interest table remove from interest
