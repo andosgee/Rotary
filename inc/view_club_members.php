@@ -1,5 +1,5 @@
 <?php include "inc/search.php";?>
-
+<div class="tablem">
 <table class="table">
   <tr>
     <th class="table__head">Name</th>
@@ -26,3 +26,4 @@
 
   ?>
 </table>
+</div>

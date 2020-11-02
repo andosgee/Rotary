@@ -3,7 +3,7 @@ if(isset($_SESSION['USER'])){ //If logged in
   $login_state = 'logout'; //Set state of login/out button
   $nav_items = array('Home'=>'./index.php', //Set user Nav
                      'Minutes'=>'./minutes.php',
-                     'Newsletter'=>'./newsletter.php',
+                     'Newsletter'=>'./newsletters.php',
                      'Articles' => './manage_articles.php');
   if ($_SESSION['ISADMIN']){ //Add Admin options
     $nav_items['Home'] = './admin.php';

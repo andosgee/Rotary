@@ -14,7 +14,7 @@
 			{
 				echo("Error: File Already Exists");
 			}
-			
+
 			else
 			{
 				if(move_uploaded_file($_FILES["file"]["tmp_name"], $target_file))
@@ -31,9 +31,13 @@
 	}
 ?>
 <div class="pdf-upload column">
-	<?php echo("Upload " . ucwords($page)); ?>
+	<h3><?php echo("Upload " . ucwords($page)); ?></h3>
 	<form method="post" enctype="multipart/form-data">
-	  <input type="file" name="file">
-	  <input type="submit" value="Upload" name="submit">
+		<div class="row">
+	  <input type="file" class="form__upload" name="file">
+	</div>
+		<div class="row">
+	  <input type="submit" value="Upload" name="submit" class="form__button form__button--submit">
+	</div>
 	</form>
 </div>

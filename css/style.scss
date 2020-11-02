@@ -186,7 +186,7 @@ a{
   height: 10rem;
   justify-content: center;
   @include responsive(desktop){
-  min-width: 100%;
+  width:80%;
   margin-bottom: 1em;
   margin-top: 1em;
   }
@@ -255,7 +255,9 @@ a{
   height: 100%;
   align-items: center;
   cursor: pointer;
-
+  @include responsive(desktop){
+    width: 100%;
+  }
 
   &__image {
     vertical-align: middle;
@@ -268,8 +270,8 @@ a{
   }
 
   &__head {
-    height: auto;
-    width: auto;
+    height: 100%;
+    width: 100%;
     transition: opacity 0.6s ease;
   }
 
@@ -316,6 +318,9 @@ a{
   align-items: center;
   cursor: pointer;
   margin: 1.25em 0;
+  @include responsive(desktop){
+    width:70%;
+  }
 
   &__title {
     position: relative;
@@ -408,6 +413,7 @@ a{
 }
 
 .article {
+  width: 100%;
   position: relative;
   align-items: center;
 
@@ -713,6 +719,10 @@ a{
     margin: 0.5em;
   }
 }
+.pdf-upload{
+  margin-left: 0.8em;
+  margin-top: 0.8em;
+}
 
 .pdf-display {
   width: 100%;
@@ -723,12 +733,29 @@ a{
   height: 100vh;
   width: 100%;
 }
+
+button[name='user_search_button']{
+  @include responsive(desktop){
+  width: 50%;
+}
+}
+input[name='user_search_input']{
+  @include responsive(desktop){
+  width: 50%;
+}
+}
+
   .form {
     padding: 1em;
 
     & > *,
     &__content > * {
       margin-bottom: 1em;
+    }
+
+    &__upload {
+      font-size: 1em;
+      height: auto;
     }
 
     &__head {
@@ -847,6 +874,10 @@ a{
   }
 }
 //table
+.tablem{
+  overflow: scroll;
+}
+
 .table {
   margin-top: 1em;
   margin-left: 0.4em;
@@ -854,6 +885,7 @@ a{
   text-align: center;
   overflow: scroll;
   max-width: 570px;
+
   @include responsive(desktop){
     min-width: 100%;
     overflow: hidden;
@@ -869,8 +901,12 @@ a{
     color: color_scheme('yellow');
   }
   &__data{
+    text-align: left;
+    border-bottom: 0.1em solid color_scheme('light blue');
+    padding: 0.5em 0;
 
   }
+
 }
 .about, .contact{
   width: 100%;

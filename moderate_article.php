@@ -13,11 +13,11 @@
     <div class="column form__head">
       <h1 class="form__title">Moderate Article</h1>
       <div class="row">
-        <label class="form__label" for="user_select">Select Article:</label>
+        <label class="form__label" for="user_select">Manage/Approve Article:</label>
         <select name="article_select" class="form__select" onchange="populateFormByID(this.value,'./inc/moderate_form.php')">
           <option value="" selected>-</option>
           <?php
-            $articles = get_from_table('tbl_articles',"Moderated = 0");
+            $articles = get_from_table('tbl_articles',"`AID` IS NOT NULL","`tbl_articles`.`Moderated`");
 
             foreach($articles as $article){
               echo "<option value=\"{$article['AID']}\">{$article['Title']}</option>";

@@ -188,7 +188,7 @@ a {
 
 @media only screen and (min-width: 800px) {
   .marquee {
-    min-width: 100%;
+    width: 80%;
     margin-bottom: 1em;
     margin-top: 1em;
   }
@@ -258,6 +258,12 @@ a {
   cursor: pointer;
 }
 
+@media only screen and (min-width: 800px) {
+  .marquee-card {
+    width: 100%;
+  }
+}
+
 .marquee-card__image {
   vertical-align: middle;
   width: 100%;
@@ -267,8 +273,8 @@ a {
 }
 
 .marquee-card__head {
-  height: auto;
-  width: auto;
+  height: 100%;
+  width: 100%;
   transition: opacity 0.6s ease;
 }
 
@@ -314,6 +320,12 @@ a {
   align-items: center;
   cursor: pointer;
   margin: 1.25em 0;
+}
+
+@media only screen and (min-width: 800px) {
+  .article-card {
+    width: 70%;
+  }
 }
 
 .article-card__title {
@@ -404,6 +416,7 @@ a {
 }
 
 .article {
+  width: 100%;
   position: relative;
   align-items: center;
 }
@@ -727,6 +740,11 @@ a {
   margin: 0.5em;
 }
 
+.pdf-upload {
+  margin-left: 0.8em;
+  margin-top: 0.8em;
+}
+
 .pdf-display {
   width: 100%;
   overflow: hidden;
@@ -737,6 +755,18 @@ a {
   width: 100%;
 }
 
+@media only screen and (min-width: 800px) {
+  button[name='user_search_button'] {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  input[name='user_search_input'] {
+    width: 50%;
+  }
+}
+
 .form {
   padding: 1em;
 }
@@ -744,6 +774,11 @@ a {
 .form > *,
 .form__content > * {
   margin-bottom: 1em;
+}
+
+.form__upload {
+  font-size: 1em;
+  height: auto;
 }
 
 .form__head {
@@ -861,6 +896,10 @@ a {
   margin: 0.5em;
 }
 
+.tablem {
+  overflow: scroll;
+}
+
 .table {
   margin-top: 1em;
   margin-left: 0.4em;
@@ -887,6 +926,12 @@ a {
   height: 3em;
   max-width: 6.5em;
   color: #FFA800;
+}
+
+.table__data {
+  text-align: left;
+  border-bottom: 0.1em solid #0055B0;
+  padding: 0.5em 0;
 }
 
 .about, .contact {

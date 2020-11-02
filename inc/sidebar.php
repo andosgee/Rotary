@@ -12,7 +12,7 @@
     5:45PM
     <h3>We Meet Every Tuesday</h3>
 
-    <h3>Calendar</h3>
+    <h3>Calendar and Events</h3>
     <iframe class="sidebar__calendar" src="https://calendar.google.com/calendar/embed?src=belfast.rotarynz%40gmail.com&ctz=Pacific%2FAuckland" style="border: 0" frameborder="0" scrolling="no"></iframe>
 
   </div>

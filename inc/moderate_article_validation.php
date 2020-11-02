@@ -6,12 +6,23 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
   $content = secure($_POST['article_content']);
   $description = substr(str_replace(array('\r','\n')," ",$content),0,67) . "...";
   $date = date("Y-m-d");
+  if(isset($_POST['article_featured'])){
+    $featured = 1;
+  }else {
+    $featured = 0;
+  }
+
+  if(isset($_POST['article_publish'])){
+    $publish = 1;
+  }else {
+    $publish = 0;
+  }
 
   //Add to database
   $update_query = "UPDATE tbl_articles
                    SET Title = '{$title}', Description = '{$description}',
-                       Content = '{$content}', Moderated = 1,Date = '{$date}'
-                   WHERE AID = {$AID}";
+                       Content = '{$content}', Moderated = {$publish},Date = '{$date}'
+                       , Featured = {$featured} WHERE AID = {$AID}";
   $conn -> query($update_query);
 
   if(isset($image)){

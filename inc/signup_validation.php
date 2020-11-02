@@ -5,7 +5,7 @@ $display_success_message = false;
 if(isset($_POST["signup_submit"])){ #checks for button press
   //Sets Vars
   $fName = secure($_POST['signup_name_f']);
-  $sName = secure($_POST['signup_name_f']);
+  $sName = secure($_POST['signup_name_s']);
   $email = secure($_POST['signup_email']);
   $phone = secure($_POST['signup_phone']);
   $streNum = secure($_POST['signup_num']);

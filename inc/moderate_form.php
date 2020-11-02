@@ -17,7 +17,14 @@ if(isset($_GET['id']) && !empty($_GET['id'])){
 
   <input type="text" class="form__input" name="article_title" placeholder="Article Title..." value="<?php echo ((isset($article))? $article['Title']:'') ?>" required>
   <textarea name="article_content" class="form__input form__textarea" placeholder="Start Writing Here..." rows=11 required ><?php echo ((isset($article))? $article['Content']:'') ?></textarea>
-
-  <input class="form__button form__button--submit" type="submit" name="create_article_submit" value="Publish to Web">
+  <div class="row">
+  <label for="article_featured">Featured:</label>
+    <input type="checkbox" name="article_featured" class="form__checkbox" <?php echo (($article['Featured'])? "checked":""); ?>>
+  </div>
+  <div class="row">
+  <label for="article_featured">Publish:</label>
+    <input type="checkbox" name="article_publish" class="form__checkbox" <?php echo (($article['Moderated'])? "checked":""); ?>>
+  </div>
+  <input class="form__button form__button--submit" type="submit" name="create_article_submit" value="Update">
 
 <?php } ?>
