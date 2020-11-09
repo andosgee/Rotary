@@ -8,6 +8,6 @@ function mobileMenu() { //Hamburger Toggle
     }
   else {
     nav.style.opacity = "1";
-    nav.style.maxHeight = "100vh";
+    nav.style.maxHeight = "None";
       }
 }
