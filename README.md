@@ -20,19 +20,25 @@ Desktop CSS
 FULLY TEST
 
 ## Roles
-**Andrew:** Login/Signup/Nav
+Login/Signup/Nav
+
 <br>
-**Nathan:** Design/CSS/Wireframes
+
+ Design/CSS/Wireframes
+
 <br>
-**Matt:** Testing
+
+Testing
 <br>
-**Ben:** Logo
+Logo
 <br>
-**Jacob:** Newsletter
+Newsletter
 <br>
-**Harrison:** Picture Gallery
+ Picture Gallery
+
 <br>
-**Cameron:** User Permissions
+
+ User Permissions
 
 ## Admin Login for testing
 **Username:** Admin
