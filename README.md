@@ -23,11 +23,8 @@ FULLY TEST
 Login/Signup/Nav
 
 <br>
-
  Design/CSS/Wireframes
-
 <br>
-
 Testing
 <br>
 Logo
