@@ -4,7 +4,8 @@ if(isset($_SESSION['USER'])){ //If logged in
   $nav_items = array('Home'=>'./index.php', //Set user Nav
                      'Minutes'=>'./minutes.php',
                      'Newsletter'=>'./newsletters.php',
-                     'Articles' => './manage_articles.php');
+                     'Articles' => './manage_articles.php',
+                      'Gallery' => './Photos.php');
   if ($_SESSION['ISADMIN']){ //Add Admin options
     $nav_items['Home'] = './admin.php';
     $nav_items['Minutes'] = './manage_minutes.php';
@@ -23,7 +24,8 @@ else{ //Default Menu
                      'Contact Us'=>'./contact.php',
                      'Newsletter'=>'./newsletters.php',
                      'Articles'=>'./articles.php',
-                     'Sign-Up'=>'./signup.php');
+                     'Sign-Up'=>'./signup.php',
+                      'Gallery' => './Photos.php');
 }
  ?>
 
