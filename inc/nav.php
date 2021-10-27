@@ -5,7 +5,7 @@ if(isset($_SESSION['USER'])){ //If logged in
                      'Minutes'=>'./minutes.php',
                      'Newsletter'=>'./newsletters.php',
                      'Articles' => './manage_articles.php',
-                      'Gallery' => './Photos.php');
+                      'Gallery' => './manage_gallery.php');
   if ($_SESSION['ISADMIN']){ //Add Admin options
     $nav_items['Home'] = './admin.php';
     $nav_items['Minutes'] = './manage_minutes.php';
