@@ -106,8 +106,7 @@ function format_date(string $date){ //Date in format YYYY-MM-DD
   return $new_date; //Return reformatted date
 }
 
-function get_extensionless_filename(string $filename)
-{
+function get_extensionless_filename(string $filename){ //Gets the filename minus the extension
 	return explode(".", $filename)[0];
 }
 

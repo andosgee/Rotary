@@ -7,8 +7,6 @@ Rotary, Combined folder
 **Crucial Changes:**
 
 <br>
-Mins Needs Upload
-<br>
 View and Upload Newsletter
 <br>
 View Members - Mobile Formatting
