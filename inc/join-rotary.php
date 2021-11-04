@@ -9,7 +9,7 @@
     <div class="join-rotary__column row" onclick=(window.location.href='#')>
       <img class="join-rotary__image" src="./media/rotary-join-template.png" alt="Image">
       <div class="join-rotary__content column">
-        <h3 class="join-rotary__subheading">Reason</h3>
+        <h3 class="join-rotary__subheading">About Us</h3>
         <p class="join-rotary__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, ipsa.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, ipsa.</p>
       </div>
     </div>
@@ -19,7 +19,7 @@
     <div class="join-rotary__column row" onclick=(window.location.href='#')>
       <img class="join-rotary__image" src="./media/rotary-join-template.png" alt="Image">
       <div class="join-rotary__content column">
-        <h3 class="join-rotary__subheading">Reason</h3>
+        <h3 class="join-rotary__subheading">Contact Us</h3>
         <p class="join-rotary__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, ipsa.</p>
       </div>
     </div>
@@ -29,7 +29,7 @@
     <div class="join-rotary__column row" onclick=(window.location.href='#')>
       <img class="join-rotary__image" src="./media/rotary-join-template.png" alt="Image">
       <div class="join-rotary__content column">
-        <h3 class="join-rotary__subheading">Reason</h3>
+        <h3 class="join-rotary__subheading">Fundraising</h3>
         <p class="join-rotary__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, ipsa.</p>
       </div>
     </div>

@@ -4,7 +4,7 @@ $target_dir = "./ass/{$page}/"; //directory of the file
 $target_file = $target_dir . date("d-m-Y") . ".pdf"; //Name of file
 if(isset($_POST["submit"])){ //button press
   if($_FILES['file']['type'] == 'application/pdf'){ //if chosen file is a pdf
-    if($_FILES['file']['size'] > 1600000){ //file size is less than 16MB
+    if($_FILES['file']['size'] > 16000000){ //file size is less than 16MB
       echo("Error: File is too big, Maximum upload size is 16MB.");
     }else if(file_exists($target_file)){ //Checks for duplicates
       echo("Error: File Already Exists.");
