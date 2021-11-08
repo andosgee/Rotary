@@ -1,8 +1,11 @@
 <?php //sample file for pdf uploads to fix
 $page = str_replace("create ", "", get_active_page());
 $target_dir = "./ass/{$page}/"; //directory of the file
-$target_file = $target_dir . date("d-m-Y") . ".pdf"; //Name of file
+$date = date('d-m-y');
+// $target_file = $target_dir . date("d-m-Y") . ".pdf"; //Name of file
 if(isset($_POST["submit"])){ //button press
+  // print_r( $_FILES['file']);
+  $target_file = $target_dir . $_FILES['file']['name'];
   if($_FILES['file']['type'] == 'application/pdf'){ //if chosen file is a pdf
     if($_FILES['file']['size'] > 16000000){ //file size is less than 16MB
       echo("Error: File is too big, Maximum upload size is 16MB.");
@@ -11,6 +14,16 @@ if(isset($_POST["submit"])){ //button press
     }else{
       if(move_uploaded_file($_FILES['file']['tmp_name'], $target_file)){
         echo "Success: File successfully uploaded.";
+        // echo get_active_page();
+        if(get_active_page() == "create newsletters"){
+          $sql_add = "INSERT INTO `tbl_news`(`FileName`,`Date`, `Moderated`,`UID`)
+                      VALUES ('{$target_file}', '{$date}', 0, {$_SESSION['USER']})";
+          $conn -> query($sql_add);
+        }else if(get_active_page() == "create minutes"){
+          $sql_add = "INSERT INTO `tbl_mins`(`FileName`,`Date`, `Moderated`,`UID`)
+                      VALUES ('{$target_file}', '{$date}', 0, {$_SESSION['USER']})";
+          $conn -> query($sql_add);
+        }
       }else{
         echo "Error: Upload Failed, please try again.";
       }

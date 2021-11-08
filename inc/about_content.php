@@ -6,10 +6,39 @@
     <span class="underline"></span>
   </div>
   <div class="about__main">
-    <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis provident eligendi laboriosam tenetur ratione dolorem tempora, temporibus nisi, ipsam voluptate. Odit tempore, reprehenderit perferendis architecto recusandae officia earum odio harum, sunt delectus rem! Totam eos laboriosam aliquid veniam quam porro!</p>
+    <h2 class="about__title">Origins of Rotary</h2>
+    <p class="info">
+      In 1905, Paul Harris, a young lawyer in Chicago, met with three other single businessmen with the idea of forming a club different
+      from the others.  He proposed that this club be based on ‘a very simple plan of mutual cooperation and informal friendship such as
+      all of us had once known in our villages’. <b>IMAGE HERE</b>
+      <br>
+      <br>
+      These gentlemen agreed to met again in two weeks, and to bring along other like-minded people who might be interested.  The plan
+      was that they should meet in each other’s offices in turn and thus the name ‘Rotation Club’ was suggested.  This quickly got shortened
+      to ‘Rotary Club’ and that name has carried forward to this day.
+      <br>
+      <br>
+      The movement spread rapidly and by 1921 had reached New Zealand.  Two clubs were formed here that year – in Auckland and Wellington.
+      Today, there are some 250 clubs and 7000 members in NZ and the Pacific Islands; and 1.2million Rotarians in 200 countries around the world.
+    </p>
   </div>
   <div class="about__main">
-    <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis provident eligendi laboriosam tenetur ratione dolorem tempora, temporibus nisi, ipsam voluptate. Odit tempore, reprehenderit perferendis architecto recusandae officia earum odio harum, sunt delectus rem! Totam eos laboriosam aliquid veniam quam porro!</p>
+    <h2 class="about__title">Rotary as a Service Organisation</h2>
+    <p class="info">
+      Rotary was the first service club organisation in the world.  The Rotary symbol is a common sight at the entrance to towns, at heritage parks
+      and walkways, and Rotary clocks display the time in many centres. <b>IMAGE HERE</b>
+      <br>
+      <br>
+      What is less known is Rotary’s extraordinary range of community support, the activities and organisations it has established, and the assistance
+      provided around the world.
+      <br>
+      <br>
+      For example, in New Zealand, Rotary helped set up and/or initially funded the Crippled Children’s’ Society (now CCS), Outward Bound, Milk in
+      Schools, the first Karitane Hospital, Birthright, Blood Transfusion Service, VSA and many others.  Internationally, Rotary was involved in
+      starting the United Nations, supports (along with the Gates Foundation) the elimination of Polio, and participates in many projects in Africa.
+      <br>
+      <b>CENTRED THEME IMAGE</b>
+    </p>
   </div>
   <script src="./js/card-expand.js"></script>
   <div class="card-section column">
