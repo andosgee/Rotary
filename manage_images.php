@@ -10,7 +10,8 @@
     <script src="./js/get_details.js" charset="utf-8"></script>
 
     <?php include "inc/approve_images.php"; ?>
-    <?php include "inc/footer.php"; ?>
+
 
   </body>
+  <?php include "inc/footer.php"; ?>
 </html>

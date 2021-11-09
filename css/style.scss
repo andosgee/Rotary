@@ -1018,7 +1018,7 @@ input[name='user_search_input']{
 /* (A1) ON BIG SCREENS */
 .gallery {
   display: grid;
-  grid-template-columns: repeat(3, auto); /* 3 IMAGES PER ROW */
+  grid-template-columns: repeat(4, auto); /* 4 IMAGES PER ROW */
   grid-gap: 10px;
   max-width: 1200px;
   margin: 0 auto; /* HORIZONTAL CENTER */

@@ -1,7 +1,7 @@
 <?php //Image upload for gallery
   if(isset($_POST['submit'])){
     $upload = "0";
-    $target_dir = "./ass/gallery";
+    $target_dir = "./ass/gallery/";
     // $target_file = $target_dir . basename($_FILES['file']['name']);
 
     $imageName = $_FILES["file"]["name"]; #Varibale with name
@@ -11,15 +11,22 @@
     $imageType = $_FILES["file"]["type"]; # Variable with file type
 
     $imageExtn = explode('.', $imageName);
+    $imageExtn = strtolower(end($imageExtn));
+
     $allowEXT = array('image/jpg', 'image/jpeg', 'image/png');
 
     if(in_array($imageType, $allowEXT)){ // Checks extension against array
       if($imageError === 0){ //no upload errors
         if($imageSize < 5500000){ //Image size less than 5.5mb
           $newName = uniqid('', true).'.'.$imageExtn;
+
           $newLocation = $target_dir . $newName;
+
           move_uploaded_file($imageTmpName , $newLocation);
           $upload = 1;
+          $sql_add = "INSERT INTO `tbl_gallery`(`ImageName`,`Moderated`,`UID`)
+                      VALUES ('{$newLocation}', 0, {$_SESSION['USER']})";
+          $conn -> query($sql_add);
           echo "Image Upload Successful!";
         }else{
           echo 'Error: Image Too Big.';
