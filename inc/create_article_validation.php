@@ -36,7 +36,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
   }
 
   //Check File size
-  if($image["size"] > 500000){ //Max file size 500kb
+  if($image["size"] > 5500000){ //Max file size 500kb
     echo "File too large";
     $uploadOk = false; //Invalid
   }
