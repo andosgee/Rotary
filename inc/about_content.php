@@ -10,8 +10,9 @@
     <p class="info">
       In 1905, Paul Harris, a young lawyer in Chicago, met with three other single businessmen with the idea of forming a club different
       from the others.  He proposed that this club be based on ‘a very simple plan of mutual cooperation and informal friendship such as
-      all of us had once known in our villages’. <b>IMAGE HERE</b>
+      all of us had once known in our villages’.
       <br>
+      <img class="about__image" src="./media/Paul_Harris.jpg" alt="Paul Harris">
       <br>
       These gentlemen agreed to met again in two weeks, and to bring along other like-minded people who might be interested.  The plan
       was that they should meet in each other’s offices in turn and thus the name ‘Rotation Club’ was suggested.  This quickly got shortened
@@ -37,7 +38,8 @@
       Schools, the first Karitane Hospital, Birthright, Blood Transfusion Service, VSA and many others.  Internationally, Rotary was involved in
       starting the United Nations, supports (along with the Gates Foundation) the elimination of Polio, and participates in many projects in Africa.
       <br>
-      <b>CENTRED THEME IMAGE</b>
+      <img class="about__image" src="./media/theme.png" alt="2021 theme">
+
     </p>
   </div>
   <script src="./js/card-expand.js"></script>

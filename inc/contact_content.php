@@ -13,13 +13,13 @@
   <div class="contact__details">
     <h3 class ="contact__subtitle">Tony Cox - Club Secretary</h3>
     <p>
-      <h4 class="contact__subtitle">Phone: 027 434 3402<h4>
-      <h4 class="contact__subtitle">Email: jenny.tony@xtra.co.nz</h4>
+      <h4 class="contact__subtitle">Phone: <a href="tel:6427-434-3402">027 434 3402</a><h4>
+      <h4 class="contact__subtitle">Email: <a href="mailto:jenny.tony@xtra.co.nz">jenny.tony@xtra.co.nz</a></h4>
     </p>
     <h3 class ="contact__subtitle">Les McFadden - President Elect</h3>
     <p>
-      <h4 class="contact__subtitle">Phone: 027 463 3644<h4>
-      <h4 class="contact__subtitle">Email: lemcfadden@xtra.co.nz</h4>
+      <h4 class="contact__subtitle">Phone: <a href="tel:6427-463-3644">027 463 3644<h4>
+      <h4 class="contact__subtitle">Email: <a href="mailto:lemcfadden@xtra.co.nz">lemcfadden@xtra.co.nz</a></h4>
     </p>
     <h3 class="contact__subtitle">Meeting Address:</h3>
     <p>18 March Place

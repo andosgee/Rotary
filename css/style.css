@@ -178,6 +178,7 @@ a {
 }
 
 .marquee {
+  border-radius: 1em;
   display: flex;
   position: relative;
   margin: auto;
@@ -492,6 +493,7 @@ a {
   background-image: linear-gradient(to bottom right, #FFA800, #ffc24d);
   align-items: center;
   text-align: center;
+  border-radius: 1em;
   cursor: pointer;
 }
 
@@ -583,6 +585,7 @@ a {
 }
 
 .card {
+  border-radius: 1em;
   position: relative;
   margin-top: 1.5em;
   width: 100%;
@@ -958,6 +961,13 @@ a {
   margin-left: 3em;
 }
 
+.about__image, .contact__image {
+  display: block;
+  align-self: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .about > .card-section > .card, .contact > .card-section > .card {
   flex-direction: row-reverse;
 }
@@ -1005,6 +1015,8 @@ a {
 
 @media only screen and (min-width: 800px) {
   .sidebar-d {
+    max-height: 845.734px;
+    border-radius: 1em;
     display: block;
     background-color: #0055B0;
     padding-top: 0.8em;

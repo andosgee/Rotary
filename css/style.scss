@@ -179,6 +179,7 @@ a{
 }
 
 .marquee {
+  border-radius: 1em;
   display: flex;
   position: relative;
   margin: auto;
@@ -483,6 +484,7 @@ a{
   background-image: linear-gradient(to bottom right,color_scheme('yellow'),lighten(color_scheme('yellow'),15));
   align-items: center;
   text-align: center;
+  border-radius: 1em;
   cursor: pointer;
   @include responsive(desktop){
     justify-content: center;
@@ -560,6 +562,7 @@ a{
 }
 
 .card {
+  border-radius: 1em;
   position: relative;
   margin-top: 1.5em;
   width: 100%;
@@ -930,6 +933,12 @@ input[name='user_search_input']{
     width: 100%;
     margin-left: 3em;
   }
+  &__image{
+    display: block;
+    align-self: center;
+    margin: 0 auto;
+    text-align: center;
+  }
 
   & > .card-section > .card{
     flex-direction: row-reverse;
@@ -978,6 +987,8 @@ input[name='user_search_input']{
 .sidebar-d{
   display:none;
   @include responsive(desktop){
+    max-height: 845.734px;
+    border-radius: 1em;
     display: block;
     background-color: color_scheme('light blue');
     padding-top: 0.8em;
