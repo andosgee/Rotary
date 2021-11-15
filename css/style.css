@@ -49,7 +49,7 @@ a {
 	padding: 0.5em;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1050px) {
 	.nav {
 		flex-direction: row;
 	}
@@ -60,7 +60,7 @@ a {
 	align-items: center;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1050px) {
 	.nav__bar {
 		justify-content: flex-end;
 	}
@@ -71,7 +71,7 @@ a {
 	cursor: pointer;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1050px) {
 	.nav__hamburger {
 		display: none;
 	}
@@ -85,7 +85,7 @@ a {
 	transition: max-height 1s, opacity 0.7s ease-in-out;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1050px) {
 	.nav__menu {
 		opacity: 1;
 		max-height: 100%;
@@ -97,7 +97,7 @@ a {
 	font-size: 1.5em;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1050px) {
 	.nav__items {
 		flex-direction: row;
 		justify-content: space-around;
@@ -187,7 +187,7 @@ a {
 	justify-content: center;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1050px) {
 	.marquee {
 		width: 80%;
 		margin-bottom: 1em;
@@ -262,7 +262,7 @@ a {
 	justify-content: space-around;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1050px) {
 	.marquee-card {
 		width: 100%;
 	}
@@ -286,7 +286,7 @@ a {
 	z-index: -1;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1050px) {
 	.marquee-card__image {
 		top: 50%;
 		left: 50%;
@@ -324,7 +324,7 @@ a {
 	display: none;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1050px) {
 	.marquee-card__desc {
 		display: block;
 	}
@@ -347,7 +347,7 @@ a {
 	margin: 1.25em 0;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1050px) {
 	.article-card {
 		width: 70%;
 	}
@@ -466,7 +466,7 @@ a {
 	width: 100%;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1050px) {
 	.article__image {
 		width: 60%;
 	}
@@ -507,7 +507,7 @@ a {
 	width: 35%;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1050px) {
 	.title__logo {
 		width: 10%;
 	}
@@ -519,11 +519,12 @@ a {
 	text-align: center;
 	border-radius: 1em;
 	cursor: pointer;
+	margin-top: 1em;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1050px) {
 	.join-rotary {
-		justify-content: center;
+		justify-content: space-around;
 		padding-bottom: 0.5em;
 		width: 80%;
 	}
@@ -532,6 +533,7 @@ a {
 .join-rotary__heading {
 	align-items: center;
 	padding: 0 1em;
+	font-size: 1.5em;
 }
 
 .join-rotary__title {
@@ -560,7 +562,7 @@ a {
 	flex-direction: row-reverse;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1050px) {
 	.join-rotary__column {
 		justify-content: space-around;
 		width: 70%;
@@ -571,7 +573,7 @@ a {
 	width: 30%;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1050px) {
 	.join-rotary__image {
 		width: 15%;
 	}
@@ -582,7 +584,7 @@ a {
 	margin: 0 1em;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1050px) {
 	.join-rotary__content {
 		align-items: center;
 	}
@@ -601,7 +603,7 @@ a {
 	width: 100%;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1050px) {
 	.card-section {
 		width: 80%;
 		margin: auto;
@@ -639,7 +641,7 @@ a {
 	z-index: -1;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1050px) {
 	.card__image {
 		min-height: 100%;
 		max-height: None;
@@ -788,7 +790,7 @@ a {
 	height: 100%;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1050px) {
 	#pdf-display {
 		overflow: hidden;
 		width: 75%;
@@ -796,13 +798,13 @@ a {
 	}
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1050px) {
 	button[name='user_search_button'] {
 		width: 50%;
 	}
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1050px) {
 	input[name='user_search_input'] {
 		width: 50%;
 	}
@@ -959,7 +961,7 @@ a {
 	max-width: 570px;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1050px) {
 	.table {
 		min-width: 100%;
 		overflow: hidden;
@@ -1074,20 +1076,21 @@ a {
 	display: none;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1050px) {
 	.sidebar-d {
 		max-height: 845.734px;
 		border-radius: 1em;
 		display: block;
 		background-color: #0055B0;
-		padding-top: 0.8em;
+		margin-top: 1em;
 		margin-left: 0.5em;
+		padding-top: 0.8em;
 		padding-bottom: 0.8em;
 		color: #F2F2F2;
 	}
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1050px) {
 	.sidebar-m {
 		display: none;
 	}
@@ -1102,7 +1105,7 @@ a {
 	margin: 0 auto;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1050px) {
 	.sidebar__content {
 		padding: 1em;
 	}

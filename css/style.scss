@@ -13,7 +13,7 @@ $colors: (
 }
 @mixin responsive ($breakpoint) {
     @if $breakpoint==desktop {
-        @media only screen and (min-width: 800px) {
+        @media only screen and (min-width: 1050px) {
             @content;
         }
     }
@@ -501,8 +501,9 @@ a {
     text-align: center;
     border-radius: 1em;
     cursor: pointer;
+    margin-top: 1em;
     @include responsive(desktop) {
-        justify-content: center;
+        justify-content: space-around;
         padding-bottom: 0.5em;
         width: 80%;
     }
@@ -510,6 +511,7 @@ a {
     &__heading {
         align-items: center;
         padding: 0 1em;
+        font-size: 1.5em;
     }
 
     &__title {
@@ -1034,8 +1036,9 @@ input[name='user_search_input'] {
         border-radius: 1em;
         display: block;
         background-color: color_scheme('light blue');
-        padding-top: 0.8em;
+        margin-top: 1em;
         margin-left: 0.5em;
+        padding-top: 0.8em;
         padding-bottom: 0.8em;
         color: color_scheme('white');
     }
