@@ -45,7 +45,8 @@ else{ //Default Menu
       <?php //Display links
       foreach($nav_items as $display_text => $link){
         $display_text = ucwords($display_text);
-        echo "<a class='nav__item' href=\"{$link}\">{$display_text}</a>";
+        $is_active = (basename($_SERVER['PHP_SELF']) == basename($link))? " nav__item--active":"";
+        echo "<a class='nav__item{$is_active}' href=\"{$link}\">{$display_text}</a>";
       }
        ?>
     </div>

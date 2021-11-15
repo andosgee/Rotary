@@ -37,7 +37,6 @@ function get_active_page(){ //Get active page as 'example' instead of '/pharcour
   $components = explode('/', $address); //Get as array
   $page_name = str_replace('.php', '', end($components));
   $page_name = str_replace('_',' ',$page_name);
-  $page_name = $page_name." | Belfast-Kaiapoi Rotary";
   return $page_name; //Return last element
 }
 

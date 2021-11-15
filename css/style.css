@@ -107,6 +107,17 @@ a {
 
 .nav__item {
 	margin: 0.2em 0;
+	border-bottom: 0.1rem solid transparent;
+}
+
+.nav__item--active {
+	color: #F2F2F2;
+}
+
+@media only screen and (min-width: 1050px) {
+	.nav__item:hover {
+		border-bottom: 0.1rem solid #FFA800;
+	}
 }
 
 .login,

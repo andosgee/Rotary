@@ -113,7 +113,20 @@ a {
 
     &__item {
         margin: 0.2em 0;
+        border-bottom: 0.1rem solid transparent;
+
+        &--active {
+            color: color_scheme('white');
+        }
+
+        &:hover {
+            @include responsive('desktop'){
+                border-bottom: 0.1rem solid color_scheme('yellow');        
+            }
+        }
     }
+
+
 }
 
 .login,
