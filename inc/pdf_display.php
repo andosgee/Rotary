@@ -1,9 +1,10 @@
 <?php
 	$page = get_active_page();
-	$dir = "./ass/{$page}";
+	$dir_loc = explode(" ",trim($page));
+	$dir = "./ass/{$dir_loc[0]}";
 ?>
 <div class="pdf-display column">
-	<select class="form__select" onchange="update_pdf(this.value,'pdf-display')">
+	<select class="form__select form__select--PDF" onchange="update_pdf(this.value,'pdf-display')">
 		<?php
 			$files = get_files($dir);
 			{

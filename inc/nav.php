@@ -24,7 +24,7 @@ else{ //Default Menu
                      'Contact Us'=>'./contact.php',
                      'Newsletter'=>'./newsletters.php',
                      'Articles'=>'./articles.php',
-                     'Sign-Up'=>'./signup.php',
+                     'Applications'=>'./applications.php',
                       'Gallery' => './Photos.php');
 }
  ?>

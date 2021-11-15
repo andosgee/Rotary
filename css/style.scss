@@ -733,8 +733,17 @@ a{
 }
 
 #pdf-display {
-  height: 100vh;
-  width: 100%;
+  width: 95%;
+  margin: auto;
+  overflow: scroll;
+  -webkit-overflow-scrolling: auto;
+  position: relative;
+  height: 100%;
+  @include responsive(desktop){
+    overflow: hidden;
+    width: 75%;
+    height: 100vh;
+  }
 }
 
 button[name='user_search_button']{
@@ -789,6 +798,16 @@ input[name='user_search_input']{
       background-color: color_scheme('white');
       border-radius: 0.25em;
       color: color_scheme('black');
+
+      &--PDF{
+        background-color: #FFFFF4;
+        font-weight: bold;
+        display: block;
+        margin: 1em auto 1em auto;
+        // margin-top: 1em;
+        min-width: 90%;
+        max-width: 90%;
+      }
     }
 
     &__textarea {

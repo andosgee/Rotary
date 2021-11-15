@@ -754,8 +754,20 @@ a {
 }
 
 #pdf-display {
-  height: 100vh;
-  width: 100%;
+  width: 95%;
+  margin: auto;
+  overflow: scroll;
+  -webkit-overflow-scrolling: auto;
+  position: relative;
+  height: 100%;
+}
+
+@media only screen and (min-width: 800px) {
+  #pdf-display {
+    overflow: hidden;
+    width: 75%;
+    height: 100vh;
+  }
 }
 
 @media only screen and (min-width: 800px) {
@@ -812,6 +824,15 @@ a {
   background-color: #F2F2F2;
   border-radius: 0.25em;
   color: #000000;
+}
+
+.form__select--PDF {
+  background-color: #FFFFF4;
+  font-weight: bold;
+  display: block;
+  margin: 1em auto 1em auto;
+  min-width: 90%;
+  max-width: 90%;
 }
 
 .form__textarea {
