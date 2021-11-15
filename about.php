@@ -12,6 +12,7 @@
       <?php include "./inc/about_content.php"; ?>
     </div>
   </div>
+   <?php include './inc/index-cards.php'; ?>
 
   <?php include './inc/footer.php'; ?>
 </body>

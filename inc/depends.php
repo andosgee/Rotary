@@ -80,11 +80,12 @@ function secure($string){ //Injection security
 function display_article($article=array(),$style="article"){ //Style is article or marquee
   echo "
     <div class=\"{$style}-card column\" onclick=(window.location.href='./article.php?AID={$article['AID']}')>
-      <h2 class=\"{$style}-card__title\">{$article['Title']}</h2>
+    <h2 class=\"{$style}-card__title\">{$article['Title']}</h2>
       <div class=\"{$style}-card__head\">
+
         <img class=\"{$style}-card__image\" src=\"./media/articles/{$article['AID']}.jpg\" alt=\"{$style} Image\">
       </div>
-      <div class=\"{$style}-card__body\">
+      <div class=\"{$style}-card__body column\">
         <p class=\"{$style}-card__desc\">{$article['Description']}</p>
       </div>
     </div>

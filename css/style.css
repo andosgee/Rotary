@@ -253,10 +253,13 @@ a {
 }
 
 .marquee-card {
-	display: none;
+	display: flex;
+	flex-direction: column;
 	height: 100%;
 	align-items: center;
+	text-align: center;
 	cursor: pointer;
+	justify-content: space-around;
 }
 
 @media only screen and (min-width: 800px) {
@@ -265,25 +268,38 @@ a {
 	}
 }
 
-.marquee-card__image {
-	vertical-align: middle;
-	width: 100%;
-	min-height: 100%;
-	opacity: 0.4;
-	transition: opacity 0.6s ease;
-}
-
 .marquee-card__head {
 	height: 100%;
 	width: 100%;
 	transition: opacity 0.6s ease;
 }
 
-.marquee-card__title {
+.marquee-card__image {
 	position: absolute;
 	top: 0;
+	left: 0;
+	opacity: 0.8;
+	transition: opacity 0.6s ease;
+	max-width: 100%;
+	min-height: 100%;
+	vertical-align: middle;
+	z-index: -1;
+}
+
+@media only screen and (min-width: 800px) {
+	.marquee-card__image {
+		top: 50%;
+		left: 50%;
+		margin-top: -20%;
+		margin-left: -50%;
+		min-width: 100%;
+	}
+}
+
+.marquee-card__title {
+	position: relative;
 	margin: 0.5em 0;
-	font-size: 1.8em;
+	font-size: 1.6em;
 	font-weight: 600;
 	color: #000000;
 	text-shadow: 1.5px 1.5px 0 rgba(255, 168, 0, 0.3);
@@ -293,17 +309,25 @@ a {
 
 .marquee-card__body {
 	position: absolute;
-	top: 35%;
+	top: 45%;
 	width: 70%;
 	overflow: hidden;
 	opacity: 1;
 	transition: opacity 0.6s;
+	justify-content: space-around;
 }
 
 .marquee-card__desc {
 	margin-top: 1em;
 	font-size: 0.9em;
 	text-align: center;
+	display: none;
+}
+
+@media only screen and (min-width: 800px) {
+	.marquee-card__desc {
+		display: block;
+	}
 }
 
 .articles {
@@ -832,7 +856,7 @@ a {
 	background-color: #FFFFF4;
 	font-weight: bold;
 	display: block;
-	margin: 1em auto 1em auto;
+	margin: 1em auto;
 	min-width: 90%;
 	max-width: 90%;
 }
@@ -960,69 +984,83 @@ a {
 	padding: 0.5em 0;
 }
 
-.about, .contact {
+.about,
+.contact {
 	width: 100%;
 	text-align: justify;
 	align-items: center;
 }
 
-.about__heading, .contact__heading {
+.about__heading,
+.contact__heading {
 	align-items: center;
 }
 
-.about__title, .contact__title {
+.about__title,
+.contact__title {
 	font-weight: 700;
 	margin-bottom: 0.1em;
 }
 
-.about__main, .contact__main {
-	padding: 0em 1.5em 0em 1.5em;
+.about__main,
+.contact__main {
+	padding: 0 1.5em;
 }
 
-.about__details, .contact__details {
+.about__details,
+.contact__details {
 	width: 100%;
 	margin-left: 3em;
 }
 
-.about__image, .contact__image {
+.about__image,
+.contact__image {
 	display: block;
 	align-self: center;
 	margin: 0 auto;
 	text-align: center;
 }
 
-.about > .card-section > .card, .contact > .card-section > .card {
+.about > .card-section > .card,
+.contact > .card-section > .card {
 	flex-direction: row-reverse;
 }
 
-.about > .card-section > .card > .card__body, .contact > .card-section > .card > .card__body {
+.about > .card-section > .card > .card__body,
+.contact > .card-section > .card > .card__body {
 	background-color: #FFA800;
 	color: #000000;
 }
 
-.about > .card-section > .card > .card__link, .contact > .card-section > .card > .card__link {
+.about > .card-section > .card > .card__link,
+.contact > .card-section > .card > .card__link {
 	color: #0055B0;
 }
 
-.about > .card-section > .card:nth-of-type(2n), .contact > .card-section > .card:nth-of-type(2n) {
+.about > .card-section > .card:nth-of-type(2n),
+.contact > .card-section > .card:nth-of-type(2n) {
 	flex-direction: row;
 }
 
-.about > .card-section > .card:nth-of-type(2n) > .card__body, .contact > .card-section > .card:nth-of-type(2n) > .card__body {
+.about > .card-section > .card:nth-of-type(2n) > .card__body,
+.contact > .card-section > .card:nth-of-type(2n) > .card__body {
 	background-color: #0055B0;
 	color: #F2F2F2;
 }
 
-.about > .card-section > .card:nth-of-type(2n) > .card__link, .contact > .card-section > .card:nth-of-type(2n) > .card__link {
+.about > .card-section > .card:nth-of-type(2n) > .card__link,
+.contact > .card-section > .card:nth-of-type(2n) > .card__link {
 	color: #FFA800;
 }
 
-.about__subheading, .contact__subheading {
+.about__subheading,
+.contact__subheading {
 	color: #FFA800;
-	margin: 1em 0em 0em 0em;
+	margin: 1em 0 0;
 }
 
-.about__data, .contact__data {
+.about__data,
+.contact__data {
 	text-align: center;
 	overflow: scroll;
 	max-width: 6.5em;
@@ -1066,7 +1104,7 @@ a {
 
 @media only screen and (min-width: 800px) {
 	.sidebar__content {
-		padding: 1em 1em;
+		padding: 1em;
 	}
 }
 
