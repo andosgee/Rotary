@@ -1134,26 +1134,25 @@ a {
 /* (A1) ON BIG SCREENS */
 .gallery {
 	display: grid;
-	grid-template-columns: repeat(4, auto);
+	grid-template-columns: repeat(2, auto);
 	/* 4 IMAGES PER ROW */
-	grid-gap: 10px;
-	max-width: 1200px;
-	margin: 0 auto;
-	/* HORIZONTAL CENTER */
+	grid-gap: 1%;
+	width: 90%;
+	margin: 0.25em auto;
+	padding: 1em;
+	overflow-y: scroll;
+	overflow-x: hidden;
 }
 
-/* (A2) ON SMALL SCREENS */
-@media screen and (max-width: 640px) {
+@media only screen and (min-width: 1050px) {
 	.gallery {
-		grid-template-columns: repeat(2, auto);
-		/* 2 IMAGES PER ROW */
+		grid-template-columns: repeat(4, auto);
 	}
 }
 
-/* (B) THUMBNAILS */
 .gallery img {
 	width: 100%;
-	height: 200px;
+	height: 10em;
 	/* FILL, CONTAIN, COVER, SCALE-DOWN : USE WHICHEVER YOU LIKE */
 	object-fit: cover;
 }

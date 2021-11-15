@@ -1087,28 +1087,27 @@ input[name='user_search_input'] {
 /* (A1) ON BIG SCREENS */
 .gallery {
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(2, auto);
     /* 4 IMAGES PER ROW */
-    grid-gap: 10px;
-    max-width: 1200px;
-    margin: 0 auto;
-    /* HORIZONTAL CENTER */
-}
-/* (A2) ON SMALL SCREENS */
-@media screen and (max-width: 640px) {
-    .gallery {
-        grid-template-columns: repeat(2, auto);
-        /* 2 IMAGES PER ROW */
-    }
-}
-/* (B) THUMBNAILS */
-.gallery img {
-    width: 100%;
-    height: 200px;
-    /* FILL, CONTAIN, COVER, SCALE-DOWN : USE WHICHEVER YOU LIKE */
-    object-fit: cover;
-}
+    grid-gap: 1%;
+    width: 90%;
+    margin: 0.25em auto;
+    padding: 1em;
+    overflow-y: scroll;
+    overflow-x: hidden;
 
-.gallery img:fullscreen {
-    object-fit: contain;
+    @include responsive(desktop) {
+        grid-template-columns: repeat(4, auto);
+    }
+
+    & img{
+        width: 100%;
+        height: 10em;
+        /* FILL, CONTAIN, COVER, SCALE-DOWN : USE WHICHEVER YOU LIKE */
+        object-fit: cover;
+
+        &:fullscreen{
+            object-fit: contain;
+        }
+    }
 }
