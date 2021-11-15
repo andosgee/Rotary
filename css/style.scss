@@ -120,13 +120,11 @@ a {
         }
 
         &:hover {
-            @include responsive('desktop'){
-                border-bottom: 0.1rem solid color_scheme('yellow');        
+            @include responsive('desktop') {
+                border-bottom: 0.1rem solid color_scheme('yellow');
             }
         }
     }
-
-
 }
 
 .login,
@@ -761,11 +759,13 @@ a {
 
 .pdf-display {
     width: 100%;
+    min-height: 100vh;
     overflow: hidden;
 }
 
 #pdf-display {
     width: 95%;
+    min-height: 95vh;
     margin: auto;
     overflow: scroll;
     -webkit-overflow-scrolling: auto;

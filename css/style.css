@@ -789,11 +789,13 @@ a {
 
 .pdf-display {
 	width: 100%;
+	min-height: 100vh;
 	overflow: hidden;
 }
 
 #pdf-display {
 	width: 95%;
+	min-height: 95vh;
 	margin: auto;
 	overflow: scroll;
 	-webkit-overflow-scrolling: auto;
