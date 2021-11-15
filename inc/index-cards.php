@@ -6,7 +6,7 @@
       <img src="./media/banner/our_work.jpg" alt="Card Image" class="card__image">
     </div>
     <div class="card__body" onclick=(window.location.href='./article.php?AID=5')>
-      <p class="card__content">Find out about what we do for our community. Forté Health and Roary New Zealand have teamed up to deliver much needed supplies.
+      <p class="card__content column">Find out about what we do for our community. Forté Health and Rotary New Zealand have teamed up to deliver much needed supplies.
       </p>
 
       <a class="card__link" href="#">Learn More...</a>
@@ -19,7 +19,7 @@
       <img src="./media/banner/our_mission.jpg" alt="Card Image" class="card__image">
     </div>
     <div class="card__body" onclick=(window.location.href='./article.php?AID=7')>
-      <p class="card__content">Find out about our mission. We have helped people who have struggled with the COVID lockdowns by backing local foodbanks.
+      <p class="card__content column">Find out about our mission. We have helped people who have struggled with the COVID lockdowns by backing local foodbanks.
       </p>
 
       <a class="card__link" href="#">Learn More...</a>
@@ -32,7 +32,7 @@
       <img src="./media/banner/come_help.jpg" alt="Card Image" class="card__image">
     </div>
     <div class="card__body" onclick=(window.location.href='./signup.php')>
-      <p class="card__content">Want to be a part of Rotary? Want to help your community? Then sign up!
+      <p class="card__content column">Want to be a part of Rotary? Want to help your community? Then sign up!
       </p>
 
       <a class="card__link" href="#">Learn More...</a>
