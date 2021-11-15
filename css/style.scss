@@ -344,19 +344,20 @@ a {
     overflow-x: hidden;
     align-items: center;
     cursor: pointer;
-    margin: 1.25em 0;
+    margin: 1.5em 0;
     @include responsive(desktop) {
         width: 70%;
     }
 
     &__title {
         position: relative;
-        margin: 0 0 0.25em;
+        margin: 0 0 1em;
         height: 10%;
         text-align: center;
         color: color_scheme('black');
         font-weight: 600;
         text-shadow: 1.5px 1.5px 0 rgba(255, 168, 0, 0.3);
+        font-size: 1.2em;
 
         &:after,
         &:before {
