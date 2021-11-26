@@ -41,6 +41,8 @@ Newsletter
 **Password:** Admin
 
 ## Google Sign In
-**User:** belfast.rotarynz@gmail.Com
+**User:** belfastkaiapoirotary.nz@gmail.Com
 <br>
 **Pass:** P1zz4B0x
+
+##Free Parking Need to make Account
