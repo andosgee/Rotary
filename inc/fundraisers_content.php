@@ -29,8 +29,7 @@
       <b>When and Where to Buy:</b> We will have stalls at the following locations: 587 Marshland Road; Beside the potato paddock at
       751 Marshland Road; 216 Cavendish Rd; cnr Main North Road and Factory Road, Belfast; and at the Kaiapoi Golf Club,
       Williams St, Kaiapoi. We will also be at Ohoka Market on the Fridays of December 10, December 17, and possibly 24th December; Riccarton
-      Market December 12 and 19th December; and Burwood hospital on December 9, December 16 and 23rd December. Club members will also be selling
-      to their own contacts.
+      Market December 12 and 19th December; and Burwood hospital on December 9, December 16 and 23rd December. Or contact any club member.
     </p>
     <p>
       <b>Funds:</b>We support many local and wider charities and organisations, with an emphasis on youth.
