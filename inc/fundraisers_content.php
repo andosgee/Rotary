@@ -9,7 +9,7 @@
     <h2 class="about__title">Potato Fundraiser - Selling between 9th December to 24th December</h2>
     <p class="info">
       At Rotary, we have started our annual potato fundraiser. This is a key fundraiser for our club as it bings in
-      <b>$70,000</b> for us to put towards community projects that can benefiet schools, charities and communities.
+      <b>tens of thousands of dollars</b> for us to put towards community projects that can benefiet schools, charities and communities.
       <br>
       <p>
       <b>History:</b> We have been growing, harvesting and selling delicious new Cliff Kidney potatoes at Christmas since 2012.
@@ -29,14 +29,14 @@
       <b>When and Where to Buy:</b> We will have stalls at the following locations: 587 Marshland Road; Beside the potato paddock at
       751 Marshland Road; 216 Cavendish Rd; cnr Main North Road and Factory Road, Belfast; and at the Kaiapoi Golf Club,
       Williams St, Kaiapoi. We will also be at Ohoka Market on the Fridays of December 10, December 17, and possibly 24th December; Riccarton
-      Market December 12 and 19th December; and Burwood hospital on December 9, December 16 and 23rd December. Or contact any club member.
+      Market December 12 and 19th December. Or contact any club member for bulk sales.
     </p>
     <p>
-      <b>Funds:</b>We support many local and wider charities and organisations, with an emphasis on youth.
+      <b>Funds:</b> We support many local and wider charities and organisations, with an emphasis on youth.
       Among many donations in the past year, we have supported the following local causes:
       <br>
       <ul>
-        <li>Computers to two local schools</li>
+        <li>Computers to many local schools</li>
         <li>Belfast Community Network</li>
         <li>Belfast Netball</li>
         <li>Coastgaurd North Canterbury</li>
