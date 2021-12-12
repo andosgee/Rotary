@@ -980,6 +980,7 @@ input[name='user_search_input'] {
 
     &__title {
         font-weight: 700;
+        text-align: center;
         margin-bottom: 0.1em;
     }
 
@@ -993,10 +994,16 @@ input[name='user_search_input'] {
     }
 
     &__image {
-        display: block;
-        align-self: center;
-        margin: 0 auto;
+        max-width: 100%;
         text-align: center;
+        align-self: center;
+        margin: 0, auto;
+        display: block;
+        @include responsive(desktop) {
+          display: block;
+          align-self: center;
+          margin: 0 auto;
+        }
     }
 
     & > .card-section > .card {

@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=`device-width`, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name='description' content="Website for Belfast-Kaiapoi Rotary Club">
+  <meta name="keywords" content="Rotary New Zealand, Belfast, Kaiapoi, Belfast Kaiapoi Rotary, Rotary Club of Belfast Kaiapoi">
+  <meta name="author" content="Andrew Grant">
   <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
   <link rel="stylesheet" href="./css/style.css">
   <link rel="icon" type="image/png" href="media/rotary_logo.png">
