@@ -13,7 +13,7 @@ if(isset($_POST["login_submit"])){
   }
 
   if($user != false && password_verify($password_input, $user['Password'])){
-    session_start();
+    // session_start();
     //Set session variables
     $_SESSION['USER'] = $user['ID'];
     $_SESSION['USERNAME'] = $user['UserName'];
@@ -22,9 +22,12 @@ if(isset($_POST["login_submit"])){
     $_SESSION['ISADMIN'] = $user['Admin'];
     //Redirect
     if($_SESSION['ISADMIN']){
-      header("location: admin.php");
+      echo"<script> location.replace('admin.php'); </script>";
+      // header("location: admin.php");
+
     }else{
-    header("location: index.php");
+      echo"<script> location.replace('index.php'); </script>";
+    // header("location: index.php");
   }
   }
   else{
