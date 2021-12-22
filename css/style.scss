@@ -68,8 +68,10 @@ a {
     color: color_scheme('yellow');
     border-bottom: 0.2em solid color_scheme('yellow');
     padding: 0.5em;
+
     @include responsive(desktop) {
         flex-direction: row;
+        font-size: 1.2vw;
     }
 
     &__bar {
@@ -898,6 +900,10 @@ input[name='user_search_input'] {
     margin-top: 1em;
     width: 100%;
     align-items: center;
+    @include responsive(desktop){
+      flex-direction: row;
+
+    }
 }
 //individual elements
 
@@ -910,7 +916,10 @@ input[name='user_search_input'] {
     padding: 0.2em;
     border-radius: 1em;
     color: color_scheme('yellow');
-    cursor: pointer;
+    @include responsive(desktop) {
+      cursor: pointer;
+      margin: 1em;
+    }
     //headings
     &__heading {
         text-align: center;

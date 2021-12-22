@@ -52,6 +52,7 @@ a {
 @media only screen and (min-width: 1050px) {
   .nav {
     flex-direction: row;
+    font-size: 1.2vw;
   }
 }
 
@@ -931,6 +932,12 @@ a {
   align-items: center;
 }
 
+@media only screen and (min-width: 1050px) {
+  .cards {
+    flex-direction: row;
+  }
+}
+
 .admin-card {
   align-items: center;
   justify-content: center;
@@ -940,7 +947,13 @@ a {
   padding: 0.2em;
   border-radius: 1em;
   color: #FFA800;
-  cursor: pointer;
+}
+
+@media only screen and (min-width: 1050px) {
+  .admin-card {
+    cursor: pointer;
+    margin: 1em;
+  }
 }
 
 .admin-card__heading {
