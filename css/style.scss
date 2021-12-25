@@ -830,10 +830,10 @@ input[name='user_search_input'] {
     }
 
     &__select {
-        font-size: 0.9em;
-        background-color: color_scheme('white');
-        border-radius: 0.25em;
-        color: color_scheme('black');
+        font-size: 0.9em !important;
+        background-color: color_scheme('white') !important;
+        border-radius: 0.25em !important;
+        color: color_scheme('black') !important;
 
         &--PDF {
             background-color: #FFFFF4;

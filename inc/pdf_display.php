@@ -4,7 +4,13 @@
 	$dir = "./ass/{$dir_loc[0]}";
 ?>
 <div class="pdf-display column">
-	<select class="form__select form__select--PDF" onchange="update_pdf(this.value,'pdf-display')">
+	<script type="text/javascript">
+		$(document).ready(function(e){
+			$(".form__select").chosen();
+		});
+	</script>
+
+	<select placeholder="PDF Select" class="form__select form__select--PDF" onchange="update_pdf(this.value,'pdf-display')">
 		<?php
 			$files = get_files($dir);
 			{

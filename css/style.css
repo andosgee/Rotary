@@ -863,10 +863,10 @@ a {
 }
 
 .form__select {
-  font-size: 0.9em;
-  background-color: #F2F2F2;
-  border-radius: 0.25em;
-  color: #000000;
+  font-size: 0.9em !important;
+  background-color: #F2F2F2 !important;
+  border-radius: 0.25em !important;
+  color: #000000 !important;
 }
 
 .form__select--PDF {
