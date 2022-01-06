@@ -6,7 +6,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=`device-width`, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name='description' content="Website for Belfast-Kaiapoi Rotary Club">
+  <meta name='description' content="Belfast-Kaiapoi Rotary Club, a group making the community better.">
+  <?php
+  $current_page = get_active_page();
+  echo "<meta name='keywords' content='".$current_page." Belfast Kaiapoi Rotary, Rotary Belfast Kaiapoi ".$current_page."'>";
+  ?> <!--Meta data done on page changes-->
   <meta name="keywords" content="Rotary New Zealand, Belfast, Kaiapoi, Belfast Kaiapoi Rotary, Rotary Club of Belfast Kaiapoi">
   <meta name="author" content="Andrew Grant">
 
@@ -18,7 +22,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!--Ajax Jquery Lib-->
   <script type="text/javascript" src="./chosen_lib/chosen.jquery.js"></script> <!--Jquery full-->
   <script type="text/javascript" src="./chosen_lib/chosen.jquery.min.js"></script> <!--Jquery Min-->
-  
+
   <!-- Dynamic Title - based off page name -->
   <title><?php echo ucwords(get_active_page()); ?> | Belfast-Kaiapoi Rotary</title>
   <!-- Google Tag Manager -->
