@@ -6,7 +6,7 @@
 <div class="pdf-display column">
 	<script type="text/javascript">
 		$(document).ready(function(e){
-			$(".form__select").chosen();
+			$(".form__select").chosen({width: "95%"});
 		});
 	</script>
 
