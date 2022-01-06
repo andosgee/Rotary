@@ -468,6 +468,12 @@ a {
   margin-bottom: 0;
 }
 
+@media only screen and (min-width: 1050px) {
+  .article__title {
+    font-size: 3vw;
+  }
+}
+
 .article__info {
   text-align: center;
   color: #AAAAAA;
@@ -481,12 +487,20 @@ a {
 
 @media only screen and (min-width: 1050px) {
   .article__image {
-    width: 60%;
+    width: 75%;
   }
 }
 
 .article__content {
   padding: 1em;
+  text-align: justify;
+}
+
+@media only screen and (min-width: 1050px) {
+  .article__content {
+    width: 75%;
+    font-size: 1.1vw;
+  }
 }
 
 .article:after {
@@ -511,6 +525,12 @@ a {
   text-decoration: none;
 }
 
+@media only screen and (min-width: 1050px) {
+  .title__name {
+    font-size: 1.8vw;
+  }
+}
+
 .title__link {
   width: 100%;
 }
@@ -522,7 +542,7 @@ a {
 
 @media only screen and (min-width: 1050px) {
   .title__logo {
-    width: 10%;
+    width: 10vw;
   }
 }
 
@@ -539,14 +559,20 @@ a {
   .join-rotary {
     justify-content: space-around;
     padding-bottom: 0.5em;
-    width: 80%;
+    width: 80vw;
   }
 }
 
 .join-rotary__heading {
   align-items: center;
   padding: 0 1em;
-  font-size: 1.5em;
+  font-size: 1.3em;
+}
+
+@media only screen and (min-width: 1050px) {
+  .join-rotary__heading {
+    font-size: 1.8vw;
+  }
 }
 
 .join-rotary__title {
@@ -578,7 +604,7 @@ a {
 @media only screen and (min-width: 1050px) {
   .join-rotary__column {
     justify-content: space-around;
-    width: 70%;
+    width: 70vw;
   }
 }
 
@@ -588,7 +614,7 @@ a {
 
 @media only screen and (min-width: 1050px) {
   .join-rotary__image {
-    width: 15%;
+    width: 15vw;
   }
 }
 
@@ -608,8 +634,20 @@ a {
   margin: 0 0 0.5em;
 }
 
+@media only screen and (min-width: 1050px) {
+  .join-rotary__subheading {
+    font-size: 1.7vw;
+  }
+}
+
 .join-rotary__desc {
   margin: 0;
+}
+
+@media only screen and (min-width: 1050px) {
+  .join-rotary__desc {
+    font-size: 1.3vw;
+  }
 }
 
 .card-section {
@@ -618,7 +656,7 @@ a {
 
 @media only screen and (min-width: 1050px) {
   .card-section {
-    width: 80%;
+    width: 80vw;
     margin: auto;
   }
 }
@@ -671,6 +709,12 @@ a {
   text-shadow: 0.1em 0.1em 0.1em #000000;
 }
 
+@media only screen and (min-width: 1050px) {
+  .card__title {
+    font-size: 2vw;
+  }
+}
+
 .card__body {
   font-size: 0.8em;
   overflow: hidden;
@@ -680,6 +724,12 @@ a {
   background-color: #0055B0;
   text-align: center;
   justify-content: space-around;
+}
+
+@media only screen and (min-width: 1050px) {
+  .card__body {
+    font-size: 1vw;
+  }
 }
 
 .card__content, .card__link {
