@@ -19,7 +19,7 @@
     foreach ($members as $person ) {
       echo"<tr>
             <td class='table__data'>{$person["NameF"]} {$person["NameS"]}</td>
-            <td class='table__data'>{$person['Email']}<br>{$person['Mobile']}</td>
+            <td class='table__data'>Email: {$person['Email']}<br>Phone: {$person['Mobile']}</td>
             <td class='table__data'>".((isset($person['UnitNum']))? "{$person['UnitNum']}/":"")."{$person['StreetNum']} {$person['StreetName']}
             <br>{$person['City']} <br>{$person['Suburb']} {$person['PostCode']}</td>
             </tr>";
