@@ -14,7 +14,7 @@ if(isset($_SESSION['USER'])){ //If logged in
     $nav_items['Members'] = './members.php'; //manage members
   }
   //Included in both
-  $nav_items['Edit Details'] = './details_change.php';
+  $nav_items['My Details'] = './details_change.php';
   $nav_items['Change Password'] = './password_change.php';
 
 }
