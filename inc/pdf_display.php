@@ -14,7 +14,7 @@
 		<?php
 			$files = get_files($dir);
 			{
-				foreach($files as $file)
+				foreach(array_reverse($files) as $file)
 				{
 					echo("<option value='{$dir}/{$file}.pdf'>{$file}</option>");
 				}
