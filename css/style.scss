@@ -978,10 +978,13 @@ input[name='user_search_input'] {
     margin-right: 0.4em;
     text-align: center;
     overflow: scroll;
-    max-width: 570px;
+    min-width: 95%;
+    max-width: 95%;
     @include responsive(desktop) {
-        min-width: 100%;
-        overflow: hidden;
+        max-width: 95%;
+        min-width: 94%;
+        margin: auto;
+        overflow: auto;
     }
 
     & table {
@@ -994,12 +997,19 @@ input[name='user_search_input'] {
         height: 3em;
         max-width: 6.5em;
         color: color_scheme('yellow');
+        border-bottom: 0.1em solid color_scheme('yellow');
+        @include responsive(desktop){
+          font-size: 1.6vw;
+        }
     }
 
     &__data {
-        text-align: left;
+        text-align: center;
         border-bottom: 0.1em solid color_scheme('light blue');
         padding: 0.5em 0;
+        @include responsive(desktop){
+          font-size: 1.3vw;
+        }
     }
 }
 

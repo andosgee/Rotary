@@ -1035,13 +1035,16 @@ a {
   margin-right: 0.4em;
   text-align: center;
   overflow: scroll;
-  max-width: 570px;
+  min-width: 95%;
+  max-width: 95%;
 }
 
 @media only screen and (min-width: 1050px) {
   .table {
-    min-width: 100%;
-    overflow: hidden;
+    max-width: 95%;
+    min-width: 94%;
+    margin: auto;
+    overflow: auto;
   }
 }
 
@@ -1055,12 +1058,25 @@ a {
   height: 3em;
   max-width: 6.5em;
   color: #FFA800;
+  border-bottom: 0.1em solid #FFA800;
+}
+
+@media only screen and (min-width: 1050px) {
+  .table__head {
+    font-size: 1.6vw;
+  }
 }
 
 .table__data {
-  text-align: left;
+  text-align: center;
   border-bottom: 0.1em solid #0055B0;
   padding: 0.5em 0;
+}
+
+@media only screen and (min-width: 1050px) {
+  .table__data {
+    font-size: 1.3vw;
+  }
 }
 
 .about,
