@@ -3,7 +3,7 @@
 <table class="table">
   <tr>
     <th class="table__head">Name</th>
-    <th class="table__head">Contact</th>
+    <th class="table__head">Contact Details</th>
     <th class="table__head">Address</th>
   </tr>
   <?php
