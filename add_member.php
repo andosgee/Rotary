@@ -10,12 +10,11 @@
 
   <?php include "inc/add_mem_script.php";?>
 
-  <script src="js/get_details.js"></script>
 
   <!-- Form to add a user -->
   <form method="POST" name="add_member_form" class="form column">
     <div class="column form__head">
-      <h1 class="form__title">Add User</h1>
+      <h1 class="form__title">Add New Member</h1>
 
       <p>Please Enter Details Below</p>
     </div>

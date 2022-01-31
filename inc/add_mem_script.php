@@ -26,20 +26,25 @@
     if(empty($unit)){ //Only field able to be blank - set to null
       $unit = 'NULL';
     }
-
+    // $email_check = $username_check = '';
+    $sql_email_check = "SELECT * FROM `tbl_login` WHERE `Email` = '{$email}' OR `UserName` = '{$username}'";
+    $duplicate_entries = $conn -> query($sql_email_check);
+    if(empty($duplicate_entries)){
 
     //SQL Statement to send the data for the new User
-    $sql_add_user = "INSERT INTO `tbl_login` (`NameF`, `NameS`, `Email`, `Mobile`, `StreetNum`, `UnitNum`, `StreetName`, `City`,
-      `Suburb`, `PostCode`, `UserName`, `Password`, `Admin`, `Active`,`Publish`)
-    VALUES ('{$fName}','{$sName}','{$email}','{$phoNum}','{$streNum}',{$unit},'{$streNam}','{$city}','{$suburb}','{$postcode}',
-      '{$username}','{$password}',{$admin},1,1)";
-  $conn -> query($sql_add_user);
+      $sql_add_user = "INSERT INTO `tbl_login` (`NameF`, `NameS`, `Email`, `Mobile`, `StreetNum`, `UnitNum`, `StreetName`, `City`,
+        `Suburb`, `PostCode`, `UserName`, `Password`, `Admin`, `Active`,`Publish`)
+        VALUES ('{$fName}','{$sName}','{$email}','{$phoNum}','{$streNum}',{$unit},'{$streNam}','{$city}','{$suburb}','{$postcode}',
+        '{$username}','{$password}',{$admin},1,1)";
+      $conn -> query($sql_add_user);
 
   //If added user was from interest table remove from interest
-  if($interestID){
-    $sql_remove = "DELETE FROM tbl_interest WHERE ID = {$interestID}";
-    $conn -> query($sql_remove);
-  }
+    if($interestID){
+      $sql_remove = "DELETE FROM tbl_interest WHERE ID = {$interestID}";
+      $conn -> query($sql_remove);
+    }}else {
+      echo "<script>window.alert('Users Details Already Exist.')</script>";
+    }
   ?>
 
 
