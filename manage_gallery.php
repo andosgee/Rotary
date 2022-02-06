@@ -23,7 +23,7 @@
         Click here to publish and archive images.
       </div>
     <?php } ?>
-    <div class="admin-card column" onclick="location.href='photos.php';">
+    <div class="admin-card column" onclick="location.href='Photos.php';">
       <h2 class="admin-card__heading">View Gallery</h2>
       <img alt="person" src="media/admin_portal/default/article.png" class="admin-card__image">
       <br>
