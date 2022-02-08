@@ -43,9 +43,9 @@
     <div class="articles-nav__items row">
       <?php
         if ($page != 1){ //All pages but first
-          echo "<a href=\"./articles.php?page=1\">First</a>";
+          echo "<a href=\"./articles?page=1\">First</a>";
           $previous = $page - 1;
-          echo "<a href=\"./articles.php?page={$previous}\">Previous</a>";
+          echo "<a href=\"./articles?page={$previous}\">Previous</a>";
         }
 
         if($page != 1 && $page != $total_pages){ //All pages but first and last
@@ -54,8 +54,8 @@
 
         if ($page != $total_pages){ //All pages but last
           $next = $page + 1;
-          echo "<a href=\"./articles.php?page={$next}\">Next</a>";
-          echo "<a href=\"./articles.php?page={$total_pages}\">Last</a>";
+          echo "<a href=\"./articles?page={$next}\">Next</a>";
+          echo "<a href=\"./articles?page={$total_pages}\">Last</a>";
         }
        ?>
     </div>

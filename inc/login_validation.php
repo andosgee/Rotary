@@ -22,11 +22,11 @@ if(isset($_POST["login_submit"])){
     $_SESSION['ISADMIN'] = $user['Admin'];
     //Redirect
     if($_SESSION['ISADMIN']){
-      echo"<script> location.replace('admin.php'); </script>";
+      echo"<script> location.replace('admin'); </script>";
       // header("location: admin.php");
 
     }else{
-      echo"<script> location.replace('index.php'); </script>";
+      echo"<script> location.replace('index'); </script>";
     // header("location: index.php");
   }
   }

@@ -8,7 +8,7 @@
   <?php include "inc/nav.php"; ?>
 
   <div class="cards column">
-    <div class="admin-card column" onclick="location.href='upload_images_to_gallery.php';">
+    <div class="admin-card column" onclick="location.href='upload_images_to_gallery';">
       <h2 class="admin-card__heading">Add Images</h2>
       <img alt="person" src="media/admin_portal/default/article.png" class="admin-card__image">
       <br>
@@ -16,14 +16,14 @@
     </div>
 
     <?php if($_SESSION['ISADMIN']){?>
-      <div class="admin-card column" onclick="location.href='manage_images.php';">
+      <div class="admin-card column" onclick="location.href='manage_images';">
         <h2 class="admin-card__heading">Manage Images</h2>
         <img alt="person" src="media/admin_portal/default/article.png" class="admin-card__image">
         <br>
         Click here to publish and archive images.
       </div>
     <?php } ?>
-    <div class="admin-card column" onclick="location.href='Photos.php';">
+    <div class="admin-card column" onclick="location.href='Photos';">
       <h2 class="admin-card__heading">View Gallery</h2>
       <img alt="person" src="media/admin_portal/default/article.png" class="admin-card__image">
       <br>

@@ -1,33 +1,33 @@
 <?php
 if(isset($_SESSION['USER'])){ //If logged in
   $login_state = 'logout'; //Set state of login/out button
-  $nav_items = array('Home'=>'./index.php', //Set user Nav
-                     'Minutes'=>'./minutes.php',
-                     'Newsletter'=>'./newsletters.php',
-                     'Articles' => './manage_articles.php',
-                      'Gallery' => './manage_gallery.php',
-                      'Current Projects' => './fundraisers.php');
+  $nav_items = array('Home'=>'./index', //Set user Nav
+                     'Minutes'=>'./minutes',
+                     'Newsletter'=>'./newsletters',
+                     'Articles' => './manage_articles',
+                      'Gallery' => './manage_gallery',
+                      'Current Projects' => './fundraisers');
   if ($_SESSION['ISADMIN']){ //Add Admin options
-    $nav_items['Home'] = './admin.php';
-    $nav_items['Minutes'] = './manage_minutes.php';
-    $nav_items['Newsletter'] = './manage_newsletter.php';
-    $nav_items['Members'] = './members.php'; //manage members
+    $nav_items['Home'] = './admin';
+    $nav_items['Minutes'] = './manage_minutes';
+    $nav_items['Newsletter'] = './manage_newsletter';
+    $nav_items['Members'] = './members'; //manage members
   }
   //Included in both
-  $nav_items['My Details'] = './details_change.php';
-  $nav_items['Change Password'] = './password_change.php';
+  $nav_items['My Details'] = './details_change';
+  $nav_items['Change Password'] = './password_change';
 
 }
 else{ //Default Menu
   $login_state = 'login'; //Set state of login/out button
-  $nav_items = array('Home'=>'./index.php',
-                     'About Us'=>'./about.php',
-                     'Contact Us'=>'./contact.php',
-                     'Newsletter'=>'./newsletters.php',
-                     'Articles'=>'./articles.php',
-                     'Applications'=>'./applications.php',
-                      'Gallery' => './Photos.php',
-                    'Current Projects' => './fundraisers.php');
+  $nav_items = array('Home'=>'./index',
+                     'About Us'=>'./about',
+                     'Contact Us'=>'./contact',
+                     'Newsletter'=>'./newsletters',
+                     'Articles'=>'./articles',
+                     'Applications'=>'./applications',
+                      'Gallery' => './Photos',
+                    'Current Projects' => './fundraisers');
 }
  ?>
 
@@ -36,7 +36,7 @@ else{ //Default Menu
     <span class="nav__hamburger" onclick="mobileMenu()">&#9776;</span>
 
     <?php
-    echo "<a class=\"nav__login\" href='./{$login_state}.php'>"
+    echo "<a class=\"nav__login\" href='./{$login_state}'>"
             .ucwords($login_state).
          "</a>";
     ?>

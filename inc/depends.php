@@ -14,20 +14,20 @@ function OpenCon(){ #Opens the connction
 
 function AdminOnlyAccess(){ #Restrict page to admin access
   if(!$_SESSION['ISADMIN']){
-    header("location: ./index.php");
+    header("location: ./index");
   }
 }
 
 function GuestOnly(){
   if(!empty($_SESSION['USER'])){
-    header("location: ./index.php");
+    header("location: ./index");
   }
 }
 
 
 function UserOnlyAccess(){ #Restrict page to user (or higher) access
   if(!isset($_SESSION['USER'])){
-    header("location: ./index.php");
+    header("location: ./index");
   }
 }
 
@@ -81,7 +81,7 @@ function secure($string){ //Injection security
 
 function display_article($article=array(),$style="article"){ //Style is article or marquee
   echo "
-    <div class=\"{$style}-card column\" onclick=(window.location.href='./article.php?AID={$article['AID']}')>
+    <div class=\"{$style}-card column\" onclick=(window.location.href='./article?AID={$article['AID']}')>
     <h2 class=\"{$style}-card__title\">{$article['Title']}</h2>
       <div class=\"{$style}-card__head\">
 

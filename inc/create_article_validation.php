@@ -48,7 +48,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
   }
 
   if($uploadOk && move_uploaded_file($image["tmp_name"], $target_location)){ //If image can be uploaded and is uploaded successfully
-    header("Location: ./article.php?AID={$AID}");
+    header("Location: ./article?AID={$AID}");
   }
   else{
     echo "Image could not be uploaded. ";

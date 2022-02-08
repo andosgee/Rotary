@@ -33,7 +33,7 @@ if(isset($_POST['pwd_reset_btn'])){
       $hash_pass = password_hash($password_new, PASSWORD_BCRYPT);
       $sql_res = "UPDATE `tbl_login` SET `Password` = '{$hash_pass}' WHERE `ID` = {$id}";
       $conn -> query($sql_res);
-      $suc_pwd = "Password has been reset. <a href='login.php' class='login__link'>Return to Login.</a>";
+      $suc_pwd = "Password has been reset. <a href='login' class='login__link'>Return to Login.</a>";
     }else {
       $err_pwd = "Passwords don't match. Please try again.";
     }

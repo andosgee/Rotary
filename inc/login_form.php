@@ -9,5 +9,5 @@
       <button class= "login__submit" type="submit" name="login_submit">Login</button>
     </form>
     <p>
-    Forgot your password? <a href="password_reset.php" class="login__link">Reset it here.</a> </p>
+    Forgot your password? <a href="password_reset" class="login__link">Reset it here.</a> </p>
 </div>

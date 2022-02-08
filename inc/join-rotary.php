@@ -6,7 +6,7 @@
   </div>
 
   <div class="join-rotary__content column">
-    <div class="join-rotary__column row" onclick=(window.location.href='fundraisers.php')>
+    <div class="join-rotary__column row" onclick=(window.location.href='fundraisers')>
       <img class="join-rotary__image" src="./media/icons/fundraising.png" alt="Image">
       <div class="join-rotary__content column">
         <h3 class="join-rotary__subheading">Fundraising</h3>
@@ -19,7 +19,7 @@
 
     <hr class="solid">
 
-    <div class="join-rotary__column row" onclick=(window.location.href='contact.php')>
+    <div class="join-rotary__column row" onclick=(window.location.href='contact')>
       <img class="join-rotary__image" src="./media/icons/contact.png" alt="Image">
       <div class="join-rotary__content column">
         <h3 class="join-rotary__subheading">Contact Us</h3>
@@ -29,7 +29,7 @@
 
     <hr class="solid">
 
-    <div class="join-rotary__column row" onclick=(window.location.href='about.php')>
+    <div class="join-rotary__column row" onclick=(window.location.href='about')>
       <img class="join-rotary__image" src="./media/icons/about.png" alt="Image">
       <div class="join-rotary__content column">
         <h3 class="join-rotary__subheading">About Us</h3>
