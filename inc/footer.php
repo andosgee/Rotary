@@ -12,7 +12,7 @@
 
   <div class="footer__info column">
     <a class="footer__legal" href="#">Privacy Policy</a>
-    <p class="footer__legal">©2020 Rotary Club Belfast. All rights reserved.</p>
+    <p class="footer__legal">©2022 Rotary Club Belfast. All rights reserved.</p>
     <p class="footer__legal">Developed by Andrew Grant</p>
 
   </div>
