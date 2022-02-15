@@ -3,7 +3,6 @@
 
   if(isset($_POST['add_mem_sub'])){
     //Sets the vars from the form and protects them
-    $interestID = secure($_POST['user_select']);
     $fName = secure($_POST['add_mem_name_f']);
     $sName = secure($_POST['add_mem_name_s']);
     $email = secure($_POST['add_mem_email']);
@@ -29,7 +28,13 @@
     // $email_check = $username_check = '';
     $sql_email_check = "SELECT * FROM `tbl_login` WHERE `Email` = '{$email}' OR `UserName` = '{$username}'";
     $duplicate_entries = $conn -> query($sql_email_check);
-    if(empty($duplicate_entries)){
+    print_r($duplicate_entries);
+    foreach ($duplicate_entries as $key) {
+      echo $key;
+      echo '1';
+    }
+    // echo(count($duplicate_entries));
+    if(sizeof($duplicate_entries) == 0){
 
     //SQL Statement to send the data for the new User
       $sql_add_user = "INSERT INTO `tbl_login` (`NameF`, `NameS`, `Email`, `Mobile`, `StreetNum`, `UnitNum`, `StreetName`, `City`,
@@ -39,10 +44,7 @@
       $conn -> query($sql_add_user);
 
   //If added user was from interest table remove from interest
-    if($interestID){
-      $sql_remove = "DELETE FROM tbl_interest WHERE ID = {$interestID}";
-      $conn -> query($sql_remove);
-    }}else {
+  }else {
       echo "<script>window.alert('Users Details Already Exist.')</script>";
     }
   ?>
