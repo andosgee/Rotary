@@ -10,7 +10,7 @@
   <div class="cards column">
     <div class="admin-card column" onclick="location.href='view_members';">
       <h2 class="admin-card__heading">View Club Members</h2>
-      <img alt="person" src="media/members/add_member.png" class="admin-card__image">
+      <img alt="person" src="media/admin_portal/default/contacts.png" class="admin-card__image">
       <br>
       Click Here to view club members.
     </div>

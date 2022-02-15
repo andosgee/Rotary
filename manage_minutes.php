@@ -10,19 +10,19 @@
   <div class="cards column">
     <div class="admin-card column" onclick="location.href='create_minutes';">
       <h2 class="admin-card__heading">Update Minutes</h2>
-      <img alt="person" src="media/admin_portal/default/article.png" class="admin-card__image">
+      <img alt="person" src="media/admin_portal/default/new_upload.png" class="admin-card__image">
       <br>
     </div>
 
     <div class="admin-card column" onclick="location.href='delete_minutes';">
       <h2 class="admin-card__heading">Delete Minutes</h2>
-      <img alt="person" src="media/admin_portal/default/Newsletter.png" class="admin-card__image">
+      <img alt="person" src="media/icons/trash.png" class="admin-card__image">
       <br>
     </div>
 
     <div class="admin-card column" onclick="location.href='minutes';">
       <h2 class="admin-card__heading">View Current Minutes</h2>
-      <img alt="person" src="media/admin_portal/default/article.png" class="admin-card__image">
+      <img alt="person" src="media/admin_portal/default/Newsletter.png" class="admin-card__image">
       <br>
     </div>
   </div>

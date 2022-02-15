@@ -25,7 +25,7 @@
           move_uploaded_file($imageTmpName , $newLocation);
           $upload = 1;
           $sql_add = "INSERT INTO `tbl_gallery`(`ImageName`,`Moderated`,`UID`)
-                      VALUES ('{$newLocation}', 0, {$_SESSION['USER']})";
+                      VALUES ('{$newLocation}', 1, {$_SESSION['USER']})";
           $conn -> query($sql_add);
           echo "Image Upload Successful!";
         }else{

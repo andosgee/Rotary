@@ -26,6 +26,8 @@
   <script type="text/javascript" src="https://cdn.rawgit.com/prashantchaudhary/ddslick/master/jquery.ddslick.min.js" ></script>
   <script type="text/javascript" src="./ddslick/jquery.ddslick.js"></script> <!--Jquery full-->
   <script type="text/javascript" src="./ddslick/jquery.ddslick.min.js"></script> <!--Jquery Min-->
+  <!-- Link in cookie maker file -->
+  <script type="text/javascript" src="./js/cookies.js"></script>
   <!-- Dynamic Title - based off page name -->
   <title><?php echo ucwords(get_active_page()); ?> | Belfast-Kaiapoi Rotary</title>
   <!-- Google Tag Manager -->
