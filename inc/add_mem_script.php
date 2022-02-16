@@ -38,7 +38,8 @@
         `Suburb`, `PostCode`, `UserName`, `Password`, `Admin`, `Active`,`Publish`)
         VALUES ('{$fName}','{$sName}','{$email}','{$phoNum}','{$streNum}','{$unit}','{$streNam}','{$city}','{$suburb}','{$postcode}',
         '{$username}','{$password}','{$admin}',1,1)";
-      $conn -> query($sql_add_user);
+      // $conn -> query($sql_add_user);
+      mysqli_query($conn, $sql_add_user);
 
   //If added user was from interest table remove from interest
   }else {
