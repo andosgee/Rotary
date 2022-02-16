@@ -28,13 +28,10 @@
     // $email_check = $username_check = '';
     $sql_email_check = "SELECT * FROM `tbl_login` WHERE `Email` = '{$email}' OR `UserName` = '{$username}'";
     $duplicate_entries = $conn -> query($sql_email_check);
-    print_r($duplicate_entries);
-    foreach ($duplicate_entries as $key) {
-      echo $key;
-      echo '1';
-    }
+
+
     // echo(count($duplicate_entries));
-    if(sizeof($duplicate_entries) == 0){
+    if(mysqli_num_rows($duplicate_entries) == 0){
 
     //SQL Statement to send the data for the new User
       $sql_add_user = "INSERT INTO `tbl_login` (`NameF`, `NameS`, `Email`, `Mobile`, `StreetNum`, `UnitNum`, `StreetName`, `City`,
