@@ -31,11 +31,11 @@
       <h3 class="card__title">Come Help!</h3>
       <img src="./media/banner/come_help.jpg" alt="Card Image" class="card__image">
     </div>
-    <div class="card__body" onclick=(window.location.href='./signup')>
+    <div class="card__body" onclick=(window.location.href='./applications')>
       <p class="card__content column">Want to be a part of Rotary? Want to help your community? Then sign up!
       </p>
 
-      <a class="card__link" href="#">Learn More...</a>
+      <a class="card__link" href="applications">Learn More...</a>
     </div>
   </div>
 </div>

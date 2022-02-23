@@ -17,7 +17,7 @@
 
     <?php if($_SESSION['ISADMIN']){?>
       <div class="admin-card column" onclick="location.href='moderate_article';">
-        <h2 class="admin-card__heading">Moderate Articles</h2>
+        <h2 class="admin-card__heading">Moderate/Edit/Delete Articles</h2>
         <img alt="person" src="media/admin_portal/default/article.png" class="admin-card__image">
         <br>
         Click here to verify and publish pending articles.

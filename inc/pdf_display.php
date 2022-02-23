@@ -24,7 +24,9 @@
 	<?php
 	if(sizeof($files) > 0)
 	{
+	  $files = array_reverse($files);
 		echo("<iframe id='pdf-display' src='{$dir}/{$files[0]}.pdf'></iframe>");
+
 	}else{
 		echo "No Files Found, Please try again Later";
 	}

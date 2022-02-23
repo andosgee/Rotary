@@ -1251,4 +1251,13 @@ a {
   object-fit: contain;
 }
 
+.calendar {
+  /*calendar controls*/
+  display: block;
+  width: 75vw;
+  height: 50vw;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
 /*# sourceMappingURL=style.css.map */

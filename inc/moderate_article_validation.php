@@ -1,5 +1,5 @@
 <?php
-if($_SERVER['REQUEST_METHOD'] == 'POST'){
+if(isset($_POST['create_article_submit'])){
   $AID = secure($_POST['article_select']);
   $image = $_FILES['article_image'];
   $title = secure($_POST['article_title']);
@@ -25,7 +25,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
                        , Featured = {$featured} WHERE AID = {$AID}";
   $conn -> query($update_query);
 
-  if(isset($image)){
+  if($image['size'] > 0){
     //Add Image - Validation
     $uploadOk = true;
     //Save location
@@ -64,5 +64,14 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
     }
   }
   echo "<script>location.replace(./article?AID={$AID})</script>";
+}
+
+if(isset($_POST['create_article_delete'])){
+  $AID = secure($_POST['article_select']);
+  $sql = "DELETE FROM `tbl_articles` WHERE `AID` = '{$AID}'";
+  $directory = './media/articles/'.$AID.'.jpg';
+  unlink($directory);
+  $conn -> query($sql);
+  echo "Article Successfully Deleted";
 }
  ?>
