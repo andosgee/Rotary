@@ -14,6 +14,7 @@
     <a class="footer__legal" href="#">Privacy Policy</a>
     <p class="footer__legal">©2022 Rotary Club Belfast. All rights reserved.</p>
     <p class="footer__legal">Developed by Andrew Grant</p>
+    <a href="#" onclick="window.open('https://www.sitelock.com/verify.php?site=belfastkaiapoirotary.co.nz','SiteLock','width=600,height=600,left=160,top=170');" ><img class="img-responsive" alt="SiteLock" title="SiteLock" src="https://shield.sitelock.com/shield/belfastkaiapoirotary.co.nz" /></a>
 
   </div>
 

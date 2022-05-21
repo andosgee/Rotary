@@ -25,6 +25,9 @@ if(isset($_GET['id']) && !empty($_GET['id'])){
   <label for="article_featured">Publish:</label>
     <input type="checkbox" name="article_publish" class="form__checkbox" <?php echo (($article['Moderated'])? "checked":""); ?>>
   </div>
-  <input class="form__button form__button--submit" type="submit" name="create_article_submit" value="Update">
+  <div class="row">
 
+  <input class="form__button form__button--submit" type="submit" name="create_article_submit" value="Update">
+  <input class='form__button form__button--delete' type="submit" name='create_article_delete' value="Delete">
+</div>
 <?php } ?>
