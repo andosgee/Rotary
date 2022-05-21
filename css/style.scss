@@ -1163,3 +1163,11 @@ input[name='user_search_input'] {
         }
     }
 }
+
+.calendar{ /*calendar controls*/
+  display: block;
+  width: 75vw;
+  height: 50vw;
+  overflow: hidden;
+  margin: 0 auto;
+}
