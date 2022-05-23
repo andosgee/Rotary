@@ -28,6 +28,7 @@
 
     <h3 class="contact__subheading"><a href="https://calendar.google.com/calendar/ical/belfast.rotarynz%40gmail.com/public/basic.ics">Click Here to Add our Calendar</a></h3>
 
+    <h1 class="contact__title">Applications</h1>
 
   </div>
 

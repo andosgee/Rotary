@@ -4,7 +4,7 @@ if(isset($_SESSION['USER'])){ //If logged in
   $nav_items = array('Home'=>'./index', //Set user Nav
                      'Minutes'=>'./minutes',
                      'Newsletter'=>'./newsletters',
-                     'Articles' => './manage_articles',
+                     'Community Service' => './manage_articles',
                       'Gallery' => './manage_gallery',
                       'Current Projects' => './fundraisers',
                     'Calendar' => './calendar');
@@ -25,8 +25,7 @@ else{ //Default Menu
                      'About Us'=>'./about',
                      'Contact Us'=>'./contact',
                      'Newsletter'=>'./newsletters',
-                     'Articles'=>'./articles',
-                     'Applications'=>'./applications',
+                     'Community Service'=>'./articles',
                       'Gallery' => './Photos',
                     'Current Projects' => './fundraisers',
                     'Calendar' => './calendar'
