@@ -16,7 +16,7 @@
       <h4 class="contact__subtitle">Phone: <a href="tel:6427-434-3402">027 434 3402</a><h4>
       <h4 class="contact__subtitle">Email: <a href="mailto:jenny.tony@xtra.co.nz">jenny.tony@xtra.co.nz</a></h4>
     </p>
-    <h3 class ="contact__subtitle">Les McFadden - President Elect</h3>
+    <h3 class ="contact__subtitle">Les McFadden - President</h3>
     <p>
       <h4 class="contact__subtitle">Phone: <a href="tel:6427-463-3644">027 463 3644<h4>
       <h4 class="contact__subtitle">Email: <a href="mailto:lemcfadden@xtra.co.nz">lemcfadden@xtra.co.nz</a></h4>
