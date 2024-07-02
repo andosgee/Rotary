@@ -40,10 +40,3 @@ Newsletter
 <br>
 **Password:** Admin
 
-## Google Sign In
-**User:** belfastkaiapoirotary.nz@gmail.Com
-<br>
-**Pass:** P1zz4B0x
-<br>
-Belfastkaiapoi18!
-##Free Parking Need to make Account
